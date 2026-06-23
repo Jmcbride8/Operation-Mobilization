@@ -8,7 +8,7 @@ const SLIDES = [
     id: "01",
     label: "THE SYMPTOM",
     title: "A WORLD IN DESPERATION",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/b1606758a_generated_image.png",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/62ecb575d_generated_image.png",
     body: "Look at the world. War. Famine. Exploitation. Abuse. Children discarded. Women oppressed. Men trapped in cycles they cannot break. Entire populations ground down by poverty, violence, and despair. These are the symptoms — the visible, measurable, undeniable symptoms of a world that has lost its way.",
     accent: "text-red-500",
     stat: "1.3 BILLION",
