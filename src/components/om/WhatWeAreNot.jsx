@@ -36,9 +36,9 @@ const CONTRASTS = [
     imageKey: "identity.donors",
   },
   {
-    not: "WELL-MEANING",
-    is: "WELL-TRAINED",
-    desc: "Good intentions don't build water systems or train leaders. Our specialists arrive certified, equipped, and mission-ready.",
+    not: "SOCIAL WORK",
+    is: "CHANGED HEARTS",
+    desc: "We don't just meet physical needs. We share the Gospel that transforms a person from the inside out. New hearts, new lives, new eternities.",
     imageKey: "identity.trained",
   },
 ];
