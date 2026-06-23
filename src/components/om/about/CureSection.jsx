@@ -68,7 +68,7 @@ export default function CureSection() {
               </div>
 
               <div className="relative z-10 flex items-center gap-4">
-                <span className="font-heading font-black text-5xl text-ignition/30 group-hover:text-ignition/50 transition-colors">
+                <span className="font-heading font-black text-5xl text-ignition">
                   {p.id}
                 </span>
                 <div>
