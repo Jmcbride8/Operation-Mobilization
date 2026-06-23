@@ -9,17 +9,17 @@ const GROUPS = [
     cards: [
       {
         num: "01",
-        title: "GOD IS INFINITELY GOOD & WE BEAR HIS IMAGE",
+        title: "GOD IS INFINITELY GOOD",
         desc: "God is infinitely good and stamped His own image onto every human being. This isn't philosophy — it's a declaration of war on the idea that people are disposable. Every person walks around carrying the fingerprint of an infinite God. That changes everything.",
       },
       {
         num: "02",
-        title: "BUT THAT MAKES EVERY SIN INFINITELY SERIOUS",
+        title: "SIN IS INFINITELY SERIOUS",
         desc: "Here's the catch: if God is infinitely good, then sin against Him isn't a misdemeanor — it's an infinite offense. You don't offend infinite goodness with a slap on the wrist. The weight of our rebellion is incalculable, and no amount of good behavior tips the scale back.",
       },
       {
         num: "03",
-        title: "WHICH WE COMPOUND WITH IGNORANCE AND ARROGANCE",
+        title: "YOU CAN'T FIX IT YOURSELF",
         desc: "Every other religion says: try harder, be better, climb your way back to God. Christianity says: that's delusional. Finite beings cannot right an infinite wrong. To think you can earn your way back to a perfectly good God isn't humility — it's the height of arrogance. The gap is unbridgeable. By us.",
       },
     ],
@@ -30,12 +30,12 @@ const GROUPS = [
     cards: [
       {
         num: "04",
-        title: "SO GOD BRIDGED THE UNBRIDGEABLE GAP",
+        title: "GOD BRIDGED THE GAP",
         desc: "Here's where Christianity flips the table on every other belief system: God didn't ask us to climb up to Him — He came down to us. Through Jesus, God Himself absorbed the full, infinite weight of our rebellion and absorbed it in His own body. He paid a debt He didn't owe because we owed a debt we couldn't pay.",
       },
       {
         num: "05",
-        title: "FORGIVENESS THROUGH HUMILITY, NOT ACHIEVEMENT",
+        title: "FORGIVENESS BY HUMILITY",
         desc: "You don't earn this. You can't. Forgiveness is received the way a drowning man receives a rescue — hands up, mouth shut, completely dependent on the one who jumped in after you. It requires the honesty to confess your wreck and the humility to accept a gift you could never deserve.",
       },
     ],
@@ -46,17 +46,17 @@ const GROUPS = [
     cards: [
       {
         num: "06",
-        title: "AND SO WE LIVE IN GRATEFUL RESPONSE",
+        title: "WE LIVE IN RESPONSE",
         desc: "Once you've been pulled out of the water, you don't swim to prove you deserved it. You live different because you've been rescued. Christians don't serve, love, and sacrifice to earn salvation — they do it because it's already been given. And that gratitude doesn't sit still. It moves. It sends. Every act of obedience becomes a living thank-you note to the God who didn't have to — and the most honest response is to carry that rescue to the ends of the earth.",
       },
       {
         num: "07",
-        title: "THE ONLY HONEST PATH OF RIGHTEOUSNESS",
+        title: "THE ONLY HONEST PATH",
         desc: "Here's the difference nobody talks about: every other system says do good to get saved. Christianity says you're saved, so do good. That makes our righteousness the only honest kind — not a transaction, not a bribe for heaven, but a free response to grace. We're liberated from pretending and empowered to actually live sacrificially. That's why OM exists — not to earn God's favor, but because His favor is already ours. The only question left is where He's sending us next.",
       },
       {
         num: "08",
-        title: "CALLED TO FORGIVE AND HEAL AS WE WERE HEALED",
+        title: "FORGIVE AS WE WERE FORGIVEN",
         desc: "You've been forgiven an infinite debt. So when someone wrongs you, you don't get to hold the receipt. And you don't get to stay home. Christians are commissioned — deployed — to carry the same mercy that rescued us into every dark corner of the map. To the ones who've never heard. To the places no one else will go. That's not a program. That's the inevitable consequence of having been saved. We go because we were sent. Forward.",
       },
     ],
