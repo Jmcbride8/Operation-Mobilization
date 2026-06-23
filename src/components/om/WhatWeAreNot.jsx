@@ -82,6 +82,23 @@ export default function WhatWeAreNot() {
           </div>
         </div>
 
+        {/* Scripture quote */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mb-12 max-w-2xl mx-auto text-center border-l-2 border-r-2 border-ignition/60 px-6 md:px-12 py-6"
+        >
+          <p className="font-heading text-lg md:text-2xl text-signal-white italic leading-relaxed">
+            "My kingdom is not of this world. If my kingdom were of this world,
+            my servants would have been fighting. But my kingdom is not
+            from the world."
+          </p>
+          <span className="block mt-3 text-[10px] font-mono tracking-[0.25em] text-ignition">
+            — JOHN 18:36
+          </span>
+        </motion.div>
+
         {/* Contrasts grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-titanium/15">
           {CONTRASTS.map((item, i) => (

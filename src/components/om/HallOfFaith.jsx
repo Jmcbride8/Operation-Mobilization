@@ -212,6 +212,22 @@ export default function HallOfFaith() {
           </p>
         </motion.div>
 
+        {/* Scripture quote */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="mb-16 max-w-2xl mx-auto text-center border-l-2 border-r-2 border-ignition/60 px-6 md:px-12 py-6"
+        >
+          <p className="font-heading text-lg md:text-2xl text-signal-white italic leading-relaxed">
+            "Greater love has no one than this, that someone lay down his life
+            for his friends."
+          </p>
+          <span className="block mt-3 text-[10px] font-mono tracking-[0.25em] text-ignition">
+            — JOHN 15:13
+          </span>
+        </motion.div>
+
         {/* Hero cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {HEROES.map((hero, i) => (
