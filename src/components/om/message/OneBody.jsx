@@ -9,6 +9,7 @@ const BRANCHES = [
     tagline: "THE EMOTIONAL & EXPRESSIVE",
     desc: "Vibrant, personal experience of God's presence. Joyful, expressive, interactive worship. Active work of the Holy Spirit — healing, gifts, and power for today.",
     strength: "Spiritual fire and boldness",
+    image: "https://images.unsplash.com/photo-1604854488803-1c4ec2cf6e68?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "02",
@@ -16,6 +17,7 @@ const BRANCHES = [
     tagline: "TRADITION, RITUAL & HERITAGE",
     desc: "Rich liturgical tradition, sacraments, and centuries of church teaching. Beauty in repetition and ritual that connects believers to history. Deep roots and a global institutional backbone.",
     strength: "Historical depth and sacred beauty",
+    image: "https://images.unsplash.com/photo-1520637836862-4d197d17c50a?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "03",
@@ -23,6 +25,7 @@ const BRANCHES = [
     tagline: "SCRIPTURE & PERSONAL FAITH",
     desc: "Born from the Reformation. The Bible as primary authority and the importance of a personal relationship with God. Baptists, Methodists, Presbyterians, Evangelicals — each with unique flavor.",
     strength: "Biblical conviction and personal faith",
+    image: "https://images.unsplash.com/photo-1504052434569-70ad5834ab65?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "04",
@@ -30,6 +33,7 @@ const BRANCHES = [
     tagline: "ANCIENT TRADITION & MYSTERY",
     desc: "Roots in Eastern Christianity. Emphasis on the mystical and transcendent. Icons, liturgy, and unbroken historical continuity with the early church.",
     strength: "Mystical depth and ancient roots",
+    image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "05",
@@ -37,6 +41,7 @@ const BRANCHES = [
     tagline: "SOVEREIGNTY & INTELLECT",
     desc: "Emphasis on God's ultimate control and authority. Deep theological reflection and careful study of Scripture alongside personal faith.",
     strength: "Theological rigor and discipline",
+    image: "https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "06",
@@ -44,6 +49,7 @@ const BRANCHES = [
     tagline: "CONVERSION & DISCIPLESHIP",
     desc: "Focus on a personal decision to follow Jesus ('born again') and actively sharing that faith. Centrality of Jesus' death and resurrection and the authority of the Bible.",
     strength: "Relational evangelism and action",
+    image: "https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=800&auto=format&fit=crop",
   },
 ];
 
@@ -54,12 +60,20 @@ function BranchCard({ branch, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.4, delay: index * 0.08 }}
-      className="bg-obsidian p-6 border-t-2 border-ignition hover:bg-signal-white/[0.02] transition-colors group"
+      className="bg-obsidian border-t-2 border-ignition hover:bg-signal-white/[0.02] transition-colors group overflow-hidden"
     >
-      <div className="flex items-start justify-between mb-3">
-        <span className="text-[10px] font-mono text-ignition tracking-wider">[ {branch.id} ]</span>
-        <span className="text-[9px] font-mono text-titanium/50 tracking-[0.15em] text-right">{branch.tagline}</span>
+      {/* Image */}
+      <div className="relative h-40 overflow-hidden">
+        <img
+          src={branch.image}
+          alt={branch.name}
+          className="w-full h-full object-cover opacity-60 group-hover:opacity-40 group-hover:grayscale transition-all duration-700"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/50 to-transparent" />
+        <span className="absolute top-2 left-2 text-[10px] font-mono text-ignition tracking-wider">[ {branch.id} ]</span>
+        <span className="absolute top-2 right-2 text-[9px] font-mono text-titanium/60 tracking-[0.15em] text-right">{branch.tagline}</span>
       </div>
+      <div className="p-6">
       <h3 className="font-heading font-bold text-sm text-signal-white uppercase tracking-[0.02em] mb-3">
         {branch.name}
       </h3>
@@ -67,6 +81,7 @@ function BranchCard({ branch, index }) {
       <div className="pt-3 border-t border-titanium/15">
         <span className="text-[9px] font-mono text-titanium/60 tracking-wider block">STRENGTH BROUGHT TO MISSION</span>
         <span className="text-[11px] font-heading font-bold text-ignition uppercase tracking-[0.02em]">{branch.strength}</span>
+      </div>
       </div>
     </motion.div>
   );
