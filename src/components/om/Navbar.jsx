@@ -7,7 +7,7 @@ const NAV_ITEMS = [
   { label: "MISSIONS", href: "#operations" },
   { label: "RESOURCES", href: "#logistics" },
   { label: "FIELD REPORTS", href: "#intel" },
-  { label: "ANSWER CALL", href: "#deploy" },
+  { label: "GIVE", href: "#deploy" },
 ];
 
 export default function Navbar() {
@@ -85,7 +85,7 @@ export default function Navbar() {
                 onClick={() => handleNav("#deploy")}
                 className="mt-2 px-4 py-3 bg-ignition text-xs font-heading font-bold tracking-[0.15em] text-white text-center"
               >
-                ANSWER THE CALL
+                GO
               </button>
             </div>
           </motion.div>

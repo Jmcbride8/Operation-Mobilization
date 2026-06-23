@@ -93,13 +93,13 @@ export default function HeroSection() {
               onClick={scrollToDeploy}
               className="flex-1 md:flex-none px-6 py-2 bg-ignition text-xs font-heading font-bold tracking-[0.15em] text-white hover:bg-ignition/90 transition-colors"
             >
-              ANSWER THE CALL
+              GIVE
             </button>
             <button
               onClick={scrollToDeploy}
               className="flex-1 md:flex-none px-6 py-2 border border-titanium/40 text-xs font-heading font-bold tracking-[0.15em] text-signal-white hover:border-signal-white transition-colors"
             >
-              GIVE
+              GO
             </button>
           </div>
         </div>
