@@ -7,6 +7,7 @@ import { ChevronDown } from "lucide-react";
 
 const HERO_IMAGE = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/08e8f025d_generated_image.png";
 const FOOT_WASHING_IMAGE = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/08e8f025d_generated_image.png";
+const OM_LOGO = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/696c1b35a_ChatGPTImageJun22202609_23_54PM.png";
 
 export default function HeroSection() {
   const scrollToOps = () => {
@@ -41,6 +42,15 @@ export default function HeroSection() {
                 <div className="w-8 h-px bg-ignition" />
                 <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">ON THE FIELD SINCE 1957</span>
               </div>
+
+              <motion.img
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                src={OM_LOGO}
+                alt="Operation Mobilization"
+                className="w-28 md:w-36 mb-6"
+              />
 
               <ScrambleText
                 as="h1"
