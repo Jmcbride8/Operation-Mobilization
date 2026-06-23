@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
@@ -8,6 +8,7 @@ const NAV_ITEMS = [
   { label: "MISSIONS", href: "#operations" },
   { label: "RESOURCES", href: "#logistics" },
   { label: "FIELD REPORTS", href: "#intel" },
+  { label: "ABOUT", to: "/about" },
   { label: "GIVE", href: "#deploy" },
 ];
 
@@ -50,6 +51,14 @@ export default function Navbar() {
               >
                 {item.label}
               </button>
+            ) : item.to ? (
+              <Link
+                key={item.label}
+                to={item.to}
+                className="px-3 py-1.5 text-[10px] font-mono tracking-[0.15em] text-titanium hover:text-signal-white hover:border hover:border-titanium/40 transition-all duration-200"
+              >
+                {item.label}
+              </Link>
             ) : (
               <button
                 key={item.label}
@@ -84,15 +93,26 @@ export default function Navbar() {
             className="md:hidden bg-obsidian/98 border-b border-titanium/20 overflow-hidden"
           >
             <div className="px-4 py-4 flex flex-col gap-1">
-              {NAV_ITEMS.map((item) => (
-                <button
-                  key={item.label}
-                  onClick={() => handleNav(item.href)}
-                  className="text-left px-3 py-3 text-xs font-mono tracking-[0.15em] text-titanium hover:text-signal-white border-b border-titanium/10 transition-colors"
-                >
-                  {item.label}
-                </button>
-              ))}
+              {NAV_ITEMS.map((item) =>
+                item.to ? (
+                  <Link
+                    key={item.label}
+                    to={item.to}
+                    onClick={() => setMobileOpen(false)}
+                    className="block px-3 py-3 text-xs font-mono tracking-[0.15em] text-titanium hover:text-signal-white border-b border-titanium/10 transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <button
+                    key={item.label}
+                    onClick={() => handleNav(item.href)}
+                    className="text-left px-3 py-3 text-xs font-mono tracking-[0.15em] text-titanium hover:text-signal-white border-b border-titanium/10 transition-colors"
+                  >
+                    {item.label}
+                  </button>
+                )
+              )}
               <button
                 onClick={() => handleNav("#deploy")}
                 className="mt-2 px-4 py-3 bg-ignition text-xs font-heading font-bold tracking-[0.15em] text-white text-center"
