@@ -5,6 +5,7 @@ import Footer from "@/components/om/Footer";
 import MessageHero from "@/components/om/message/MessageHero";
 import WhyDifferent from "@/components/om/message/WhyDifferent";
 import OneBody from "@/components/om/message/OneBody";
+import TrinitySection from "@/components/om/message/TrinitySection";
 
 export default function TheMessage() {
   return (
@@ -13,6 +14,7 @@ export default function TheMessage() {
       <Navbar />
       <MessageHero />
       <WhyDifferent />
+      <TrinitySection />
       <OneBody />
       <Footer />
     </div>
