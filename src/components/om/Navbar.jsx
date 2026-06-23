@@ -60,7 +60,7 @@ export default function Navbar() {
           )}
           <button
             onClick={() => handleNav("#deploy")}
-            className="ml-4 px-4 py-1.5 border border-titanium/40 text-[10px] font-heading font-bold tracking-[0.15em] text-signal-white hover:border-signal-white transition-colors"
+            className="ml-4 px-4 py-1.5 bg-ignition text-[10px] font-heading font-bold tracking-[0.15em] text-white hover:bg-ignition/90 transition-colors"
           >
             GO
           </button>
