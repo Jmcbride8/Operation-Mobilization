@@ -32,7 +32,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 grid-lines opacity-30 pointer-events-none" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1440px] mx-auto px-4 md:px-8 pt-24 pb-32 w-full">
+      <div className="relative z-10 max-w-[1440px] mx-auto px-4 md:px-8 pt-24 pb-48 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 items-center">
           {/* Left: Main content */}
           <div className="lg:col-span-7 space-y-8">
