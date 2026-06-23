@@ -81,8 +81,8 @@ export default function SacrificeStatement() {
         >
           <p className="font-heading text-lg md:text-2xl text-signal-white italic leading-relaxed">
             "My kingdom is not of this world. If my kingdom were of this world,
-            my servants would have been fighting, that I might not be delivered
-            over to the Jews. But my kingdom is not from the world."
+            my servants would have been fighting, [...] But my kingdom is not
+            from the world."
           </p>
           <span className="block mt-3 text-[10px] font-mono tracking-[0.25em] text-ignition">
             — JOHN 18:36
