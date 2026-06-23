@@ -27,8 +27,7 @@ const PERSONS = [
 ];
 
 const SPECTRUM = [
-  { pos: 0, label: "ATHEISM", count: "1", desc: "One god — yourself. You are your own highest authority." },
-  { pos: 12, label: "JUDAISM / ISLAM", count: "1", desc: "One god. Strict, solitary, unified. God is one person." },
+  { pos: 10, label: "ATHEISM / JUDAISM / ISLAM", count: "1", desc: "One god — yourself, or one solitary divine being. No relationship at the root." },
   { pos: 25, label: "CHRISTIANITY", count: "3", desc: "One God. Three Persons. Same essence. Distinct identities." },
   { pos: 50, label: "HINDUISM", count: "3M+", desc: "Thousands of gods — diverse, regional, often expressions of one." },
   { pos: 88, label: "POLYTHEISM", count: "∞", desc: "Endless gods. Every force, every fear, its own deity." },
