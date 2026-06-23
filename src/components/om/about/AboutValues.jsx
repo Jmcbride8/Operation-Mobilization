@@ -1,5 +1,5 @@
-import React, { useRef, useMemo } from "react";
-import { motion, useInView } from "framer-motion";
+import React, { useMemo } from "react";
+import { motion } from "framer-motion";
 import ScrambleText from "@/components/om/ScrambleText";
 
 const PILLARS = [
@@ -30,7 +30,6 @@ const PILLARS = [
   },
 ];
 
-// Generate a dense, staggered grid of crosses for the Wall of Crosses
 function generateCrosses(count) {
   const rows = [];
   for (let i = 0; i < count; i++) {
@@ -38,12 +37,9 @@ function generateCrosses(count) {
     const col = i % 24;
     rows.push({
       id: i,
-      // slight vertical offset for each row, alternating for organic feel
       top: row * 26 + (col % 2 === 0 ? 0 : 6),
       left: col * (100 / 24),
-      // vary size subtly
       size: 10 + ((i * 7) % 5),
-      // vary opacity for depth
       opacity: 0.15 + ((i * 13) % 50) / 100,
       delay: (i % 48) * 0.015,
     });
@@ -52,7 +48,6 @@ function generateCrosses(count) {
 }
 
 function CrossMark({ size }) {
-  // A simple geometric cross
   return (
     <svg width={size} height={size} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="4.5" y="0" width="3" height="12" fill="currentColor" />
@@ -62,8 +57,6 @@ function CrossMark({ size }) {
 }
 
 export default function AboutValues() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
   const crosses = useMemo(() => generateCrosses(240), []);
 
   return (
@@ -82,17 +75,12 @@ export default function AboutValues() {
         />
 
         {/* Intro statement */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="max-w-3xl mb-16 border-l-2 border-ignition pl-6"
-        >
+        <div className="max-w-3xl mb-16 border-l-2 border-ignition pl-6">
           <p className="text-sm md:text-base font-mono text-signal-white/90 leading-relaxed">
             OM has always been the tip of the spear of missions. We do not go
             where it is safe. We go where the love of Christ is most denied.
           </p>
-        </motion.div>
+        </div>
 
         {/* Pillars */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-titanium/15 mb-24">
@@ -100,7 +88,8 @@ export default function AboutValues() {
             <motion.div
               key={v.id}
               initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
               className="bg-obsidian p-6 hover:bg-signal-white/[0.02] transition-colors"
             >
@@ -112,12 +101,7 @@ export default function AboutValues() {
         </div>
 
         {/* Wall of Crosses */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="relative"
-        >
+        <div className="relative">
           <div className="flex items-center gap-3 mb-2">
             <div className="w-8 h-px bg-ignition" />
             <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">THE FALLEN</span>
@@ -143,7 +127,8 @@ export default function AboutValues() {
               <motion.div
                 key={c.id}
                 initial={{ opacity: 0, scale: 0.4 }}
-                animate={isInView ? { opacity: c.opacity, scale: 1 } : {}}
+                whileInView={{ opacity: c.opacity, scale: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: c.delay }}
                 className="absolute text-ignition"
                 style={{
@@ -175,7 +160,7 @@ export default function AboutValues() {
           <p className="text-[10px] font-mono text-titanium/60 tracking-wider mt-4 text-right">
             [ IN MEMORIAM — NAMES WITHHELD FOR SECURITY ]
           </p>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
