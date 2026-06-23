@@ -31,18 +31,25 @@ const PILLARS = [
 ];
 
 function generateCrosses(count) {
+  // CIA memorial-style trapezoidal formation: wider at bottom, narrower at top
   const rows = [];
-  for (let i = 0; i < count; i++) {
-    const row = Math.floor(i / 24);
-    const col = i % 24;
-    rows.push({
-      id: i,
-      top: row * 26 + (col % 2 === 0 ? 0 : 6),
-      left: col * (100 / 24),
-      size: 14 + ((i * 7) % 8),
-      opacity: 0.15 + ((i * 13) % 50) / 100,
-      delay: (i % 48) * 0.015,
-    });
+  const rowsCount = 18;
+  const perRow = count / rowsCount;
+  for (let r = 0; r < rowsCount; r++) {
+    // Wider at bottom (r = rowsCount-1), narrower at top (r = 0)
+    const widthPct = 35 + (r / (rowsCount - 1)) * 60; // 35% to 95%
+    const cols = Math.max(4, Math.round(perRow * (widthPct / 95)));
+    for (let c = 0; c < cols; c++) {
+      const left = 50 - (widthPct / 2) + (c / (cols - 1)) * widthPct;
+      rows.push({
+        id: `${r}-${c}`,
+        top: r * 36 + 10,
+        left,
+        size: 16,
+        opacity: 0.6 + ((r * 13 + c * 7) % 30) / 100,
+        delay: (r * 0.02 + c * 0.008),
+      });
+    }
   }
   return rows;
 }
@@ -57,7 +64,7 @@ function CrossMark({ size }) {
 }
 
 export default function AboutValues() {
-  const crosses = useMemo(() => generateCrosses(480), []);
+  const crosses = useMemo(() => generateCrosses(400), []);
 
   return (
     <section className="py-24 border-t border-titanium/10 relative overflow-hidden">
@@ -117,15 +124,15 @@ export default function AboutValues() {
             We do not forget them. We follow them. Forward.
           </p>
 
-          {/* The wall */}
+          {/* The wall — CIA memorial style: white marble, engraved dark crosses */}
           <div className="relative w-full h-[900px] border border-titanium/30 overflow-hidden"
             style={{
-              backgroundColor: "#0a0a0a",
+              backgroundColor: "#E8E6E1",
               backgroundImage: `
-                radial-gradient(ellipse at 20% 15%, rgba(60,60,60,0.4) 0%, transparent 45%),
-                radial-gradient(ellipse at 80% 85%, rgba(40,40,40,0.5) 0%, transparent 50%),
-                radial-gradient(ellipse at 50% 50%, rgba(30,30,30,0.3) 0%, transparent 60%),
-                linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 30%, #0e0e0e 60%, #161616 100%)
+                radial-gradient(ellipse at 20% 15%, rgba(210,208,203,0.6) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 85%, rgba(195,193,188,0.7) 0%, transparent 55%),
+                radial-gradient(ellipse at 50% 50%, rgba(225,223,218,0.5) 0%, transparent 60%),
+                linear-gradient(135deg, #EAE8E3 0%, #D5D3CE 30%, #E2E0DB 60%, #CCCAC5 100%)
               `,
             }}
           >
@@ -133,23 +140,38 @@ export default function AboutValues() {
             <div className="absolute inset-0 pointer-events-none z-[5]"
               style={{
                 backgroundImage: `
-                  linear-gradient(72deg, transparent 48%, rgba(80,80,80,0.06) 49%, rgba(100,100,100,0.04) 50%, transparent 51%),
-                  linear-gradient(-65deg, transparent 47%, rgba(70,70,70,0.05) 48%, transparent 49%),
-                  linear-gradient(85deg, transparent 30%, rgba(60,60,60,0.03) 32%, transparent 34%),
-                  linear-gradient(-40deg, transparent 60%, rgba(90,90,90,0.04) 62%, transparent 64%),
-                  linear-gradient(110deg, transparent 75%, rgba(50,50,50,0.05) 77%, transparent 79%)
+                  linear-gradient(72deg, transparent 48%, rgba(160,158,153,0.08) 49%, rgba(140,138,133,0.06) 50%, transparent 51%),
+                  linear-gradient(-65deg, transparent 47%, rgba(150,148,143,0.07) 48%, transparent 49%),
+                  linear-gradient(85deg, transparent 30%, rgba(170,168,163,0.05) 32%, transparent 34%),
+                  linear-gradient(-40deg, transparent 60%, rgba(155,153,148,0.06) 62%, transparent 64%),
+                  linear-gradient(110deg, transparent 75%, rgba(165,163,158,0.05) 77%, transparent 79%)
                 `,
               }}
             />
-            {/* Subtle vertical light reflection for polished stone sheen */}
+            {/* Polished stone sheen reflection */}
             <div className="absolute inset-0 pointer-events-none z-[6]"
               style={{
-                background: `linear-gradient(90deg, rgba(255,255,255,0.015) 0%, transparent 20%, transparent 80%, rgba(255,255,255,0.015) 100%)`,
+                background: `linear-gradient(90deg, rgba(255,255,255,0.08) 0%, transparent 25%, transparent 75%, rgba(255,255,255,0.08) 100%)`,
               }}
             />
             {/* Edge vignette for depth */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-transparent to-black/80 pointer-events-none z-10" />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/60 pointer-events-none z-10" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30 pointer-events-none z-10" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/30 pointer-events-none z-10" />
+
+            {/* Inscription at top — like CIA memorial */}
+            <div className="absolute top-10 left-1/2 -translate-x-1/2 z-15 text-center w-full px-8">
+              {/* Small row of crosses above inscription */}
+              <div className="flex justify-center gap-3 mb-4 text-[#2B2B2B]">
+                {[0,1,2,3].map((i) => (
+                  <div key={i} style={{ filter: "drop-shadow(0 1px 1px rgba(0,0,0,0.3))" }}>
+                    <CrossMark size={12} />
+                  </div>
+                ))}
+              </div>
+              <p className="text-[10px] md:text-xs font-heading tracking-[0.15em] text-[#2B2B2B] uppercase max-w-xl mx-auto leading-relaxed">
+                In Honor of Those Members of Operation Mobilization Who Gave Their Lives in the Service of Their King
+              </p>
+            </div>
 
             {crosses.map((c) => (
               <motion.div
@@ -157,29 +179,31 @@ export default function AboutValues() {
                 initial={{ opacity: 0, scale: 0.4 }}
                 whileInView={{ opacity: c.opacity, scale: 1 }}
                 viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: c.delay }}
-                className="absolute text-signal-white"
+                transition={{ duration: 0.4, delay: c.delay }}
+                className="absolute text-[#2B2B2B]"
                 style={{
                   top: `${c.top}px`,
                   left: `${c.left}%`,
                   transform: "translateX(-50%)",
-                  filter: "drop-shadow(0 1px 1px rgba(0,0,0,0.9)) drop-shadow(0 0 3px rgba(179,57,57,0.15))",
+                  filter: "drop-shadow(0 1px 1px rgba(0,0,0,0.4)) drop-shadow(0 0 1px rgba(0,0,0,0.2))",
                 }}
               >
                 <CrossMark size={c.size} />
               </motion.div>
             ))}
 
-            {/* Center tribute overlay */}
+            {/* Center tribute overlay — engraved in marble */}
             <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
-              <div className="text-center bg-obsidian/80 backdrop-blur-md px-12 py-10 border border-ignition/50">
-                <p className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-ignition tracking-[-0.02em] uppercase leading-[0.9]">
+              <div className="text-center px-12 py-10">
+                <p className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-[#2B2B2B] tracking-[-0.02em] uppercase leading-[0.9]"
+                  style={{ textShadow: "0 1px 2px rgba(0,0,0,0.3), 0 0 1px rgba(255,255,255,0.5)" }}
+                >
                   No Greater Love
                 </p>
-                <p className="text-xs font-mono text-titanium tracking-[0.25em] mt-4">
+                <p className="text-xs font-mono text-[#555] tracking-[0.25em] mt-4">
                   GREATER LOVE HAS NO ONE THAN THIS
                 </p>
-                <p className="text-[10px] font-mono text-titanium/70 tracking-[0.2em] mt-1">
+                <p className="text-[10px] font-mono text-[#777] tracking-[0.2em] mt-1">
                   JOHN 15:13
                 </p>
               </div>
