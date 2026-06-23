@@ -10,17 +10,17 @@ const GROUPS = [
       {
         num: "01",
         title: "GOD IS INFINITELY GOOD & WE BEAR HIS IMAGE",
-        desc: "God is infinitely good and created us in His image. This isn't just a philosophical idea — it means we reflect God's character. Every person carries infinite worth because they reflect an infinite God.",
+        desc: "God is infinitely good and stamped His own image onto every human being. This isn't philosophy — it's a declaration of war on the idea that people are disposable. Every person walks around carrying the fingerprint of an infinite God. That changes everything.",
       },
       {
         num: "02",
         title: "BUT THAT MAKES EVERY SIN INFINITELY SERIOUS",
-        desc: "Because God is infinitely good, sin against Him (and against those made in His image) is infinitely serious. It's not just breaking rules — it's transgressing against infinite goodness, which makes the weight of sin incalculable.",
+        desc: "Here's the catch: if God is infinitely good, then sin against Him isn't a misdemeanor — it's an infinite offense. You don't offend infinite goodness with a slap on the wrist. The weight of our rebellion is incalculable, and no amount of good behavior tips the scale back.",
       },
       {
         num: "03",
         title: "WHICH WE COMPOUND WITH IGNORANCE AND ARROGANCE",
-        desc: "Unlike other religions that call you to fix yourself through effort or discipline, Christianity teaches that finite beings cannot right an infinite wrong against a perfectly good God. To try is arrogance. You cannot earn your way back to Him.",
+        desc: "Every other religion says: try harder, be better, climb your way back to God. Christianity says: that's delusional. Finite beings cannot right an infinite wrong. To think you can earn your way back to a perfectly good God isn't humility — it's the height of arrogance. The gap is unbridgeable. By us.",
       },
     ],
   },
@@ -31,12 +31,12 @@ const GROUPS = [
       {
         num: "04",
         title: "SO GOD BRIDGED THE UNBRIDGEABLE GAP",
-        desc: "Here's where Christianity is radically different: God Himself came and died to bridge the infinite gap we could never bridge. Through Jesus, God absorbed the full weight of our infinite transgression and made reconciliation possible.",
+        desc: "Here's where Christianity flips the table on every other belief system: God didn't ask us to climb up to Him — He came down to us. Through Jesus, God Himself absorbed the full, infinite weight of our rebellion and absorbed it in His own body. He paid a debt He didn't owe because we owed a debt we couldn't pay.",
       },
       {
         num: "05",
         title: "FORGIVENESS THROUGH HUMILITY, NOT ACHIEVEMENT",
-        desc: "We receive forgiveness not by performing or earning it, but by humbly acknowledging we could never bridge the gap ourselves and accepting God's free gift. It requires honest confession of our gravity and complete dependence on His mercy.",
+        desc: "You don't earn this. You can't. Forgiveness is received the way a drowning man receives a rescue — hands up, mouth shut, completely dependent on the one who jumped in after you. It requires the honesty to confess your wreck and the humility to accept a gift you could never deserve.",
       },
     ],
   },
@@ -47,17 +47,17 @@ const GROUPS = [
       {
         num: "06",
         title: "AND SO WE LIVE IN GRATEFUL RESPONSE",
-        desc: "Once forgiven, Christians live differently — not to earn salvation, but to demonstrate gratitude. A life transformed by grace becomes a living thank you to God. Service, love, and growth flow from having received something we never deserved.",
+        desc: "Once you've been pulled out of the water, you don't swim to prove you deserved it. You live different because you've been rescued. Christians don't serve, love, and sacrifice to earn salvation — they do it because it's already been given. Every act of obedience becomes a living thank-you note to the God who didn't have to.",
       },
       {
         num: "07",
         title: "THE ONLY HONEST PATH OF RIGHTEOUSNESS",
-        desc: "Because our good works flow from gratitude for salvation — not attempts to earn it — Christianity offers the only truly honest path of righteousness. We're freed from transactional love and empowered to live sacrificially and volitionally. The church, family, and society become places where we aspire to live out these ideals together, even when we fall short.",
+        desc: "Here's the difference nobody talks about: every other system says do good to get saved. Christianity says you're saved, so do good. That makes our righteousness the only honest kind — not a transaction, not a bribe for heaven, but a free response to grace. We're liberated from pretending and empowered to actually live sacrificially.",
       },
       {
         num: "08",
         title: "CALLED TO FORGIVE AND HEAL AS WE WERE HEALED",
-        desc: "Because we have been forgiven of infinite wrongs, we are commissioned to forgive others and heal the world as God healed us. Our purpose becomes an echo of His grace — extending mercy, pursuing justice, and mending what sin has broken.",
+        desc: "You've been forgiven an infinite debt. So when someone wrongs you, you don't get to hold the receipt. Christians are commissioned to extend the same reckless mercy we received — to break cycles of hurt, pursue justice, and mend what sin has shattered. Our entire purpose becomes an echo of His grace. Forward.",
       },
     ],
   },
