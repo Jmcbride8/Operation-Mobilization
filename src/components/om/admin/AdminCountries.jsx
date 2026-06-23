@@ -177,9 +177,15 @@ export default function AdminCountries() {
               {countries.map((c) => (
                 <tr key={c.id} className="border-b border-titanium/10 hover:bg-signal-white/[0.02] transition-colors">
                   <td className="px-3 py-2">
-                    <span className="text-2xl leading-none" style={{ fontFamily: "Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji, sans-serif" }}>
-                      {c.code ? String.fromCodePoint(...c.code.toUpperCase().split("").map((ch) => 0x1f1e6 + ch.charCodeAt(0) - 65)) : "🏳️"}
-                    </span>
+                    {c.code ? (
+                      <img
+                        src={`https://flagcdn.com/${c.code.toLowerCase()}.svg`}
+                        alt={c.code}
+                        className="w-7 h-5 object-cover"
+                      />
+                    ) : (
+                      <span className="text-[9px] font-mono text-titanium">—</span>
+                    )}
                   </td>
                   <td className="px-3 py-2">
                     <input

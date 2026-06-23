@@ -6,21 +6,16 @@ import { base44 } from "@/api/base44Client";
  * Converts an ISO 3166-1 alpha-2 country code into its regional indicator
  * symbol pair so the browser renders the correct flag emoji.
  */
-function countryCodeToFlag(code) {
-  if (!code || code.length !== 2) return "🏳️";
-  const chars = code
-    .toUpperCase()
-    .split("")
-    .map((ch) => 0x1f1e6 + ch.charCodeAt(0) - 65);
-  return String.fromCodePoint(...chars);
-}
-
 function TickerItem({ country }) {
   return (
     <div className="flex items-center gap-2 px-6 whitespace-nowrap">
-      <span className="text-xl leading-none" style={{ fontFamily: "Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji, sans-serif" }}>
-        {countryCodeToFlag(country.code)}
-      </span>
+      {country.code && (
+        <img
+          src={`https://flagcdn.com/${country.code.toLowerCase()}.svg`}
+          alt={country.code}
+          className="w-6 h-4 object-cover"
+        />
+      )}
       <span className="text-[11px] font-mono text-signal-white tracking-[0.05em] uppercase">
         {country.name}
       </span>
