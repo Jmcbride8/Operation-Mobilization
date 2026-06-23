@@ -78,7 +78,7 @@ function IntelCard({ item, index }) {
         <img
           src={item.image}
           alt={item.title}
-          className="w-full h-full object-cover grayscale opacity-40 group-hover:opacity-70 group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
+          className="w-full h-full object-cover opacity-40 group-hover:opacity-70 transition-all duration-700 scale-105 group-hover:scale-100"
         />
         <div className="absolute inset-0 bg-obsidian/60 group-hover:bg-obsidian/30 transition-colors duration-500" />
         
