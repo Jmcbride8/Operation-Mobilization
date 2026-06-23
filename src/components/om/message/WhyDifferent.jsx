@@ -47,17 +47,17 @@ const GROUPS = [
       {
         num: "06",
         title: "AND SO WE LIVE IN GRATEFUL RESPONSE",
-        desc: "Once you've been pulled out of the water, you don't swim to prove you deserved it. You live different because you've been rescued. Christians don't serve, love, and sacrifice to earn salvation — they do it because it's already been given. Every act of obedience becomes a living thank-you note to the God who didn't have to.",
+        desc: "Once you've been pulled out of the water, you don't swim to prove you deserved it. You live different because you've been rescued. Christians don't serve, love, and sacrifice to earn salvation — they do it because it's already been given. And that gratitude doesn't sit still. It moves. It sends. Every act of obedience becomes a living thank-you note to the God who didn't have to — and the most honest response is to carry that rescue to the ends of the earth.",
       },
       {
         num: "07",
         title: "THE ONLY HONEST PATH OF RIGHTEOUSNESS",
-        desc: "Here's the difference nobody talks about: every other system says do good to get saved. Christianity says you're saved, so do good. That makes our righteousness the only honest kind — not a transaction, not a bribe for heaven, but a free response to grace. We're liberated from pretending and empowered to actually live sacrificially.",
+        desc: "Here's the difference nobody talks about: every other system says do good to get saved. Christianity says you're saved, so do good. That makes our righteousness the only honest kind — not a transaction, not a bribe for heaven, but a free response to grace. We're liberated from pretending and empowered to actually live sacrificially. That's why OM exists — not to earn God's favor, but because His favor is already ours. The only question left is where He's sending us next.",
       },
       {
         num: "08",
         title: "CALLED TO FORGIVE AND HEAL AS WE WERE HEALED",
-        desc: "You've been forgiven an infinite debt. So when someone wrongs you, you don't get to hold the receipt. Christians are commissioned to extend the same reckless mercy we received — to break cycles of hurt, pursue justice, and mend what sin has shattered. Our entire purpose becomes an echo of His grace. Forward.",
+        desc: "You've been forgiven an infinite debt. So when someone wrongs you, you don't get to hold the receipt. And you don't get to stay home. Christians are commissioned — deployed — to carry the same mercy that rescued us into every dark corner of the map. To the ones who've never heard. To the places no one else will go. That's not a program. That's the inevitable consequence of having been saved. We go because we were sent. Forward.",
       },
     ],
   },
