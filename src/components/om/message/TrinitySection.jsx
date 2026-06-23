@@ -110,7 +110,6 @@ export default function TrinitySection() {
             <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">THE SPECTRUM</span>
           </div>
           <p className="text-xs font-mono text-titanium max-w-2xl leading-relaxed mb-8">
-            On a timeline from zero to infinity, Christianity lands in a strange, specific place: three.
             Not solitary. Not scattered. One God, three Persons — relational at the root.
           </p>
 
