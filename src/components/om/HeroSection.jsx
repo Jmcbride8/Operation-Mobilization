@@ -6,6 +6,7 @@ import MissionLogs from "./MissionLogs";
 import { ChevronDown } from "lucide-react";
 
 const HERO_IMAGE = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/4ee6413e7_generated_ebacdcea.png";
+const FOOT_WASHING_IMAGE = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/d28ffd2fc_generated_image.png";
 
 export default function HeroSection() {
   const scrollToOps = () => {
@@ -22,7 +23,7 @@ export default function HeroSection() {
     <section id="command" className="relative min-h-screen flex flex-col justify-center overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
-        <img src={HERO_IMAGE} alt="Cargo plane being loaded at dawn airstrip" className="w-full h-full object-cover" />
+        <img src={FOOT_WASHING_IMAGE} alt="Christ washing feet" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian/80 via-obsidian/70 to-obsidian" />
         <div className="absolute inset-0 bg-gradient-to-r from-obsidian/90 via-transparent to-obsidian/60" />
       </div>
