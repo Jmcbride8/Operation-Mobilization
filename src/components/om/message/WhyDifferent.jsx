@@ -100,7 +100,7 @@ export default function WhyDifferent() {
         </div>
         <ScrambleText
           as="h2"
-          text="SIN. SAVIOR. SENDING."
+          text="CHRISTIANITY. DISTILLED."
           className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-6"
         />
         <p className="text-xs md:text-sm font-mono text-titanium max-w-2xl leading-relaxed mb-8">
