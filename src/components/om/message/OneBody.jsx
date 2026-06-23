@@ -9,7 +9,7 @@ const BRANCHES = [
     tagline: "THE EMOTIONAL & EXPRESSIVE",
     desc: "Vibrant, personal experience of God's presence. Joyful, expressive, interactive worship. Active work of the Holy Spirit — healing, gifts, and power for today.",
     strength: "Spiritual fire and boldness",
-    image: "https://images.unsplash.com/photo-1604854488803-1c4ec2cf6e68?q=80&w=800&auto=format&fit=crop",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/e581a8875_generated_image.png",
   },
   {
     id: "02",
@@ -17,7 +17,7 @@ const BRANCHES = [
     tagline: "TRADITION, RITUAL & HERITAGE",
     desc: "Rich liturgical tradition, sacraments, and centuries of church teaching. Beauty in repetition and ritual that connects believers to history. Deep roots and a global institutional backbone.",
     strength: "Historical depth and sacred beauty",
-    image: "https://images.unsplash.com/photo-1520637836862-4d197d17c50a?q=80&w=800&auto=format&fit=crop",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/4cd39d145_generated_image.png",
   },
   {
     id: "03",
@@ -25,7 +25,7 @@ const BRANCHES = [
     tagline: "SCRIPTURE & PERSONAL FAITH",
     desc: "Born from the Reformation. The Bible as primary authority and the importance of a personal relationship with God. Baptists, Methodists, Presbyterians, Evangelicals — each with unique flavor.",
     strength: "Biblical conviction and personal faith",
-    image: "https://images.unsplash.com/photo-1504052434569-70ad5834ab65?q=80&w=800&auto=format&fit=crop",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/f4c0a6fb8_generated_image.png",
   },
   {
     id: "04",
@@ -33,7 +33,7 @@ const BRANCHES = [
     tagline: "ANCIENT TRADITION & MYSTERY",
     desc: "Roots in Eastern Christianity. Emphasis on the mystical and transcendent. Icons, liturgy, and unbroken historical continuity with the early church.",
     strength: "Mystical depth and ancient roots",
-    image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=800&auto=format&fit=crop",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/e6d82fe5a_generated_image.png",
   },
   {
     id: "05",
@@ -41,7 +41,7 @@ const BRANCHES = [
     tagline: "SOVEREIGNTY & INTELLECT",
     desc: "Emphasis on God's ultimate control and authority. Deep theological reflection and careful study of Scripture alongside personal faith.",
     strength: "Theological rigor and discipline",
-    image: "https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=800&auto=format&fit=crop",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/38fcc4e21_generated_image.png",
   },
   {
     id: "06",
@@ -49,7 +49,7 @@ const BRANCHES = [
     tagline: "CONVERSION & DISCIPLESHIP",
     desc: "Focus on a personal decision to follow Jesus ('born again') and actively sharing that faith. Centrality of Jesus' death and resurrection and the authority of the Bible.",
     strength: "Relational evangelism and action",
-    image: "https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=800&auto=format&fit=crop",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/f5369f784_generated_image.png",
   },
 ];
 
