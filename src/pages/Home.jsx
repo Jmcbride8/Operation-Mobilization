@@ -2,6 +2,7 @@ import React from "react";
 import DataOverlay from "@/components/om/DataOverlay";
 import Navbar from "@/components/om/Navbar";
 import HeroSection from "@/components/om/HeroSection";
+import GreatCommission from "@/components/om/GreatCommission";
 import WhatWeAreNot from "@/components/om/WhatWeAreNot";
 import WorldMap from "@/components/om/WorldMap";
 import OperationsSection from "@/components/om/OperationsSection";
@@ -18,6 +19,7 @@ export default function Home() {
       <DataOverlay />
       <Navbar />
       <HeroSection />
+      <GreatCommission />
       <WhatWeAreNot />
       <SacrificeStatement />
       <WorldMap />
