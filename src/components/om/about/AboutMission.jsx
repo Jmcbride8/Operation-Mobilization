@@ -45,18 +45,24 @@ export default function AboutMission() {
               order — the reason we exist.
             </p>
             <p className="text-xs md:text-sm font-mono text-titanium leading-relaxed">
-              Right now, billions of people live without hope — in refugee camps,
-              in slums, in villages with no clean water and no witness to the
-              love of Christ. They are not statistics. They are image-bearers of
-              God, desperate to know that someone sees them, that someone came
-              for them, that God has not forgotten them.
+              The deepest poverty is not physical. It is spiritual. Billions have
+              been told by their culture, their religion, their circumstances,
+              that they are not loved — that love must be earned, that they will
+              never be enough. They carry the weight of that lie every single day.
+              It is a poverty no well can fill, no road can reach, no clinic can
+              cure.
             </p>
             <p className="text-xs md:text-sm font-mono text-titanium leading-relaxed">
-              We go to the hardest places on earth. Not because it is easy. Not
-              because it is safe. Because the love of God demands it, and the
-              command of Christ compels it. We carry a message of hope to the
-              hopeless, light to the forgotten, and the relentless love of Jesus
-              to the ends of the earth.
+              The greatest transformation you can make is to change a person's
+              heart. To fill it with <span className="text-signal-white">love</span>. <span className="text-signal-white">Hope</span>. <span className="text-signal-white">Light</span>.
+              And everything else flows from that transformation — family, culture,
+              politics, technology, business, and yes, even entire societies.
+            </p>
+            <p className="text-xs md:text-sm font-mono text-titanium leading-relaxed">
+              We go to the hardest places on earth. We bring clean water, medical
+              care, and practical help — but these are the fruit, not the root. The
+              root is a message that shatters every lie: <span className="text-signal-white">you are loved. You
+              have always been loved. And the love of God is already pursuing you.</span>
             </p>
             <motion.div
               initial={{ opacity: 0, y: 10 }}
