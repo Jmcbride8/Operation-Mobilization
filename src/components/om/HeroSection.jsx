@@ -5,10 +5,9 @@ import CounterDisplay from "./CounterDisplay";
 import MissionLogs from "./MissionLogs";
 import MissionaryTicker from "./MissionaryTicker";
 import { ChevronDown } from "lucide-react";
-import { useSiteImages } from "@/hooks/useSiteImages";
+import HeroMap from "./HeroMap";
 
 export default function HeroSection() {
-  const { getImage } = useSiteImages();
   const scrollToOps = () => {
     const el = document.querySelector("#operations");
     if (el) el.scrollIntoView({ behavior: "smooth" });
@@ -21,9 +20,11 @@ export default function HeroSection() {
 
   return (
     <section id="command" className="relative min-h-screen flex flex-col justify-center overflow-hidden">
-      {/* Background image */}
+      {/* Background map */}
       <div className="absolute inset-0">
-        <img src={getImage("hero.main")} alt="Missionary on the field" className="w-full h-full object-cover" />
+        <div className="w-full h-full">
+          <HeroMap />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian/80 via-obsidian/70 to-obsidian" />
         <div className="absolute inset-0 bg-gradient-to-r from-obsidian/90 via-transparent to-obsidian/60" />
       </div>
