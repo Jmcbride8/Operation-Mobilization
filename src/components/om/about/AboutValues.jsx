@@ -31,23 +31,23 @@ const PILLARS = [
 ];
 
 function generateCrosses(count) {
-  // CIA memorial-style trapezoidal formation: wider at bottom, narrower at top
+  // Trapezoidal formation: 6 rows, wider at bottom, narrower at top
   const rows = [];
-  const rowsCount = 18;
-  const perRow = count / rowsCount;
+  const rowsCount = 6;
+  const colsPerRow = [5, 7, 9, 11, 13, 15]; // narrows toward top
   for (let r = 0; r < rowsCount; r++) {
-    // Wider at bottom (r = rowsCount-1), narrower at top (r = 0)
-    const widthPct = 35 + (r / (rowsCount - 1)) * 60; // 35% to 95%
-    const cols = Math.max(4, Math.round(perRow * (widthPct / 95)));
+    const cols = colsPerRow[rowsCount - 1 - r]; // bottom row widest
+    const rowWidthPct = 40 + (r / (rowsCount - 1)) * 50; // 40% top → 90% bottom... wait reverse
+    const widthPct = 90 - (r / (rowsCount - 1)) * 50; // 90% at bottom (r=0), 40% at top (r=5)
     for (let c = 0; c < cols; c++) {
-      const left = 50 - (widthPct / 2) + (c / (cols - 1)) * widthPct;
+      const left = 50 - (widthPct / 2) + (cols > 1 ? (c / (cols - 1)) * widthPct : 0);
       rows.push({
         id: `${r}-${c}`,
-        top: r * 36 + 10,
+        top: r * 50,
         left,
         size: 16,
-        opacity: 0.6 + ((r * 13 + c * 7) % 30) / 100,
-        delay: (r * 0.02 + c * 0.008),
+        opacity: 0.7 + ((r * 13 + c * 7) % 25) / 100,
+        delay: (r * 0.03 + c * 0.012),
       });
     }
   }
@@ -64,7 +64,7 @@ function CrossMark({ size }) {
 }
 
 export default function AboutValues() {
-  const crosses = useMemo(() => generateCrosses(400), []);
+  const crosses = useMemo(() => generateCrosses(60), []);
 
   return (
     <section className="py-24 border-t border-titanium/10 relative overflow-hidden">
@@ -124,90 +124,162 @@ export default function AboutValues() {
             We do not forget them. We follow them. Forward.
           </p>
 
-          {/* The wall — CIA memorial style: white marble, engraved dark crosses */}
-          <div className="relative w-full h-[900px] border border-titanium/30 overflow-hidden"
+          {/* The wall — dark memorial stone, white crosses, OM flags */}
+          <div className="relative w-full h-[1000px] overflow-hidden"
             style={{
-              backgroundColor: "#E8E6E1",
+              backgroundColor: "#1c1c1c",
               backgroundImage: `
-                radial-gradient(ellipse at 20% 15%, rgba(210,208,203,0.6) 0%, transparent 50%),
-                radial-gradient(ellipse at 80% 85%, rgba(195,193,188,0.7) 0%, transparent 55%),
-                radial-gradient(ellipse at 50% 50%, rgba(225,223,218,0.5) 0%, transparent 60%),
-                linear-gradient(135deg, #EAE8E3 0%, #D5D3CE 30%, #E2E0DB 60%, #CCCAC5 100%)
+                radial-gradient(ellipse at 50% 20%, rgba(45,45,45,0.8) 0%, transparent 60%),
+                radial-gradient(ellipse at 50% 80%, rgba(30,30,30,0.6) 0%, transparent 55%),
+                linear-gradient(180deg, #222222 0%, #1c1c1c 40%, #262626 70%, #1a1a1a 100%)
               `,
             }}
           >
-            {/* Marble veining overlay */}
-            <div className="absolute inset-0 pointer-events-none z-[5]"
+            {/* Subtle stone texture lines */}
+            <div className="absolute inset-0 pointer-events-none z-[2]"
               style={{
                 backgroundImage: `
-                  linear-gradient(72deg, transparent 48%, rgba(160,158,153,0.08) 49%, rgba(140,138,133,0.06) 50%, transparent 51%),
-                  linear-gradient(-65deg, transparent 47%, rgba(150,148,143,0.07) 48%, transparent 49%),
-                  linear-gradient(85deg, transparent 30%, rgba(170,168,163,0.05) 32%, transparent 34%),
-                  linear-gradient(-40deg, transparent 60%, rgba(155,153,148,0.06) 62%, transparent 64%),
-                  linear-gradient(110deg, transparent 75%, rgba(165,163,158,0.05) 77%, transparent 79%)
+                  repeating-linear-gradient(0deg, transparent 0px, transparent 60px, rgba(0,0,0,0.15) 60px, rgba(0,0,0,0.15) 61px),
+                  repeating-linear-gradient(90deg, transparent 0px, transparent 120px, rgba(0,0,0,0.08) 120px, rgba(0,0,0,0.08) 121px)
                 `,
               }}
             />
-            {/* Polished stone sheen reflection */}
-            <div className="absolute inset-0 pointer-events-none z-[6]"
-              style={{
-                background: `linear-gradient(90deg, rgba(255,255,255,0.08) 0%, transparent 25%, transparent 75%, rgba(255,255,255,0.08) 100%)`,
-              }}
+            {/* Top lighting glow */}
+            <div className="absolute inset-x-0 top-0 h-48 pointer-events-none z-[3]"
+              style={{ background: "linear-gradient(180deg, rgba(255,255,255,0.06) 0%, transparent 100%)" }}
             />
-            {/* Edge vignette for depth */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30 pointer-events-none z-10" />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/30 pointer-events-none z-10" />
+            {/* Edge vignette */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/60 pointer-events-none z-[4]" />
 
-            {/* Inscription at top — like CIA memorial */}
-            <div className="absolute top-10 left-1/2 -translate-x-1/2 z-15 text-center w-full px-8">
-              {/* Small row of crosses above inscription */}
-              <div className="flex justify-center gap-3 mb-4 text-[#2B2B2B]">
-                {[0,1,2,3].map((i) => (
-                  <div key={i} style={{ filter: "drop-shadow(0 1px 1px rgba(0,0,0,0.3))" }}>
-                    <CrossMark size={12} />
-                  </div>
-                ))}
+            {/* Left OM Flag */}
+            <div className="absolute left-4 md:left-8 top-0 bottom-0 z-10 flex flex-col items-center pointer-events-none">
+              {/* Pole */}
+              <div className="w-[3px] bg-gradient-to-b from-[#666] via-[#444] to-[#333] relative h-full">
+                {/* Spearhead finial */}
+                <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-0 h-0"
+                  style={{ borderLeft: "5px solid transparent", borderRight: "5px solid transparent", borderBottom: "10px solid #888" }}
+                />
               </div>
-              <p className="text-[10px] md:text-xs font-heading tracking-[0.15em] text-[#2B2B2B] uppercase max-w-xl mx-auto leading-relaxed">
-                In Honor of Those Members of Operation Mobilization Who Gave Their Lives in the Service of Their King
+              {/* Flag */}
+              <div className="absolute top-16 left-[3px] w-20 md:w-28 h-14 md:h-20 bg-black border-2 border-ignition flex items-center justify-center"
+                style={{ boxShadow: "2px 2px 8px rgba(0,0,0,0.6)" }}
+              >
+                <div className="w-6 h-6 md:w-8 md:h-8 bg-ignition flex items-center justify-center">
+                  <span className="text-white font-heading font-black text-[8px] md:text-[10px] tracking-tight">OM</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right OM Flag */}
+            <div className="absolute right-4 md:right-8 top-0 bottom-0 z-10 flex flex-col items-center pointer-events-none">
+              <div className="w-[3px] bg-gradient-to-b from-[#666] via-[#444] to-[#333] relative h-full">
+                <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-0 h-0"
+                  style={{ borderLeft: "5px solid transparent", borderRight: "5px solid transparent", borderBottom: "10px solid #888" }}
+                />
+              </div>
+              <div className="absolute top-16 right-[3px] w-20 md:w-28 h-14 md:h-20 bg-black border-2 border-ignition flex items-center justify-center"
+                style={{ boxShadow: "-2px 2px 8px rgba(0,0,0,0.6)" }}
+              >
+                <div className="w-6 h-6 md:w-8 md:h-8 bg-ignition flex items-center justify-center">
+                  <span className="text-white font-heading font-black text-[8px] md:text-[10px] tracking-tight">OM</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Top branding */}
+            <div className="absolute top-8 left-1/2 -translate-x-1/2 z-15 text-center">
+              <div className="flex items-center justify-center gap-2 mb-1">
+                <div className="w-8 h-8 bg-ignition flex items-center justify-center">
+                  <span className="text-white font-heading font-black text-xs">OM</span>
+                </div>
+                <span className="text-white font-heading font-bold text-sm md:text-lg tracking-[0.15em]">
+                  OPERATION MOBILIZATION
+                </span>
+              </div>
+              <p className="text-ignition text-[9px] md:text-[10px] font-heading tracking-[0.25em] font-bold">
+                NOT A CHARITY. A MISSION FORCE.
               </p>
             </div>
 
-            {crosses.map((c) => (
-              <motion.div
-                key={c.id}
-                initial={{ opacity: 0, scale: 0.4 }}
-                whileInView={{ opacity: c.opacity, scale: 1 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.4, delay: c.delay }}
-                className="absolute text-[#2B2B2B]"
-                style={{
-                  top: `${c.top}px`,
-                  left: `${c.left}%`,
-                  transform: "translateX(-50%)",
-                  filter: "drop-shadow(0 1px 1px rgba(0,0,0,0.4)) drop-shadow(0 0 1px rgba(0,0,0,0.2))",
-                }}
-              >
-                <CrossMark size={c.size} />
-              </motion.div>
-            ))}
-
-            {/* Center tribute overlay — engraved in marble */}
-            <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
-              <div className="text-center px-12 py-10">
-                <p className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-[#2B2B2B] tracking-[-0.02em] uppercase leading-[0.9]"
-                  style={{ textShadow: "0 1px 2px rgba(0,0,0,0.3), 0 0 1px rgba(255,255,255,0.5)" }}
-                >
-                  No Greater Love
-                </p>
-                <p className="text-xs font-mono text-[#555] tracking-[0.25em] mt-4">
-                  GREATER LOVE HAS NO ONE THAN THIS
-                </p>
-                <p className="text-[10px] font-mono text-[#777] tracking-[0.2em] mt-1">
-                  JOHN 15:13
-                </p>
+            {/* Central inscription — John 15:13 */}
+            <div className="absolute top-28 md:top-32 left-1/2 -translate-x-1/2 z-15 text-center w-full px-12 max-w-2xl">
+              {/* Single cross above quote */}
+              <div className="flex justify-center mb-4 text-white" style={{ filter: "drop-shadow(0 1px 3px rgba(0,0,0,0.5))" }}>
+                <CrossMark size={16} />
               </div>
+              <p className="text-white font-heading font-bold text-sm md:text-lg tracking-[0.05em] leading-relaxed">
+                GREATER LOVE HAS NO ONE THAN THIS: TO LAY DOWN ONE'S LIFE FOR ONE'S FRIENDS.
+              </p>
+              <p className="text-ignition text-[10px] md:text-xs font-heading tracking-[0.3em] font-bold mt-3">
+                JOHN 15:13
+              </p>
             </div>
+
+            {/* Cross wall — trapezoidal formation */}
+            <div className="absolute top-[33%] left-1/2 -translate-x-1/2 z-10 w-full max-w-3xl h-[340px]">
+              {crosses.map((c) => (
+                <motion.div
+                  key={c.id}
+                  initial={{ opacity: 0, scale: 0.3 }}
+                  whileInView={{ opacity: c.opacity, scale: 1 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 0.4, delay: c.delay }}
+                  className="absolute text-white"
+                  style={{
+                    top: `${c.top}px`,
+                    left: `${c.left}%`,
+                    transform: "translateX(-50%)",
+                    filter: "drop-shadow(0 1px 2px rgba(0,0,0,0.6)) drop-shadow(0 0 1px rgba(255,255,255,0.2))",
+                  }}
+                >
+                  <CrossMark size={c.size} />
+                </motion.div>
+              ))}
+            </div>
+
+            {/* Memorial book display */}
+            <div className="absolute bottom-16 left-1/2 -translate-x-1/2 z-20">
+              <div className="relative"
+                style={{ filter: "drop-shadow(0 4px 12px rgba(0,0,0,0.7))" }}
+              >
+                {/* Glass case */}
+                <div className="bg-black/90 border border-[#444] px-10 py-6"
+                  style={{ boxShadow: "inset 0 1px 0 rgba(255,255,255,0.05)" }}
+                >
+                  {/* Open book */}
+                  <div className="flex">
+                    <div className="w-20 h-12 bg-[#2a2a2a] border-r border-[#444] flex items-center justify-center">
+                      <div className="w-14 h-[2px] bg-[#555] mb-1" />
+                    </div>
+                    <div className="w-20 h-12 bg-[#2a2a2a] flex items-center justify-center">
+                      <div className="w-14 h-[2px] bg-[#555] mb-1" />
+                    </div>
+                  </div>
+                </div>
+                {/* Shelf */}
+                <div className="h-2 bg-gradient-to-b from-[#333] to-[#1a1a1a] -mx-2" />
+                <div className="h-1 bg-[#111]" />
+              </div>
+              <p className="text-center text-[9px] font-mono text-titanium tracking-[0.2em] mt-3">
+                [ THE BOOK OF THE FALLEN ]
+              </p>
+            </div>
+
+            {/* Floor */}
+            <div className="absolute bottom-0 left-0 right-0 h-20 z-0"
+              style={{
+                background: "linear-gradient(180deg, #1a1a1a 0%, #0e0e0e 100%)",
+                backgroundImage: `
+                  repeating-linear-gradient(90deg, #222 0px, #222 60px, #1a1a1a 60px, #1a1a1a 120px)
+                `,
+              }}
+            />
+            {/* Darker floor inset centered beneath memorial */}
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-20 z-0"
+              style={{
+                background: "linear-gradient(180deg, #111 0%, #050505 100%)",
+              }}
+            />
           </div>
 
           <p className="text-[10px] font-mono text-titanium/60 tracking-wider mt-4 text-right">
