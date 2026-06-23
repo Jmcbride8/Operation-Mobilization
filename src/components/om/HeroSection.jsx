@@ -116,7 +116,7 @@ export default function HeroSection() {
       </motion.button>
 
       {/* Missionary ticker */}
-      <div className="absolute bottom-0 left-0 right-0 z-20">
+      <div className="absolute bottom-14 left-0 right-0 z-20">
         <MissionaryTicker />
       </div>
     </section>
