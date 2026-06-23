@@ -80,6 +80,20 @@ export default function SacrificeStatement() {
           className="mt-12 border-l-2 border-r-2 border-ignition/60 px-6 md:px-12 py-6 max-w-2xl mx-auto"
         >
           <p className="font-heading text-lg md:text-2xl text-signal-white italic leading-relaxed">
+            "My kingdom is not of this world."
+          </p>
+          <span className="block mt-3 text-[10px] font-mono tracking-[0.25em] text-ignition">
+            — JOHN 18:36
+          </span>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 1.8 }}
+          className="mt-8 border-l-2 border-r-2 border-ignition/60 px-6 md:px-12 py-6 max-w-2xl mx-auto"
+        >
+          <p className="font-heading text-lg md:text-2xl text-signal-white italic leading-relaxed">
             "Greater love has no one than this, that someone lay down his life
             for his friends."
           </p>
