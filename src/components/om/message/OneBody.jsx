@@ -104,17 +104,13 @@ function BranchCard({ branch, index }) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/50 to-transparent" />
         <span className="absolute top-2 left-2 text-[10px] font-mono text-ignition tracking-wider">[ {branch.id} ]</span>
-        <span className="absolute top-2 right-2 text-[9px] font-mono text-titanium/60 tracking-[0.15em] text-right">{branch.tagline}</span>
+        <span className="absolute top-3 right-3 text-[12px] font-mono text-signal-white tracking-[0.15em] text-right font-bold">{branch.tagline}</span>
       </div>
       <div className="p-6">
       <h3 className="font-heading font-bold text-sm text-signal-white uppercase tracking-[0.02em] mb-3">
         {branch.name}
       </h3>
       <p className="text-[11px] font-mono text-titanium leading-relaxed mb-4">{branch.desc}</p>
-      <div className="pt-3 border-t border-titanium/15">
-        <span className="text-[9px] font-mono text-titanium/60 tracking-wider block">STRENGTH BROUGHT TO MISSION</span>
-        <span className="text-[11px] font-heading font-bold text-ignition uppercase tracking-[0.02em]">{branch.strength}</span>
-      </div>
       <div className="pt-3 mt-3 border-t border-titanium/15">
         <span className="text-[9px] font-mono text-titanium/60 tracking-wider block">EMPHASIS VERSE</span>
         <span className="text-[11px] font-mono text-signal-white/80 leading-relaxed italic">{branch.verse}</span>
