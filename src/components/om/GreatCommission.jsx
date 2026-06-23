@@ -43,7 +43,7 @@ export default function GreatCommission() {
           className="flex items-center justify-center gap-2 mb-8"
         >
           <div className="w-8 h-px bg-ignition" />
-          <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">THE GREAT COMMISSION</span>
+          <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">WHY</span>
           <div className="w-8 h-px bg-ignition" />
         </motion.div>
 
