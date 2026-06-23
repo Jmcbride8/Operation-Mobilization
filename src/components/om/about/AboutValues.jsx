@@ -118,7 +118,7 @@ export default function AboutValues() {
           </p>
 
           {/* The wall */}
-          <div className="relative w-full h-[600px] border border-ignition/30 bg-obsidian/60 overflow-hidden">
+          <div className="relative w-full h-[900px] border border-ignition/30 bg-obsidian/60 overflow-hidden">
             {/* Subtle vertical gradient for depth */}
             <div className="absolute inset-0 bg-gradient-to-r from-obsidian via-transparent to-obsidian pointer-events-none z-10" />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-obsidian pointer-events-none z-10" />
