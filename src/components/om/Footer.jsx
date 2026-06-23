@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const [utc, setUtc] = useState("");
@@ -63,16 +64,33 @@ export default function Footer() {
           <div className="md:col-span-2">
             <span className="text-[9px] font-mono text-titanium tracking-[0.2em] block mb-3">ORGANIZATION</span>
             <div className="space-y-2">
-              {["About OM", "Leadership", "Financial Reports", "Governance", "Press"].map((item) => (
-                <a
-                  key={item}
-                  href="https://om.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-[11px] font-mono text-signal-white/60 hover:text-ignition transition-colors"
-                >
-                  {item}
-                </a>
+              {[
+                { label: "About OM", href: "https://om.org" },
+                { label: "Leadership", href: "https://om.org" },
+                { label: "Financial Reports", href: "https://om.org" },
+                { label: "Governance", href: "https://om.org" },
+                { label: "Press", href: "https://om.org" },
+                { label: "Brand Identity", to: "/brand" },
+              ].map((item) => (
+                item.to ? (
+                  <Link
+                    key={item.label}
+                    to={item.to}
+                    className="block text-[11px] font-mono text-signal-white/60 hover:text-ignition transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-[11px] font-mono text-signal-white/60 hover:text-ignition transition-colors"
+                  >
+                    {item.label}
+                  </a>
+                )
               ))}
             </div>
           </div>
