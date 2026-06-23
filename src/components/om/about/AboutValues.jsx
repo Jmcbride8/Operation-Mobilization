@@ -39,7 +39,7 @@ function generateCrosses(count) {
       id: i,
       top: row * 26 + (col % 2 === 0 ? 0 : 6),
       left: col * (100 / 24),
-      size: 10 + ((i * 7) % 5),
+      size: 14 + ((i * 7) % 8),
       opacity: 0.15 + ((i * 13) % 50) / 100,
       delay: (i % 48) * 0.015,
     });
@@ -57,7 +57,7 @@ function CrossMark({ size }) {
 }
 
 export default function AboutValues() {
-  const crosses = useMemo(() => generateCrosses(240), []);
+  const crosses = useMemo(() => generateCrosses(480), []);
 
   return (
     <section className="py-24 border-t border-titanium/10 relative overflow-hidden">
@@ -109,7 +109,7 @@ export default function AboutValues() {
           <ScrambleText
             as="h3"
             text="WALL OF CROSSES"
-            className="font-heading font-black text-2xl md:text-4xl text-signal-white tracking-[-0.02em] uppercase mb-2"
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-2"
           />
           <p className="text-[11px] md:text-xs font-mono text-titanium max-w-2xl mb-10 leading-relaxed">
             Countless men and women laid down their lives to share Christ with OM.
@@ -118,7 +118,7 @@ export default function AboutValues() {
           </p>
 
           {/* The wall */}
-          <div className="relative w-full h-[340px] border border-titanium/20 bg-obsidian/60 overflow-hidden">
+          <div className="relative w-full h-[600px] border border-ignition/30 bg-obsidian/60 overflow-hidden">
             {/* Subtle vertical gradient for depth */}
             <div className="absolute inset-0 bg-gradient-to-r from-obsidian via-transparent to-obsidian pointer-events-none z-10" />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-obsidian pointer-events-none z-10" />
@@ -143,14 +143,14 @@ export default function AboutValues() {
 
             {/* Center tribute overlay */}
             <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
-              <div className="text-center bg-obsidian/70 backdrop-blur-sm px-8 py-6 border border-ignition/40">
-                <p className="font-heading font-black text-3xl md:text-5xl text-ignition tracking-[-0.02em] uppercase leading-[0.9]">
+              <div className="text-center bg-obsidian/80 backdrop-blur-md px-12 py-10 border border-ignition/50">
+                <p className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-ignition tracking-[-0.02em] uppercase leading-[0.9]">
                   No Greater Love
                 </p>
-                <p className="text-[10px] font-mono text-titanium tracking-[0.25em] mt-3">
+                <p className="text-xs font-mono text-titanium tracking-[0.25em] mt-4">
                   GREATER LOVE HAS NO ONE THAN THIS
                 </p>
-                <p className="text-[9px] font-mono text-titanium/70 tracking-[0.2em] mt-1">
+                <p className="text-[10px] font-mono text-titanium/70 tracking-[0.2em] mt-1">
                   JOHN 15:13
                 </p>
               </div>
