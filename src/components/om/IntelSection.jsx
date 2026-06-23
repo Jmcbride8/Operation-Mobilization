@@ -9,7 +9,7 @@ const MEDICAL = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53
 
 const INTEL = [
   {
-    id: "INTEL-2026-047",
+    id: "REPORT-2026-047",
     classification: "OPERATIONAL",
     title: "FRESH WATER REACHES 340,000 IN THE SAHEL CORRIDOR",
     excerpt: "After 14 months of drilling operations and infrastructure buildout, the Sahel water network is now fully operational. Local maintenance teams have been trained and certified to sustain operations independently.",
@@ -20,7 +20,7 @@ const INTEL = [
     region: "WEST AFRICA",
   },
   {
-    id: "INTEL-2026-046",
+    id: "REPORT-2026-046",
     classification: "FIELD REPORT",
     title: "MEDICAL CONVOY REACHES FORWARD POSITIONS IN NORTHERN MOUNTAINS",
     excerpt: "A twelve-vehicle convoy carrying surgical supplies and mobile clinic modules successfully navigated mountain passes to reach isolated communities cut off since the spring floods.",
@@ -31,8 +31,8 @@ const INTEL = [
     region: "CENTRAL ASIA",
   },
   {
-    id: "INTEL-2026-045",
-    classification: "STRATEGIC",
+    id: "REPORT-2026-045",
+    classification: "FEATURE",
     title: "LEADERSHIP TRAINING PROGRAM GRADUATES 120 LOCAL COORDINATORS",
     excerpt: "The third cohort of the Meridian Leadership Initiative has completed 18 months of intensive training. These coordinators now manage regional operations across four provinces.",
     image: PORTRAIT,
@@ -42,7 +42,7 @@ const INTEL = [
     region: "SOUTH ASIA",
   },
   {
-    id: "INTEL-2026-044",
+    id: "REPORT-2026-044",
     classification: "URGENT",
     title: "EMERGENCY SHELTER DEPLOYMENT TO COASTAL DISPLACEMENT ZONE",
     excerpt: "Rapid response teams deployed 600 modular shelter units within 72 hours of the cyclone making landfall. Food and water distribution ongoing across 8 distribution points.",
@@ -61,7 +61,7 @@ function IntelCard({ item, index }) {
   const classColors = {
     OPERATIONAL: "text-green-500 border-green-500/30",
     "FIELD REPORT": "text-blue-400 border-blue-400/30",
-    STRATEGIC: "text-yellow-500 border-yellow-500/30",
+    FEATURE: "text-yellow-500 border-yellow-500/30",
     URGENT: "text-ignition border-ignition/30",
   };
 
@@ -134,16 +134,16 @@ export default function IntelSection() {
           <div>
             <ScrambleText
               as="h2"
-              text="FIELD INTELLIGENCE"
+              text="FIELD REPORTS"
               className="font-heading font-black text-3xl md:text-5xl text-signal-white tracking-[-0.02em] uppercase"
             />
             <p className="text-xs font-mono text-titanium mt-3 max-w-lg">
-              Classified field reports from active operations. Verified data, measured outcomes,
-              no embellishment. Intelligence, not marketing.
+              Dispatches from the field. Real stories, measured outcomes,
+              no embellishment. Truth, not marketing.
             </p>
           </div>
           <span className="text-[10px] font-mono text-titanium tracking-wider">
-            {INTEL.length} BRIEFINGS AVAILABLE
+            {INTEL.length} REPORTS AVAILABLE
           </span>
         </div>
 

@@ -28,8 +28,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-[11px] font-mono text-titanium leading-relaxed max-w-xs">
-              Deploying trained specialists to the hardest places on earth since 1957. 
-              Not a charity. A global operations network.
+              Sending workers to the hardest places on earth since 1957.
+              Not a charity. A global mission force.
             </p>
             <div className="text-[9px] font-mono text-titanium/50 space-y-0.5">
               <div>HQ: 51.5074° N, 0.1278° W</div>
@@ -125,7 +125,7 @@ export default function Footer() {
             © {new Date().getFullYear()} OPERATION MOBILIZATION INTERNATIONAL. ALL RIGHTS RESERVED.
           </span>
           <span className="text-[9px] font-mono text-titanium/30">
-            SYS.VERSION 4.7.0 // PROTOCOL: SOVEREIGN_UTILITY // STATUS: OPERATIONAL
+            EST. 1957 // STATUS: ON THE FIELD // 118 COUNTRIES
           </span>
         </div>
       </div>

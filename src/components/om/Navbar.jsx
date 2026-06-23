@@ -3,11 +3,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const NAV_ITEMS = [
-  { label: "COMMAND", href: "#command" },
-  { label: "OPERATIONS", href: "#operations" },
-  { label: "LOGISTICS", href: "#logistics" },
-  { label: "FIELD INTEL", href: "#intel" },
-  { label: "DEPLOY", href: "#deploy" },
+  { label: "HOME", href: "#command" },
+  { label: "MISSIONS", href: "#operations" },
+  { label: "RESOURCES", href: "#logistics" },
+  { label: "FIELD REPORTS", href: "#intel" },
+  { label: "ANSWER CALL", href: "#deploy" },
 ];
 
 export default function Navbar() {
@@ -52,7 +52,7 @@ export default function Navbar() {
             onClick={() => handleNav("#deploy")}
             className="ml-4 px-4 py-1.5 bg-ignition text-[10px] font-heading font-bold tracking-[0.15em] text-white hover:bg-ignition/90 transition-colors"
           >
-            INITIATE
+            GO
           </button>
         </div>
 
@@ -85,7 +85,7 @@ export default function Navbar() {
                 onClick={() => handleNav("#deploy")}
                 className="mt-2 px-4 py-3 bg-ignition text-xs font-heading font-bold tracking-[0.15em] text-white text-center"
               >
-                INITIATE DEPLOYMENT
+                ANSWER THE CALL
               </button>
             </div>
           </motion.div>

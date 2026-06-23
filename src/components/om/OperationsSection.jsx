@@ -9,7 +9,7 @@ const MEDICAL = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53
 
 const OPERATIONS = [
   {
-    id: "OP-MERIDIAN",
+    id: "MISSION:MERIDIAN",
     region: "SOUTH ASIA",
     image: REGION_SA,
     status: "ACTIVE",
@@ -19,7 +19,7 @@ const OPERATIONS = [
     coordinates: "20.5937° N, 78.9629° E",
   },
   {
-    id: "OP-CITADEL",
+    id: "MISSION:CITADEL",
     region: "MIDDLE EAST & NORTH AFRICA",
     image: REGION_ME,
     status: "ACTIVE",
@@ -29,7 +29,7 @@ const OPERATIONS = [
     coordinates: "29.3117° N, 47.4818° E",
   },
   {
-    id: "OP-FULCRUM",
+    id: "MISSION:FULCRUM",
     region: "EAST AFRICA",
     image: OPS_HUB,
     status: "ACTIVE",
@@ -39,7 +39,7 @@ const OPERATIONS = [
     coordinates: "1.2921° S, 36.8219° E",
   },
   {
-    id: "OP-SUMMIT",
+    id: "MISSION:SUMMIT",
     region: "CENTRAL ASIA",
     image: MEDICAL,
     status: "SCALING",
@@ -88,7 +88,7 @@ function OperationCard({ op, index }) {
         <div className="flex gap-4 border-t border-b border-titanium/15 py-2.5">
           <div>
             <span className="font-heading font-bold text-xl text-signal-white">{op.personnel}</span>
-            <span className="block text-[9px] font-mono text-titanium tracking-wider">PERSONNEL</span>
+            <span className="block text-[9px] font-mono text-titanium tracking-wider">WORKERS</span>
           </div>
           <div className="border-l border-titanium/15 pl-4">
             <span className="font-heading font-bold text-xl text-ignition">{op.reach}</span>
@@ -122,12 +122,12 @@ export default function OperationsSection() {
         </div>
         <ScrambleText
           as="h2"
-          text="ACTIVE OPERATIONS"
+          text="ON THE FIELD"
           className="font-heading font-black text-3xl md:text-5xl text-signal-white tracking-[-0.02em] uppercase"
         />
         <p className="text-xs font-mono text-titanium mt-3 max-w-lg">
-          Real-time deployment status across strategic regions. Each operation is a self-sustaining node
-          in the global network — resourced, measured, and accountable.
+          Where our workers are right now. Each mission is a long-term commitment —
+          resourced, measured, and accountable to the communities we serve.
         </p>
       </div>
 

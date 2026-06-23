@@ -38,7 +38,7 @@ export default function HeroSection() {
             <div className="space-y-1">
               <div className="flex items-center gap-2 mb-6">
                 <div className="w-8 h-px bg-ignition" />
-                <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">MISSION_STATUS: ACTIVE SINCE 1957</span>
+                <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">ON THE FIELD SINCE 1957</span>
               </div>
 
               <ScrambleText
@@ -56,14 +56,14 @@ export default function HeroSection() {
             </div>
 
             <p className="text-xs md:text-sm font-mono text-titanium max-w-lg leading-relaxed">
-              Operation Mobilization deploys trained specialists to the hardest places on earth. 
-              Not tourists. Not spectators. Operators who build infrastructure, train leaders, 
-              and transform communities at the root level.
+              Operation Mobilization sends men and women to the hardest places on earth.
+              Not tourists. Not spectators. Workers who build, train, and lay down their lives
+              to see communities transformed at the root.
             </p>
 
             {/* Stats row */}
             <div className="flex flex-wrap gap-8 md:gap-12 pt-4">
-              <CounterDisplay target={5800} label="Active Personnel" />
+              <CounterDisplay target={5800} label="On the Field" />
               <CounterDisplay target={118} label="Countries" duration={1500} />
               <CounterDisplay target={67} label="Years Deployed" duration={1200} />
             </div>
@@ -85,20 +85,20 @@ export default function HeroSection() {
       >
         <div className="max-w-[1440px] mx-auto px-4 md:px-8 h-14 flex items-center justify-between">
           <span className="text-[10px] font-mono text-titanium tracking-[0.15em] hidden md:block">
-            [ READY FOR DEPLOYMENT ]
+            [ THE CALL IS OPEN ]
           </span>
           <div className="flex items-center gap-2 w-full md:w-auto">
             <button
               onClick={scrollToDeploy}
               className="flex-1 md:flex-none px-6 py-2 bg-ignition text-xs font-heading font-bold tracking-[0.15em] text-white hover:bg-ignition/90 transition-colors"
             >
-              INITIATE DEPLOYMENT
+              ANSWER THE CALL
             </button>
             <button
               onClick={scrollToDeploy}
               className="flex-1 md:flex-none px-6 py-2 border border-titanium/40 text-xs font-heading font-bold tracking-[0.15em] text-signal-white hover:border-signal-white transition-colors"
             >
-              ALLOCATE RESOURCES
+              GIVE
             </button>
           </div>
         </div>

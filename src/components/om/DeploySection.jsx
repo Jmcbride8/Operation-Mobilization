@@ -5,8 +5,8 @@ import { ChevronRight } from "lucide-react";
 
 const POSITIONS = [
   {
-    id: "MAN-001",
-    title: "Field Medical Specialist",
+    id: "POS-001",
+    title: "Field Medical Worker",
     region: "East Africa",
     risk: "HIGH",
     duration: "12 months",
@@ -15,8 +15,8 @@ const POSITIONS = [
     urgency: "CRITICAL",
   },
   {
-    id: "MAN-002",
-    title: "Water Systems Engineer",
+    id: "POS-002",
+    title: "Water Systems Worker",
     region: "Sahel Corridor",
     risk: "MODERATE",
     duration: "18 months",
@@ -25,8 +25,8 @@ const POSITIONS = [
     urgency: "HIGH",
   },
   {
-    id: "MAN-003",
-    title: "Logistics Coordinator",
+    id: "POS-003",
+    title: "Field Coordinator",
     region: "Central Asia",
     risk: "MODERATE",
     duration: "24 months",
@@ -35,7 +35,7 @@ const POSITIONS = [
     urgency: "STANDARD",
   },
   {
-    id: "MAN-004",
+    id: "POS-004",
     title: "Community Health Trainer",
     region: "South Asia",
     risk: "LOW",
@@ -45,18 +45,18 @@ const POSITIONS = [
     urgency: "HIGH",
   },
   {
-    id: "MAN-005",
-    title: "Emergency Response Lead",
+    id: "POS-005",
+    title: "Crisis Response Lead",
     region: "Southeast Asia",
-    risk: "EXTREME",
+    risk: "HIGH",
     duration: "6 months",
     specialization: "Crisis Mgmt",
-    requirements: "Disaster response certification, team leadership, physical fitness",
+    requirements: "Crisis response experience, team leadership, physical fitness",
     urgency: "CRITICAL",
   },
   {
-    id: "MAN-006",
-    title: "Agricultural Systems Advisor",
+    id: "POS-006",
+    title: "Agricultural Advisor",
     region: "West Africa",
     risk: "LOW",
     duration: "18 months",
@@ -69,8 +69,7 @@ const POSITIONS = [
 const RISK_COLORS = {
   LOW: "text-green-500",
   MODERATE: "text-yellow-500",
-  HIGH: "text-orange-500",
-  EXTREME: "text-red-500",
+  HIGH: "text-ignition",
 };
 
 const URGENCY_COLORS = {
@@ -97,12 +96,12 @@ export default function DeploySection() {
         </div>
         <ScrambleText
           as="h2"
-          text="DEPLOYMENT MANIFEST"
+          text="ANSWER THE CALL"
           className="font-heading font-black text-3xl md:text-5xl text-signal-white tracking-[-0.02em] uppercase"
         />
         <p className="text-xs font-mono text-titanium mt-3 max-w-lg">
-          We don't recruit volunteers. We deploy specialists. Every position is a critical node
-          in the global network. Match your skills. Accept the mission.
+          We don't recruit volunteers for a weekend. We send workers for a lifetime.
+          Every position is a calling. Match your skills. Count the cost. Go.
         </p>
 
         {/* Filters */}
@@ -127,7 +126,7 @@ export default function DeploySection() {
           <span className="col-span-1 text-[9px] font-mono text-titanium tracking-wider">ID</span>
           <span className="col-span-3 text-[9px] font-mono text-titanium tracking-wider">POSITION</span>
           <span className="col-span-2 text-[9px] font-mono text-titanium tracking-wider">REGION</span>
-          <span className="col-span-1 text-[9px] font-mono text-titanium tracking-wider">RISK</span>
+          <span className="col-span-1 text-[9px] font-mono text-titanium tracking-wider">COST</span>
           <span className="col-span-1 text-[9px] font-mono text-titanium tracking-wider">DURATION</span>
           <span className="col-span-2 text-[9px] font-mono text-titanium tracking-wider">SPEC</span>
           <span className="col-span-2 text-[9px] font-mono text-titanium tracking-wider">URGENCY</span>
@@ -176,7 +175,7 @@ export default function DeploySection() {
                       <p className="text-xs font-mono text-signal-white/80 mt-1">{pos.requirements}</p>
                     </div>
                     <button className="px-4 py-2 bg-ignition text-xs font-heading font-bold tracking-[0.1em] text-white hover:bg-ignition/90 transition-colors">
-                      APPLY FOR DEPLOYMENT
+                      APPLY NOW
                     </button>
                   </div>
                 </motion.div>

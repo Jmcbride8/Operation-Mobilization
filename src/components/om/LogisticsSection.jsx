@@ -66,12 +66,12 @@ export default function LogisticsSection() {
         </div>
         <ScrambleText
           as="h2"
-          text="LOGISTICS HUB"
+          text="WHERE IT GOES"
           className="font-heading font-black text-3xl md:text-5xl text-signal-white tracking-[-0.02em] uppercase"
         />
         <p className="text-xs font-mono text-titanium mt-3 max-w-lg">
-          Radical transparency. Every dollar tracked, every resource accounted for. 
-          No stock photos. No vague promises. Just data.
+          Radical transparency. Every dollar tracked, every resource accounted for.
+          No stock photos. No vague promises. Just stewardship.
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-12">
@@ -108,7 +108,7 @@ export default function LogisticsSection() {
               <div className="absolute inset-0 bg-obsidian/50" />
               <div className="absolute bottom-3 left-3">
                 <span className="text-[9px] font-mono text-signal-white/60 bg-obsidian/80 px-2 py-1">
-                  [ LOGISTICS_FEED: LIVE ]
+                  [ STEWARDSHIP_FEED: LIVE ]
                 </span>
               </div>
             </div>

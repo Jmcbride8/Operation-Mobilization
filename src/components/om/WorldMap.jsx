@@ -5,18 +5,18 @@ import ScrambleText from "./ScrambleText";
 import "leaflet/dist/leaflet.css";
 
 const OPERATIONS = [
-  { name: "South Asia", region: "OP-MERIDIAN", coords: [20.5937, 78.9629], personnel: 1240, status: "ACTIVE" },
-  { name: "Middle East & North Africa", region: "OP-CITADEL", coords: [29.3117, 47.4818], personnel: 890, status: "ACTIVE" },
-  { name: "East Africa", region: "OP-FULCRUM", coords: [-1.2921, 36.8219], personnel: 1050, status: "ACTIVE" },
-  { name: "Central Asia", region: "OP-SUMMIT", coords: [41.2995, 69.2401], personnel: 430, status: "SCALING" },
-  { name: "West Africa", region: "OP-VANGUARD", coords: [7.9465, -1.0232], personnel: 380, status: "ACTIVE" },
-  { name: "Southeast Asia", region: "OP-TIDEWATER", coords: [-2.5489, 118.0149], personnel: 520, status: "ACTIVE" },
-  { name: "Southern Africa", region: "OP-ANCHOR", coords: [-22.3285, 24.6849], personnel: 310, status: "ACTIVE" },
-  { name: "Eastern Europe", region: "OP-CROSSWIND", coords: [44.4268, 26.1025], personnel: 280, status: "ACTIVE" },
-  { name: "Latin America", region: "OP-COMPASS", coords: [-14.235, -51.9253], personnel: 440, status: "SCALING" },
-  { name: "Pacific Islands", region: "OP-HORIZON", coords: [-8.9674, 148.0609], personnel: 120, status: "ACTIVE" },
-  { name: "Horn of Africa", region: "OP-BASTION", coords: [9.145, 40.4897], personnel: 190, status: "ACTIVE" },
-  { name: "Central Africa", region: "OP-BENCHMARK", coords: [6.6111, 20.9394], personnel: 250, status: "ACTIVE" },
+  { name: "South Asia", region: "MERIDIAN", coords: [20.5937, 78.9629], personnel: 1240, status: "ACTIVE" },
+  { name: "Middle East & North Africa", region: "CITADEL", coords: [29.3117, 47.4818], personnel: 890, status: "ACTIVE" },
+  { name: "East Africa", region: "FULCRUM", coords: [-1.2921, 36.8219], personnel: 1050, status: "ACTIVE" },
+  { name: "Central Asia", region: "SUMMIT", coords: [41.2995, 69.2401], personnel: 430, status: "SCALING" },
+  { name: "West Africa", region: "VANGUARD", coords: [7.9465, -1.0232], personnel: 380, status: "ACTIVE" },
+  { name: "Southeast Asia", region: "TIDEWATER", coords: [-2.5489, 118.0149], personnel: 520, status: "ACTIVE" },
+  { name: "Southern Africa", region: "ANCHOR", coords: [-22.3285, 24.6849], personnel: 310, status: "ACTIVE" },
+  { name: "Eastern Europe", region: "CROSSWIND", coords: [44.4268, 26.1025], personnel: 280, status: "ACTIVE" },
+  { name: "Latin America", region: "COMPASS", coords: [-14.235, -51.9253], personnel: 440, status: "SCALING" },
+  { name: "Pacific Islands", region: "HORIZON", coords: [-8.9674, 148.0609], personnel: 120, status: "ACTIVE" },
+  { name: "Horn of Africa", region: "BASTION", coords: [9.145, 40.4897], personnel: 190, status: "ACTIVE" },
+  { name: "Central Africa", region: "BENCHMARK", coords: [6.6111, 20.9394], personnel: 250, status: "ACTIVE" },
 ];
 
 export default function WorldMap() {
@@ -36,22 +36,22 @@ export default function WorldMap() {
           <div>
             <ScrambleText
               as="h2"
-              text="GLOBAL DEPLOYMENT GRID"
+              text="GLOBAL MISSION FIELD"
               className="font-heading font-black text-3xl md:text-5xl text-signal-white tracking-[-0.02em] uppercase"
             />
             <p className="text-xs font-mono text-titanium mt-3 max-w-lg">
-              Real-time operational footprint. Every marker represents an active mission node —
-              personnel deployed, infrastructure built, communities transformed.
+              Where our workers are right now. Every marker represents a long-term mission —
+              lives given, communities transformed, the Gospel going forward.
             </p>
           </div>
           <div className="flex gap-6">
             <div className="text-right">
               <span className="font-heading font-black text-2xl text-ignition tabular-nums">{OPERATIONS.length}</span>
-              <span className="block text-[9px] font-mono text-titanium tracking-wider">ACTIVE NODES</span>
+              <span className="block text-[9px] font-mono text-titanium tracking-wider">ACTIVE FIELDS</span>
             </div>
             <div className="text-right">
               <span className="font-heading font-black text-2xl text-signal-white tabular-nums">{totalPersonnel.toLocaleString()}</span>
-              <span className="block text-[9px] font-mono text-titanium tracking-wider">DEPLOYED</span>
+              <span className="block text-[9px] font-mono text-titanium tracking-wider">ON THE FIELD</span>
             </div>
           </div>
         </div>
@@ -67,13 +67,13 @@ export default function WorldMap() {
           {/* Corner labels */}
           <div className="absolute top-3 left-3 z-[1000] flex items-center gap-2 pointer-events-none">
             <div className="w-1.5 h-1.5 bg-ignition animate-pulse-dot" />
-            <span className="text-[9px] font-mono text-ignition tracking-wider">LIVE_GRID.SYS</span>
+            <span className="text-[9px] font-mono text-ignition tracking-wider">LIVE_FIELD_MAP</span>
           </div>
           <div className="absolute top-3 right-3 z-[1000] pointer-events-none">
             <span className="text-[9px] font-mono text-titanium/50 tracking-wider">PROJECTION: MERCATOR</span>
           </div>
           <div className="absolute bottom-3 left-3 z-[1000] pointer-events-none">
-            <span className="text-[9px] font-mono text-titanium/50 tracking-wider">SAT.UPLINK: STABLE</span>
+            <span className="text-[9px] font-mono text-titanium/50 tracking-wider">UPDATES: LIVE</span>
           </div>
           <div className="absolute bottom-3 right-3 z-[1000] pointer-events-none flex items-center gap-3">
             <div className="flex items-center gap-1">
@@ -124,7 +124,7 @@ export default function WorldMap() {
                       {op.name}
                     </div>
                     <div style={{ fontSize: "9px", fontFamily: "monospace", color: "#404040", marginTop: "2px" }}>
-                      {op.personnel} PERSONNEL // {op.status}
+                      {op.personnel} WORKERS // {op.status}
                     </div>
                   </div>
                 </Tooltip>
@@ -137,7 +137,7 @@ export default function WorldMap() {
         <div className="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-[9px] font-mono text-titanium/40">
           {OPERATIONS.map((op) => (
             <span key={op.region}>
-              <span className="text-ignition">●</span> {op.region} {op.coords[0].toFixed(2)}°, {op.coords[1].toFixed(2)}°
+              <span className="text-ignition">●</span> {op.name.toUpperCase()} {op.coords[0].toFixed(2)}°, {op.coords[1].toFixed(2)}°
             </span>
           ))}
         </div>
