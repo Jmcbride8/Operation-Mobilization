@@ -3,10 +3,15 @@ import { motion, useInView } from "framer-motion";
 import ScrambleText from "@/components/om/ScrambleText";
 
 const MILESTONES = [
+  { year: "1955", title: "THE CONVERSION", desc: "A classmate hands George Verwer a copy of the Gospel of John. George gives his life to Christ at a Billy Graham crusade. The seed of a global movement is planted.", image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/1391a8c8d_generated_image.png" },
   { year: "1957", title: "THE BEGINNING", desc: "George Verwer sells his books and boards a ship to Mexico with two friends. The movement is born from prayer and a second-hand operation.", image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/cbc67e493_generated_image.png" },
+  { year: "1960", title: "SPAIN & SEND THE LIGHT", desc: "George and his team move to Spain, distributing literature across Europe. The vision crystallizes: mobilize the Church to reach the nations. Send the Light is born.", image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/e19c0d760_generated_image.png" },
   { year: "1963", title: "GOING GLOBAL", desc: "OM expands into Europe, the Middle East, and Asia. The Logos ship launches, carrying literature and workers to ports across the world.", image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/3d30bdb67_generated_image.png" },
+  { year: "1970", title: "THE LOGOS SHIP", desc: "The Logos — OM's first missionary vessel — sets sail, revolutionizing how the Gospel reaches port cities. Millions would step aboard over the next four decades.", image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/3004808b5_generated_image.png" },
   { year: "1978", title: "DOULOS LAUNCHED", desc: "A second ship joins the fleet. Over the next 30 years, OM's vessels visit over 400 ports, welcoming millions aboard.", image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/63d6519de_generated_image.png" },
+  { year: "1981", title: "OFFICIALLY OM", desc: "Send the Light officially changes its name to Operation Mobilisation. The identity of a global mission force is forged.", image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/28b5e37c6_generated_image.png" },
   { year: "2000s", title: "NEW FRONTIERS", desc: "OM pivots from ships to sustainable field operations — water infrastructure, medical deployment, literacy, and church planting in hard places.", image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/28b8c68cb_generated_image.png" },
+  { year: "2023", title: "A SERVANT GOES HOME", desc: "Founder George Verwer goes to be with the Lord at age 84. His legacy: a movement of 5,800+ workers in 118 countries, still going hard.", image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/72da8824b_generated_image.png" },
   { year: "TODAY", title: "5,800+ WORKERS", desc: "Operating in 118 countries. Not a charity. Not an NGO. A mission force of called servants, still going hard to the hardest places.", image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/162fe90d2_generated_image.png" },
 ];
 
