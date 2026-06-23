@@ -4,6 +4,7 @@ import Navbar from "@/components/om/Navbar";
 import AboutHero from "@/components/om/about/AboutHero";
 import AboutMission from "@/components/om/about/AboutMission";
 import DiagnosisSection from "@/components/om/about/DiagnosisSection";
+import CureSection from "@/components/om/about/CureSection";
 import AboutStory from "@/components/om/about/AboutStory";
 import AboutValues from "@/components/om/about/AboutValues";
 import Footer from "@/components/om/Footer";
@@ -16,6 +17,7 @@ export default function AboutOM() {
       <AboutHero />
       <AboutMission />
       <DiagnosisSection />
+      <CureSection />
       <AboutStory />
       <AboutValues />
       <Footer />
