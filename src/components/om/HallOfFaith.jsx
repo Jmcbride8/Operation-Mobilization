@@ -141,14 +141,17 @@ export default function HallOfFaith() {
         {/* Header */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12">
           <div className="lg:col-span-8">
+            <span className="text-[10px] font-mono tracking-[0.3em] text-titanium block mb-3">
+              THE GREATEST TRADITION
+            </span>
             <ScrambleText
               as="h2"
-              text="THE LINE IS UNBROKEN."
+              text="GIVING YOUR LIFE"
               className="font-heading font-black text-3xl md:text-5xl lg:text-6xl text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
             />
             <ScrambleText
               as="h2"
-              text="THE LINEAGE IS YOURS."
+              text="FOR THEIRS."
               className="font-heading font-black text-3xl md:text-5xl lg:text-6xl text-ignition tracking-[-0.03em] uppercase leading-[0.9] mt-1"
               delay={300}
             />
