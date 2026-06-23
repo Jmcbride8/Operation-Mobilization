@@ -1,8 +1,7 @@
 import React, { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import ScrambleText from "./ScrambleText";
-
-const SUPPLY_IMG = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/fe9557239_generated_7bc052d7.png";
+import { useSiteImages } from "@/hooks/useSiteImages";
 
 const CATEGORIES = [
   {
@@ -52,6 +51,7 @@ const CATEGORIES = [
 ];
 
 export default function LogisticsSection() {
+  const { getImage } = useSiteImages();
   const [active, setActive] = useState("water");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -104,7 +104,7 @@ export default function LogisticsSection() {
             </div>
 
             <div className="relative h-56 overflow-hidden border border-titanium/20">
-              <img src={SUPPLY_IMG} alt="Supply distribution operations" className="w-full h-full object-cover hover:grayscale transition-all duration-700" />
+              <img src={getImage("logistics.supply")} alt="Supply distribution operations" className="w-full h-full object-cover hover:grayscale transition-all duration-700" />
               <div className="absolute inset-0 bg-obsidian/50" />
               <div className="absolute bottom-3 left-3">
                 <span className="text-[9px] font-mono text-signal-white/60 bg-obsidian/80 px-2 py-1">

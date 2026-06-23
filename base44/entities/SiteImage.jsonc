@@ -1,0 +1,26 @@
+{
+  "name": "SiteImage",
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "string",
+      "description": "Unique identifier for the image (e.g. hero.main)"
+    },
+    "url": {
+      "type": "string",
+      "description": "Image URL"
+    },
+    "label": {
+      "type": "string",
+      "description": "Human-readable label"
+    },
+    "category": {
+      "type": "string",
+      "description": "Category for grouping (e.g. Home, About, Operations)"
+    }
+  },
+  "required": [
+    "key",
+    "url"
+  ]
+}

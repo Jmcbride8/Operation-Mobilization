@@ -4,11 +4,10 @@ import ScrambleText from "./ScrambleText";
 import CounterDisplay from "./CounterDisplay";
 import MissionLogs from "./MissionLogs";
 import { ChevronDown } from "lucide-react";
-
-const HERO_IMAGE = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/f4ecd5f2e_generated_image.png";
-const FOOT_WASHING_IMAGE = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/f4ecd5f2e_generated_image.png";
+import { useSiteImages } from "@/hooks/useSiteImages";
 
 export default function HeroSection() {
+  const { getImage } = useSiteImages();
   const scrollToOps = () => {
     const el = document.querySelector("#operations");
     if (el) el.scrollIntoView({ behavior: "smooth" });
@@ -23,7 +22,7 @@ export default function HeroSection() {
     <section id="command" className="relative min-h-screen flex flex-col justify-center overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
-        <img src={HERO_IMAGE} alt="Missionary on the field" className="w-full h-full object-cover" />
+        <img src={getImage("hero.main")} alt="Missionary on the field" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian/80 via-obsidian/70 to-obsidian" />
         <div className="absolute inset-0 bg-gradient-to-r from-obsidian/90 via-transparent to-obsidian/60" />
       </div>

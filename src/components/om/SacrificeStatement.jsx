@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import ScrambleText from "./ScrambleText";
-
-const BG_IMAGE = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/182e07e9d_generated_image.png";
+import { useSiteImages } from "@/hooks/useSiteImages";
 
 export default function SacrificeStatement() {
+  const { getImage } = useSiteImages();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -12,7 +12,7 @@ export default function SacrificeStatement() {
     <section id="sacrifice" ref={ref} className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <img src={BG_IMAGE} alt="Cross on a hilltop at dusk" className="w-full h-full object-cover" />
+        <img src={getImage("sacrifice.background")} alt="Cross on a hilltop at dusk" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-obsidian/80" />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian via-obsidian/60 to-obsidian" />
       </div>

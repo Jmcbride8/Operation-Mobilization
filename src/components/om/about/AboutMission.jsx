@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import ScrambleText from "@/components/om/ScrambleText";
-
-const MISSION_IMAGE = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/9d8f7d593_generated_image.png";
+import { useSiteImages } from "@/hooks/useSiteImages";
 
 export default function AboutMission() {
+  const { getImage } = useSiteImages();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -12,7 +12,7 @@ export default function AboutMission() {
     <section id="mission" ref={ref} className="relative py-24 border-t border-titanium/10 overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
-        <img src={MISSION_IMAGE} alt="Missionary serving in a remote village" className="w-full h-full object-cover opacity-25" />
+        <img src={getImage("mission.background")} alt="Missionary serving in a remote village" className="w-full h-full object-cover opacity-25" />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian via-obsidian/85 to-obsidian" />
       </div>
       <div className="absolute inset-0 grid-lines opacity-20 pointer-events-none" />

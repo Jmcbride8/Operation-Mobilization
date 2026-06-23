@@ -71,6 +71,7 @@ export default function Footer() {
                 { label: "Governance", to: "/about" },
                 { label: "Press", to: "/about" },
                 { label: "Brand Identity", to: "/brand" },
+                { label: "Admin Console", to: "/admin" },
               ].map((item) => (
                 item.to ? (
                   <Link

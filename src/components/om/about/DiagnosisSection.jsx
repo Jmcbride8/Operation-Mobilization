@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import ScrambleText from "@/components/om/ScrambleText";
+import { useSiteImages } from "@/hooks/useSiteImages";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const SLIDES = [
@@ -8,7 +9,7 @@ const SLIDES = [
     id: "01",
     label: "THE SYMPTOM",
     title: "A WORLD IN DESPERATION",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/62ecb575d_generated_image.png",
+    imageKey: "diagnosis.symptom",
     body: "Look at the world. War. Famine. Exploitation. Abuse. Children discarded. Women oppressed. Men trapped in cycles they cannot break. Entire populations ground down by poverty, violence, and despair. These are the symptoms — the visible, measurable, undeniable symptoms of a world that has lost its way.",
     accent: "text-red-500",
     stat: "1.3 BILLION",
@@ -18,7 +19,7 @@ const SLIDES = [
     id: "02",
     label: "THE CAUSE",
     title: "A DARK HEART",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/c89850f6d_generated_image.png",
+    imageKey: "diagnosis.cause",
     body: "Strip away the politics, the economics, the systems. Go deeper. The root is not policy. The root is not infrastructure. The root is a dark heart. The human heart, turned from God, hardened by lies, incapable of love on its own. Every war, every abuse, every act of exploitation — it all begins here. In a heart that does not know it is loved.",
     accent: "text-titanium",
     stat: "JEREMIAH 17:9",
@@ -28,7 +29,7 @@ const SLIDES = [
     id: "03",
     label: "THE CURE",
     title: "GOD'S LOVE",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/199f6f543_generated_image.png",
+    imageKey: "diagnosis.cure",
     body: "The cure is not a program. It is not a policy. It is a person. The love of God — relentless, pursuing, sacrificial — that shatters every darkness. When a heart is filled with love, hope, and light, everything else flows from that transformation: family, culture, politics, technology, business, and entire societies. This is why we go. Not to treat symptoms. To bring the cure.",
     accent: "text-ignition",
     stat: "1 JOHN 4:16",
@@ -40,6 +41,7 @@ export default function DiagnosisSection() {
   const [active, setActive] = useState(0);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-80px" });
+  const { getImage } = useSiteImages();
   const slide = SLIDES[active];
 
   const next = () => setActive((p) => (p + 1) % SLIDES.length);
@@ -93,7 +95,7 @@ export default function DiagnosisSection() {
             <div className="lg:col-span-5">
               <div className="relative aspect-[4/5] overflow-hidden border border-titanium/20 group">
                 <img
-                  src={slide.image}
+                  src={getImage(slide.imageKey)}
                   alt={slide.title}
                   className="w-full h-full object-cover opacity-70 group-hover:opacity-50 group-hover:grayscale transition-all duration-700"
                 />

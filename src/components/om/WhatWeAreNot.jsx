@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import ScrambleText from "./ScrambleText";
+import { useSiteImages } from "@/hooks/useSiteImages";
 import { X, Check } from "lucide-react";
 
 const CONTRASTS = [
@@ -8,43 +9,44 @@ const CONTRASTS = [
     not: "A CHARITY",
     is: "A MISSION FORCE",
     desc: "Charities write checks. We deploy people. Trained operators who live in the communities they serve — for years, not weeks.",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/d3dee249f_generated_image.png",
+    imageKey: "identity.charity",
   },
   {
     not: "AN NGO",
     is: "A MISSIONARY MOVEMENT",
     desc: "NGOs optimize for metrics and grants. We optimize for transformed lives and surrendered obedience. The mission is spiritual, not bureaucratic.",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/6166e16c0_generated_image.png",
+    imageKey: "identity.ngo",
   },
   {
     not: "DISASTER TOURISTS",
     is: "LONG-TERM SPECIALISTS",
     desc: "We don't parachute in for a photo op and leave. Our average deployment is 18 months. We build, we train, we stay until the work is done.",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/37398c563_generated_image.png",
+    imageKey: "identity.tourists",
   },
   {
     not: "A CORPORATION",
     is: "A CALLED COMMUNITY",
     desc: "We aren't here to maximize ROI. We're here because God said go. Every specialist is deployed by calling, not hired by salary.",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/4da8084f2_generated_image.png",
+    imageKey: "identity.corporation",
   },
   {
     not: "PASSIVE DONORS",
     is: "ACTIVE DEPLOYERS",
     desc: "You don't 'give to the needy.' You resource a global operations network that transforms regions from the inside out.",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/751d76893_generated_image.png",
+    imageKey: "identity.donors",
   },
   {
     not: "WELL-MEANING",
     is: "WELL-TRAINED",
     desc: "Good intentions don't build water systems or train leaders. Our specialists arrive certified, equipped, and mission-ready.",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/0c410993c_generated_image.png",
+    imageKey: "identity.trained",
   },
 ];
 
 export default function WhatWeAreNot() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { getImage } = useSiteImages();
 
   return (
     <section id="identity" ref={ref} className="py-24 border-t border-titanium/10 relative overflow-hidden">
@@ -93,7 +95,7 @@ export default function WhatWeAreNot() {
               {/* Image */}
               <div className="relative h-32 overflow-hidden">
                 <img
-                  src={item.image}
+                  src={getImage(item.imageKey)}
                   alt={item.is}
                   className="w-full h-full object-cover opacity-50 group-hover:opacity-30 group-hover:grayscale transition-all duration-700"
                 />

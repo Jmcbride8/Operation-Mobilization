@@ -1,11 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import ScrambleText from "./ScrambleText";
-
-const PORTRAIT = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/f7dc02aed_generated_68021472.png";
-const COMMAND = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/53789e54b_generated_696925f2.png";
-const OPS_HUB = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/34ef08e21_generated_fd8ecaec.png";
-const MEDICAL = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/57b2add53_generated_7a4bd510.png";
+import { useSiteImages } from "@/hooks/useSiteImages";
 
 const INTEL = [
   {
@@ -13,7 +9,7 @@ const INTEL = [
     classification: "OPERATIONAL",
     title: "FRESH WATER REACHES 340,000 IN THE SAHEL CORRIDOR",
     excerpt: "After 14 months of drilling operations and infrastructure buildout, the Sahel water network is now fully operational. Local maintenance teams have been trained and certified to sustain operations independently.",
-    image: OPS_HUB,
+    imageKey: "intel.ops_hub",
     reach: "340K",
     status: "SUSTAINED",
     date: "2026.06.18",
@@ -24,7 +20,7 @@ const INTEL = [
     classification: "FIELD REPORT",
     title: "MEDICAL CONVOY REACHES FORWARD POSITIONS IN NORTHERN MOUNTAINS",
     excerpt: "A twelve-vehicle convoy carrying surgical supplies and mobile clinic modules successfully navigated mountain passes to reach isolated communities cut off since the spring floods.",
-    image: MEDICAL,
+    imageKey: "intel.medical",
     reach: "12K",
     status: "ACTIVE",
     date: "2026.06.14",
@@ -35,7 +31,7 @@ const INTEL = [
     classification: "FEATURE",
     title: "LEADERSHIP TRAINING PROGRAM GRADUATES 120 LOCAL COORDINATORS",
     excerpt: "The third cohort of the Meridian Leadership Initiative has completed 18 months of intensive training. These coordinators now manage regional operations across four provinces.",
-    image: PORTRAIT,
+    imageKey: "intel.portrait",
     reach: "450K",
     status: "SUSTAINED",
     date: "2026.06.10",
@@ -46,7 +42,7 @@ const INTEL = [
     classification: "URGENT",
     title: "EMERGENCY SHELTER DEPLOYMENT TO COASTAL DISPLACEMENT ZONE",
     excerpt: "Rapid response teams deployed 600 modular shelter units within 72 hours of the cyclone making landfall. Food and water distribution ongoing across 8 distribution points.",
-    image: COMMAND,
+    imageKey: "intel.command",
     reach: "28K",
     status: "ACTIVE",
     date: "2026.06.06",
@@ -54,7 +50,7 @@ const INTEL = [
   },
 ];
 
-function IntelCard({ item, index }) {
+function IntelCard({ item, index, getImage }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
@@ -76,7 +72,7 @@ function IntelCard({ item, index }) {
       {/* Image reveal on hover */}
       <div className="relative h-48 overflow-hidden">
         <img
-          src={item.image}
+          src={getImage(item.imageKey)}
           alt={item.title}
           className="w-full h-full object-cover opacity-70 group-hover:opacity-40 group-hover:grayscale transition-all duration-700 scale-105 group-hover:scale-100"
         />
@@ -123,6 +119,8 @@ function IntelCard({ item, index }) {
 }
 
 export default function IntelSection() {
+  const { getImage } = useSiteImages();
+
   return (
     <section id="intel" className="py-24 border-t border-titanium/10">
       <div className="max-w-[1440px] mx-auto px-4 md:px-8">
@@ -149,7 +147,7 @@ export default function IntelSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {INTEL.map((item, i) => (
-            <IntelCard key={item.id} item={item} index={i} />
+            <IntelCard key={item.id} item={item} index={i} getImage={getImage} />
           ))}
         </div>
       </div>

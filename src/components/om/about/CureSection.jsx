@@ -1,13 +1,14 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import ScrambleText from "@/components/om/ScrambleText";
+import { useSiteImages } from "@/hooks/useSiteImages";
 
 const PILLARS = [
   {
     id: "01",
     label: "THE MESSAGE",
     title: "WE SHARE IT",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/821cb991b_generated_image.png",
+    imageKey: "cure.message",
     scripture: "ROMANS 1:16",
     scriptureText: "I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes.",
   },
@@ -15,7 +16,7 @@ const PILLARS = [
     id: "02",
     label: "THE PROOF",
     title: "WE SHOW IT",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/b6c0da36b_generated_image.png",
+    imageKey: "cure.proof",
     scripture: "1 JOHN 3:18",
     scriptureText: "Let us not love in word or talk, but in deed and in truth.",
   },
@@ -24,6 +25,7 @@ const PILLARS = [
 export default function CureSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-80px" });
+  const { getImage } = useSiteImages();
 
   return (
     <section id="cure" ref={ref} className="relative py-24 border-t border-titanium/10 overflow-hidden bg-obsidian">
@@ -63,7 +65,7 @@ export default function CureSection() {
             >
               {/* Background image */}
               <div className="absolute inset-0">
-                <img src={p.image} alt="" className="w-full h-full object-cover opacity-60 group-hover:opacity-70 group-hover:scale-105 transition-all duration-500" />
+                <img src={getImage(p.imageKey)} alt="" className="w-full h-full object-cover opacity-60 group-hover:opacity-70 group-hover:scale-105 transition-all duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/50 to-obsidian/20" />
               </div>
 

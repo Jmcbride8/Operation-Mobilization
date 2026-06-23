@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import ScrambleText from "./ScrambleText";
-
-const BG_IMAGE = "https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=2400&q=80";
+import { useSiteImages } from "@/hooks/useSiteImages";
 
 export default function GreatCommission() {
+  const { getImage } = useSiteImages();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const { scrollYProgress } = useScroll({
@@ -22,7 +22,7 @@ export default function GreatCommission() {
       {/* Parallax background image */}
       <motion.div style={{ y }} className="absolute inset-0 scale-110">
         <img
-          src={BG_IMAGE}
+          src={getImage("commission.background")}
           alt="The Great Commission"
           className="w-full h-full object-cover"
         />

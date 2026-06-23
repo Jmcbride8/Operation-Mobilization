@@ -1,17 +1,13 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import ScrambleText from "./ScrambleText";
-
-const REGION_SA = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/b3202034e_generated_f1e526ec.png";
-const REGION_ME = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/b925a4c82_generated_e0771031.png";
-const OPS_HUB = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/34ef08e21_generated_fd8ecaec.png";
-const MEDICAL = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/57b2add53_generated_7a4bd510.png";
+import { useSiteImages } from "@/hooks/useSiteImages";
 
 const OPERATIONS = [
   {
     id: "MISSION:MERIDIAN",
     region: "SOUTH ASIA",
-    image: REGION_SA,
+    imageKey: "operations.south_asia",
     status: "ACTIVE",
     personnel: 1240,
     reach: "2.4M",
@@ -21,7 +17,7 @@ const OPERATIONS = [
   {
     id: "MISSION:CITADEL",
     region: "MIDDLE EAST & NORTH AFRICA",
-    image: REGION_ME,
+    imageKey: "operations.middle_east",
     status: "ACTIVE",
     personnel: 890,
     reach: "1.8M",
@@ -31,7 +27,7 @@ const OPERATIONS = [
   {
     id: "MISSION:FULCRUM",
     region: "EAST AFRICA",
-    image: OPS_HUB,
+    imageKey: "operations.east_africa",
     status: "ACTIVE",
     personnel: 1050,
     reach: "3.1M",
@@ -41,7 +37,7 @@ const OPERATIONS = [
   {
     id: "MISSION:SUMMIT",
     region: "CENTRAL ASIA",
-    image: MEDICAL,
+    imageKey: "operations.central_asia",
     status: "SCALING",
     personnel: 430,
     reach: "890K",
@@ -50,7 +46,7 @@ const OPERATIONS = [
   },
 ];
 
-function OperationCard({ op, index }) {
+function OperationCard({ op, index, getImage }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
@@ -65,7 +61,7 @@ function OperationCard({ op, index }) {
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
         <img
-          src={op.image}
+          src={getImage(op.imageKey)}
           alt={`${op.region} operations`}
           className="w-full h-full object-cover group-hover:grayscale transition-all duration-700 group-hover:scale-105"
         />
@@ -112,6 +108,7 @@ function OperationCard({ op, index }) {
 
 export default function OperationsSection() {
   const scrollRef = useRef(null);
+  const { getImage } = useSiteImages();
 
   return (
     <section id="operations" className="py-24 border-t border-titanium/10">
@@ -137,7 +134,7 @@ export default function OperationsSection() {
         className="horizontal-scroll overflow-x-auto flex gap-4 px-4 md:px-8 pb-4"
       >
         {OPERATIONS.map((op, i) => (
-          <OperationCard key={op.id} op={op} index={i} />
+          <OperationCard key={op.id} op={op} index={i} getImage={getImage} />
         ))}
         {/* End spacer */}
         <div className="flex-shrink-0 w-4" />

@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import ScrambleText from "./ScrambleText";
+import { useSiteImages } from "@/hooks/useSiteImages";
 
 const HEROES = [
   {
@@ -11,7 +12,7 @@ const HEROES = [
     sacrifice:
       "He did not send someone else. He came Himself. Left the glory of heaven for a manger in a stable. Walked our dust. Felt our hunger. Bore our grief. Thirty-three years ending in a cross He did not deserve — so we could have a home He did not owe. Every missionary who came after Him is only following the trail He blazed first. The line begins here.",
     quote: "The Son of Man came not to be served, but to serve, and to give His life as a ransom for many.",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/59f667692_generated_image.png",
+    imageKey: "faith.jesus",
   },
   {
     name: "THE APOSTLE PAUL",
@@ -21,7 +22,7 @@ const HEROES = [
     sacrifice:
       "The prototype. A Pharisee who met the risen Christ on a road and was never the same. Walked ten thousand miles across the Roman Empire. Shipwrecked. Beaten. Imprisoned. Stoned and left for dead. Wrote half the New Testament from jail cells. He was beheaded in Rome under Nero, and his letters outlived the Empire that killed him.",
     quote: "I have been crucified with Christ. It is no longer I who live, but Christ who lives in me.",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/7198696f7_generated_image.png",
+    imageKey: "faith.paul",
   },
   {
     name: "WILLIAM CAREY",
@@ -31,7 +32,7 @@ const HEROES = [
     sacrifice:
       "Shoemaker turned missionary. Told to sit down by men who believed the age of missions had passed. He didn't. Arrived in India and lost his five-year-old son to disease, then his wife to madness. Translated the Scriptures into Bengali, Sanskrit, and dozens more. He worked for forty years without returning home. He ended the practice of sati — the burning of widows.",
     quote: "Expect great things from God. Attempt great things for God.",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/d1f83d3b0_generated_image.png",
+    imageKey: "faith.carey",
   },
   {
     name: "DAVID LIVINGSTONE",
@@ -41,7 +42,7 @@ const HEROES = [
     sacrifice:
       "Medical missionary. Explorer. Walked a continent that had no maps. Carried the gospel where no European had stood. His body broken by disease, by lion, by years. Found dead, kneeling by his bed in prayer. They carried his body to England. His heart they buried in the soil of Africa.",
     quote: "I will go anywhere, provided it be forward.",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/01f8a3506_generated_image.png",
+    imageKey: "faith.livingstone",
   },
   {
     name: "HUDSON TAYLOR",
@@ -51,7 +52,7 @@ const HEROES = [
     sacrifice:
       "Left England at twenty-one. Founded the China Inland Mission. Adopted Chinese dress, Chinese customs, Chinese language — so the gospel would not arrive as a foreign thing. Lost his wife and children to disease. Served fifty-one years in a land that buried him.",
     quote: "God's work done in God's way will never lack God's supply.",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/7122bdb5b_generated_image.png",
+    imageKey: "faith.taylor",
   },
   {
     name: "AMY CARMICHAEL",
@@ -61,7 +62,7 @@ const HEROES = [
     sacrifice:
       "Served fifty-five years in India without once going home. Darkened her skin, wore Indian dress, built the Dohnavur Fellowship. Rescued hundreds of children from temple prostitution. She never married. She never left. She gave her life away one child at a time.",
     quote: "You can give without loving. But you cannot love without giving.",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/4aec35b71_generated_image.png",
+    imageKey: "faith.carmichael",
   },
   {
     name: "SAINT & ELLIOT",
@@ -71,7 +72,7 @@ const HEROES = [
     sacrifice:
       "Nate Saint — pilot, inventor, thirty-two. Jim Elliot — twenty-eight. They reached out to the Waorani people no outsider had met in peace. For months Saint circled his plane overhead, lowering gifts on a line. On January 8, 1956, they landed on a sandbar. The spears came. Five men fell. But the story didn't end — Elliot's widow Elisabeth returned to live among the people who killed her husband. They came to know the God who sent them.",
     quote: "He is no fool who gives what he cannot keep to gain what he cannot lose.",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/f711e1ed1_generated_image.png",
+    imageKey: "faith.saint_elliot",
   },
   {
     name: "GEORGE VERWER",
@@ -81,11 +82,11 @@ const HEROES = [
     sacrifice:
       "Received a Gospel of John at fourteen. Gave his life to Christ at a Billy Graham rally. Sold his record collection to buy Bibles. Founded Operation Mobilization — what began as a handful of students became a force of thousands representing 110 nationalities across 118 countries. He wore a globe jacket and prayed like a man on fire. He never stopped until his body gave out. The mission he built continues without him.",
     quote: "We need a new generation of revolutionaries who will go to the ends of the earth.",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/7ba33378b_generated_image.png",
+    imageKey: "faith.verwer",
   },
 ];
 
-function HeroCard({ hero, index }) {
+function HeroCard({ hero, index, getImage }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
@@ -100,7 +101,7 @@ function HeroCard({ hero, index }) {
       {/* Image */}
       <div className="relative aspect-[4/5] overflow-hidden">
         <img
-          src={hero.image}
+          src={getImage(hero.imageKey)}
           alt={hero.name}
           className="w-full h-full object-cover opacity-80 group-hover:opacity-50 group-hover:grayscale transition-all duration-1000 scale-105 group-hover:scale-100"
         />
@@ -151,6 +152,7 @@ function HeroCard({ hero, index }) {
 export default function HallOfFaith() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const { getImage } = useSiteImages();
 
   const scrollToDeploy = () => {
     const el = document.querySelector("#deploy");
@@ -213,7 +215,7 @@ export default function HallOfFaith() {
         {/* Hero cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {HEROES.map((hero, i) => (
-            <HeroCard key={hero.name} hero={hero} index={i} />
+            <HeroCard key={hero.name} hero={hero} index={i} getImage={getImage} />
           ))}
 
           {/* Closing CTA card */}

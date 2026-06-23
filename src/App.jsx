@@ -9,6 +9,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from '@/pages/Home';
 import BrandIdentity from '@/pages/BrandIdentity';
 import AboutOM from '@/pages/AboutOM';
+import Admin from '@/pages/Admin';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -40,6 +41,7 @@ const AuthenticatedApp = () => {
       <Route path="/" element={<Home />} />
       <Route path="/brand" element={<BrandIdentity />} />
       <Route path="/about" element={<AboutOM />} />
+      <Route path="/admin" element={<Admin />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );

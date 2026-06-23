@@ -1,14 +1,14 @@
 import React from "react";
 import ScrambleText from "@/components/om/ScrambleText";
 import CounterDisplay from "@/components/om/CounterDisplay";
-
-const ABOUT_IMAGE = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/f4ecd5f2e_generated_image.png";
+import { useSiteImages } from "@/hooks/useSiteImages";
 
 export default function AboutHero() {
+  const { getImage } = useSiteImages();
   return (
     <section className="relative min-h-[70vh] flex items-center overflow-hidden pt-14">
       <div className="absolute inset-0">
-        <img src={ABOUT_IMAGE} alt="OM field workers" className="w-full h-full object-cover" />
+        <img src={getImage("about.hero")} alt="OM field workers" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian/80 via-obsidian/70 to-obsidian" />
         <div className="absolute inset-0 bg-gradient-to-r from-obsidian/90 via-transparent to-obsidian/60" />
       </div>
