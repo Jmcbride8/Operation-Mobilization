@@ -58,8 +58,7 @@ export default function TrinitySection() {
           <div className="lg:col-span-7">
             <div className="border-l-2 border-ignition pl-6">
               <p className="text-sm md:text-base font-mono text-signal-white/90 leading-relaxed">
-                Christians don't believe in three gods. Christians don't believe in one god.
-                Christians believe in one God who is three Persons — Father, Son, and Holy Spirit.
+                Three persons. One purpose. Love.
               </p>
               <p className="text-xs md:text-sm font-mono text-titanium leading-relaxed mt-4">
                 This is not a math problem. It's a claim that God is, by nature, relational to His core.
