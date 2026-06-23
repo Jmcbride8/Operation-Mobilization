@@ -28,7 +28,7 @@ const SLIDES = [
   {
     id: "03",
     label: "THE CURE",
-    title: "GOD'S LOVE",
+    title: "GOD'S LOVE & FORGIVENESS",
     imageKey: "diagnosis.cure",
     body: "The cure is not a program. It is not a policy. It is a person. The love of God — relentless, pursuing, sacrificial — that shatters every darkness. When a heart is filled with love, hope, and light, everything else flows from that transformation: family, culture, politics, technology, business, and entire societies. This is why we go. Not to treat symptoms. To bring the cure.",
     accent: "text-ignition",
