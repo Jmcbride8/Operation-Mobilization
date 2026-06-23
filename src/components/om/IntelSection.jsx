@@ -135,7 +135,7 @@ export default function IntelSection() {
             <ScrambleText
               as="h2"
               text="FIELD REPORTS"
-              className="font-heading font-black text-3xl md:text-5xl text-signal-white tracking-[-0.02em] uppercase"
+              className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.02em] uppercase"
             />
             <p className="text-xs font-mono text-titanium mt-3 max-w-lg">
               Dispatches from the field. Real stories, measured outcomes,

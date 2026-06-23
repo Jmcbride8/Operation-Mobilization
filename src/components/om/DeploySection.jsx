@@ -97,7 +97,7 @@ export default function DeploySection() {
         <ScrambleText
           as="h2"
           text="ANSWER THE CALL"
-          className="font-heading font-black text-3xl md:text-5xl text-signal-white tracking-[-0.02em] uppercase"
+          className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.02em] uppercase"
         />
         <p className="text-xs font-mono text-titanium mt-3 max-w-lg">
           We don't recruit volunteers for a weekend. We send workers for a lifetime.

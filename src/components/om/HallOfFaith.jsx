@@ -177,12 +177,12 @@ export default function HallOfFaith() {
             <ScrambleText
               as="h2"
               text="GIVING YOUR LIFE"
-              className="font-heading font-black text-3xl md:text-5xl lg:text-6xl text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
+              className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
             />
             <ScrambleText
               as="h2"
               text="FOR THEIRS."
-              className="font-heading font-black text-3xl md:text-5xl lg:text-6xl text-ignition tracking-[-0.03em] uppercase leading-[0.9] mt-1"
+              className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-ignition tracking-[-0.03em] uppercase leading-[0.9] mt-1"
               delay={300}
             />
           </div>
