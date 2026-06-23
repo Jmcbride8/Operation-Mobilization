@@ -110,13 +110,13 @@ export default function HeroSection() {
         onClick={scrollToOps}
         animate={{ y: [0, 8, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
-        className="absolute bottom-20 left-1/2 -translate-x-1/2 z-10 text-titanium hover:text-signal-white transition-colors"
+        className="absolute bottom-28 left-1/2 -translate-x-1/2 z-10 text-titanium hover:text-signal-white transition-colors"
       >
         <ChevronDown size={24} />
       </motion.button>
 
       {/* Missionary ticker */}
-      <div className="absolute bottom-14 left-0 right-0 z-20">
+      <div className="absolute bottom-0 left-0 right-0 z-20">
         <MissionaryTicker />
       </div>
     </section>
