@@ -53,6 +53,20 @@ export default function TrinitySection() {
           className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-6"
         />
 
+        {/* Trinitarian symbol */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={isInView ? { opacity: 1, scale: 1 } : {}}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="flex justify-center mb-16"
+        >
+          <svg viewBox="0 0 120 120" className="w-32 h-32 md:w-40 md:h-40" fill="none" stroke="currentColor">
+            <circle cx="60" cy="40" r="30" className="stroke-ignition" strokeWidth="2" />
+            <circle cx="40" cy="75" r="30" className="stroke-signal-white/70" strokeWidth="2" />
+            <circle cx="80" cy="75" r="30" className="stroke-titanium" strokeWidth="2" />
+          </svg>
+        </motion.div>
+
         {/* Intro */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
           <div className="lg:col-span-7">
