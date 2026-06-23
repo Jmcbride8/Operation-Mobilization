@@ -57,9 +57,9 @@ export default function HeroSection() {
             </div>
 
             <p className="text-xs md:text-sm font-mono text-titanium max-w-lg leading-relaxed">
-              Operation Mobilization sends men and women to the hardest places on earth.
-              Not tourists. Not spectators. Workers who build, train, and lay down their lives
-              to see communities transformed at the root.
+              Operation Mobilization sends men and women anywhere on earth.
+              Not tourists. Not spectators. Servants, determined to take the
+              love of Jesus to the ends of the earth.
             </p>
 
             {/* Stats row */}
