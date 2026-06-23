@@ -49,7 +49,7 @@ export default function TrinitySection() {
         </div>
         <ScrambleText
           as="h2"
-          text="THE CHRISTIAN GOD"
+          text="GOD."
           className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-6"
         />
 
