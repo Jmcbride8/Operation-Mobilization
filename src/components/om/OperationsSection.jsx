@@ -67,7 +67,7 @@ function OperationCard({ op, index }) {
         <img
           src={op.image}
           alt={`${op.region} operations`}
-          className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
+          className="w-full h-full object-cover group-hover:grayscale transition-all duration-700 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-obsidian/40 group-hover:bg-obsidian/20 transition-colors" />
         <div className="absolute top-3 left-3 flex items-center gap-2">
