@@ -3,6 +3,7 @@ import DataOverlay from "@/components/om/DataOverlay";
 import Navbar from "@/components/om/Navbar";
 import HeroSection from "@/components/om/HeroSection";
 import WhatWeAreNot from "@/components/om/WhatWeAreNot";
+import WorldMap from "@/components/om/WorldMap";
 import OperationsSection from "@/components/om/OperationsSection";
 import LogisticsSection from "@/components/om/LogisticsSection";
 import IntelSection from "@/components/om/IntelSection";
@@ -16,6 +17,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <WhatWeAreNot />
+      <WorldMap />
       <OperationsSection />
       <LogisticsSection />
       <IntelSection />

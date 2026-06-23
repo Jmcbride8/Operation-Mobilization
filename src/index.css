@@ -98,6 +98,20 @@
   background: #FF4D00;
 }
 
+/* Leaflet tooltip override */
+.leaflet-tooltip.om-tooltip {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+.leaflet-tooltip.om-tooltip::before {
+  display: none;
+}
+.leaflet-container {
+  font-family: 'JetBrains Mono', monospace;
+}
+
 /* Grid lines overlay */
 .grid-lines {
   background-image: 

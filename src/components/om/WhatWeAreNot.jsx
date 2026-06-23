@@ -8,31 +8,37 @@ const CONTRASTS = [
     not: "A CHARITY",
     is: "A MISSION FORCE",
     desc: "Charities write checks. We deploy people. Trained operators who live in the communities they serve — for years, not weeks.",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/d3dee249f_generated_image.png",
   },
   {
     not: "AN NGO",
     is: "A MISSIONARY MOVEMENT",
     desc: "NGOs optimize for metrics and grants. We optimize for transformed lives and surrendered obedience. The mission is spiritual, not bureaucratic.",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/6166e16c0_generated_image.png",
   },
   {
     not: "DISASTER TOURISTS",
     is: "LONG-TERM SPECIALISTS",
     desc: "We don't parachute in for a photo op and leave. Our average deployment is 18 months. We build, we train, we stay until the work is done.",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/37398c563_generated_image.png",
   },
   {
     not: "A CORPORATION",
     is: "A CALLED COMMUNITY",
     desc: "We aren't here to maximize ROI. We're here because God said go. Every specialist is deployed by calling, not hired by salary.",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/4da8084f2_generated_image.png",
   },
   {
     not: "PASSIVE DONORS",
     is: "ACTIVE DEPLOYERS",
     desc: "You don't 'give to the needy.' You resource a global operations network that transforms regions from the inside out.",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/751d76893_generated_image.png",
   },
   {
     not: "WELL-MEANING",
     is: "WELL-TRAINED",
     desc: "Good intentions don't build water systems or train leaders. Our specialists arrive certified, equipped, and mission-ready.",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/0c410993c_generated_image.png",
   },
 ];
 
@@ -82,8 +88,20 @@ export default function WhatWeAreNot() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="bg-obsidian p-5 space-y-3 group hover:bg-signal-white/[0.02] transition-colors"
+              className="bg-obsidian group hover:bg-signal-white/[0.02] transition-colors overflow-hidden"
             >
+              {/* Image */}
+              <div className="relative h-32 overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.is}
+                  className="w-full h-full object-cover grayscale opacity-30 group-hover:opacity-50 group-hover:grayscale-0 transition-all duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/60 to-transparent" />
+                <span className="absolute top-2 right-2 text-[9px] font-mono text-titanium/40">[ {String(i + 1).padStart(2, "0")} ]</span>
+              </div>
+
+              <div className="p-5 space-y-3">
               {/* What we are NOT */}
               <div className="flex items-start gap-2.5">
                 <X size={16} className="text-red-500/70 flex-shrink-0 mt-0.5" />
@@ -117,6 +135,7 @@ export default function WhatWeAreNot() {
               <p className="text-[11px] font-mono text-signal-white/50 leading-relaxed pt-1">
                 {item.desc}
               </p>
+              </div>
             </motion.div>
           ))}
         </div>
