@@ -51,7 +51,7 @@ function CrossMark({ size }) {
   return (
     <svg width={size} height={size} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="4.5" y="0" width="3" height="12" fill="currentColor" />
-      <rect x="0" y="4.5" width="12" height="3" fill="currentColor" />
+      <rect x="0" y="3.5" width="12" height="3" fill="currentColor" />
     </svg>
   );
 }
