@@ -18,9 +18,9 @@ const SLIDES = [
   {
     id: "02",
     label: "THE CAUSE",
-    title: "A DARK HEART",
+    title: "HEARTS BENT ON EVIL",
     imageKey: "diagnosis.cause",
-    body: "Strip away the politics, the economics, the systems. Go deeper. The root is not policy. The root is not infrastructure. The root is a dark heart. The human heart, turned from God, hardened by lies, incapable of love on its own. Every war, every abuse, every act of exploitation — it all begins here. In a heart that does not know it is loved.",
+    body: "Strip away the politics, the economics, the systems. Go deeper. The root is not policy. The root is not infrastructure. The root is hearts bent on evil. We are not just missing some cuddles. We live in a darkness we chose. The human heart, turned from God, hardened by lies, incapable of love on its own. Every war, every abuse, every act of exploitation — it all begins here.",
     accent: "text-titanium",
     stat: "JEREMIAH 17:9",
     statLabel: "THE HEART IS DECEITFUL ABOVE ALL THINGS",
