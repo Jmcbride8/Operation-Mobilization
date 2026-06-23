@@ -6,6 +6,7 @@ import ColorPalette from "@/components/om/brand/ColorPalette";
 import TypographySystem from "@/components/om/brand/TypographySystem";
 import VoiceAndTone from "@/components/om/brand/VoiceAndTone";
 import DesignPrinciples from "@/components/om/brand/DesignPrinciples";
+import AIInstructionSet from "@/components/om/brand/AIInstructionSet";
 import Footer from "@/components/om/Footer";
 
 export default function BrandIdentity() {
@@ -18,6 +19,7 @@ export default function BrandIdentity() {
       <TypographySystem />
       <VoiceAndTone />
       <DesignPrinciples />
+      <AIInstructionSet />
       <Footer />
     </div>
   );
