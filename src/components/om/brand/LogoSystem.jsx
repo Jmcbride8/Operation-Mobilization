@@ -10,7 +10,7 @@ function OMMark({ size = 48, className = "" }) {
       <circle cx="24" cy="24" r="14" stroke="currentColor" strokeWidth="1" opacity="0.5" />
       <line x1="24" y1="2" x2="24" y2="46" stroke="currentColor" strokeWidth="0.75" opacity="0.4" />
       <line x1="2" y1="24" x2="46" y2="24" stroke="currentColor" strokeWidth="0.75" opacity="0.4" />
-      <circle cx="24" cy="24" r="3" fill="#FF4D00" />
+      <circle cx="24" cy="24" r="3" fill="#B33939" />
     </svg>
   );
 }

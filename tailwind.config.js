@@ -15,7 +15,7 @@ module.exports = {
   			obsidian: '#080808',
   			'signal-white': '#F2F2F2',
   			titanium: '#404040',
-  			ignition: '#FF4D00',
+  			ignition: '#B33939',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'

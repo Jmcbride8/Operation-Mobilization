@@ -5,7 +5,7 @@ import ScrambleText from "../ScrambleText";
 const COLORS = [
   { name: "OBSIDIAN", hex: "#080808", hsl: "0 0% 3.1%", role: "Primary background", usage: "All base surfaces, sections, cards" },
   { name: "SIGNAL WHITE", hex: "#F2F2F2", hsl: "0 0% 94.9%", role: "Primary text", usage: "Headlines, body, high-contrast UI" },
-  { name: "IGNITION", hex: "#FF4D00", hsl: "18 100% 50%", role: "Primary accent", usage: "CTAs, key data, section markers" },
+  { name: "IGNITION", hex: "#B33939", hsl: "0 52% 46%", role: "Primary accent", usage: "CTAs, key data, section markers" },
   { name: "TITANIUM", hex: "#404040", hsl: "0 0% 25%", role: "Secondary text", usage: "Labels, borders, metadata, dividers" },
   { name: "CARD", hex: "#0D0D0D", hsl: "0 0% 5%", role: "Elevated surface", usage: "Cards, popovers, inset panels" },
   { name: "BORDER", hex: "#242424", hsl: "0 0% 14%", role: "Divider", usage: "All borders, input outlines, separators" },
@@ -71,7 +71,7 @@ export default function ColorPalette() {
           <div className="space-y-3">
             {[
               { bg: "#080808", fg: "#F2F2F2", label: "PRIMARY — Obsidian / Signal White", ratio: "16:1" },
-              { bg: "#080808", fg: "#FF4D00", label: "ACCENT — Obsidian / Ignition", ratio: "5.3:1" },
+              { bg: "#080808", fg: "#B33939", label: "ACCENT — Obsidian / Ignition", ratio: "4.0:1" },
               { bg: "#080808", fg: "#404040", label: "SUPPORT — Obsidian / Titanium", ratio: "3.2:1" },
             ].map((row) => (
               <div key={row.label} className="flex items-center gap-4">
