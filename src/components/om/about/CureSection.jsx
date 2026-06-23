@@ -47,8 +47,8 @@ export default function CureSection() {
           delay={300}
         />
         <p className="text-xs md:text-sm font-mono text-titanium leading-relaxed max-w-xl mt-6">
-          The cure is not a concept we hold. It is a love we carry — spoken and
-          lived, declared and demonstrated. We refuse to separate the two.
+          The cure is not a concept we hold. It is a love we carry — we can't
+          change the world. But we can bring the God who can.
         </p>
 
         {/* Pillars */}
