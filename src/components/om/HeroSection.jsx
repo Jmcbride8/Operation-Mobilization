@@ -21,8 +21,8 @@ export default function HeroSection() {
   return (
     <section id="command" className="relative min-h-screen flex flex-col justify-center overflow-hidden">
       {/* Background map */}
-      <div className="absolute inset-0">
-        <div className="w-full h-full">
+      <div className="absolute inset-0 z-0">
+        <div className="w-full h-full hero-map-container">
           <HeroMap />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian/80 via-obsidian/70 to-obsidian" />

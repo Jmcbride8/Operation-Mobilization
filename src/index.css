@@ -98,6 +98,17 @@
   background: #B33939;
 }
 
+/* Force hero map panes behind hero content */
+.hero-map-container .leaflet-pane,
+.hero-map-container .leaflet-control,
+.hero-map-container .leaflet-top,
+.hero-map-container .leaflet-bottom {
+  z-index: 0 !important;
+}
+.hero-map-container .leaflet-container {
+  background: #080808 !important;
+}
+
 /* Leaflet tooltip override */
 .leaflet-tooltip.om-tooltip {
   background: transparent;
