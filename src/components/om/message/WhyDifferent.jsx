@@ -100,11 +100,11 @@ export default function WhyDifferent() {
         </div>
         <ScrambleText
           as="h2"
-          text="WHY CHRISTIANITY IS DIFFERENT"
+          text="SIN. SAVIOR. SENDING."
           className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-6"
         />
         <p className="text-xs md:text-sm font-mono text-titanium max-w-2xl leading-relaxed mb-8">
-          If you're unfamiliar with Christianity, here are some key ideas that set it apart.
+          The fault, the fix, and the follow — the whole Christian message in plain language.
         </p>
 
         {/* Scripture quote */}
