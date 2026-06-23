@@ -112,7 +112,7 @@ export default function WhyDifferent() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mb-16 max-w-2xl border-l-2 border-r-2 border-ignition/60 px-6 md:px-12 py-6"
+          className="mb-8 max-w-2xl border-l-2 border-r-2 border-ignition/60 px-6 md:px-12 py-4"
         >
           <p className="font-heading text-lg md:text-2xl text-signal-white italic leading-relaxed">
             "For God so loved the world that he gave his one and only Son,
