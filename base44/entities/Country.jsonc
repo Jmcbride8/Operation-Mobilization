@@ -1,0 +1,28 @@
+{
+  "name": "Country",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Country name"
+    },
+    "code": {
+      "type": "string",
+      "description": "ISO 3166-1 alpha-2 country code (e.g. US, IN, BR) \u2014 used for flag rendering"
+    },
+    "missionaries": {
+      "type": "integer",
+      "description": "Number of missionaries deployed to this country"
+    },
+    "display_order": {
+      "type": "integer",
+      "default": 0,
+      "description": "Sort order for ticker display (lower = first)"
+    }
+  },
+  "required": [
+    "name",
+    "code",
+    "missionaries"
+  ]
+}

@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { base44 } from "@/api/base44Client";
 import AdminImages from "@/components/om/admin/AdminImages";
 import AdminData from "@/components/om/admin/AdminData";
-import { Image, Database, ArrowLeft, ShieldAlert } from "lucide-react";
+import AdminCountries from "@/components/om/admin/AdminCountries";
+import { Image, Database, ArrowLeft, ShieldAlert, Globe } from "lucide-react";
 
 export default function Admin() {
   const [user, setUser] = useState(null);
@@ -63,6 +64,7 @@ export default function Admin() {
 
   const TABS = [
     { id: "images", label: "IMAGES", icon: Image },
+    { id: "countries", label: "COUNTRIES", icon: Globe },
     { id: "data", label: "DATA TABLES", icon: Database },
   ];
 
@@ -110,7 +112,7 @@ export default function Admin() {
 
       {/* Content */}
       <main className="max-w-[1440px] mx-auto px-4 md:px-8 py-8">
-        {tab === "images" ? <AdminImages /> : <AdminData />}
+        {tab === "images" ? <AdminImages /> : tab === "countries" ? <AdminCountries /> : <AdminData />}
       </main>
     </div>
   );

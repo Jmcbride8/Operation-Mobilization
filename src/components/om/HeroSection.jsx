@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import ScrambleText from "./ScrambleText";
 import CounterDisplay from "./CounterDisplay";
 import MissionLogs from "./MissionLogs";
+import MissionaryTicker from "./MissionaryTicker";
 import { ChevronDown } from "lucide-react";
 import { useSiteImages } from "@/hooks/useSiteImages";
 
@@ -113,6 +114,11 @@ export default function HeroSection() {
       >
         <ChevronDown size={24} />
       </motion.button>
+
+      {/* Missionary ticker */}
+      <div className="absolute bottom-0 left-0 right-0 z-20">
+        <MissionaryTicker />
+      </div>
     </section>
   );
 }
