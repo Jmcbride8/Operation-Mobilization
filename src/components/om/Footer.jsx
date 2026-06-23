@@ -65,11 +65,11 @@ export default function Footer() {
             <span className="text-[9px] font-mono text-titanium tracking-[0.2em] block mb-3">ORGANIZATION</span>
             <div className="space-y-2">
               {[
-                { label: "About OM", href: "https://om.org" },
-                { label: "Leadership", href: "https://om.org" },
-                { label: "Financial Reports", href: "https://om.org" },
-                { label: "Governance", href: "https://om.org" },
-                { label: "Press", href: "https://om.org" },
+                { label: "About OM", to: "/about" },
+                { label: "Leadership", to: "/about" },
+                { label: "Financial Reports", to: "/about" },
+                { label: "Governance", to: "/about" },
+                { label: "Press", to: "/about" },
                 { label: "Brand Identity", to: "/brand" },
               ].map((item) => (
                 item.to ? (
