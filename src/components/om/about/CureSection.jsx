@@ -38,12 +38,12 @@ export default function CureSection() {
         <ScrambleText
           as="h2"
           text="WE BRING THE CURE."
-          className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
+          className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
         />
         <ScrambleText
           as="h2"
           text="BOTH. ALWAYS."
-          className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-ignition tracking-[-0.03em] uppercase leading-[0.9] mt-1"
+          className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-ignition tracking-[-0.03em] uppercase leading-[0.9] mt-1"
           delay={300}
         />
         <p className="text-xs md:text-sm font-mono text-titanium leading-relaxed max-w-xl mt-6">

@@ -37,7 +37,7 @@ export default function WorldMap() {
             <ScrambleText
               as="h2"
               text="GLOBAL MISSION FIELD"
-              className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.02em] uppercase"
+              className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase"
             />
             <p className="text-xs font-mono text-titanium mt-3 max-w-lg">
               Where our workers are right now. Every marker represents a long-term mission —

@@ -51,12 +51,12 @@ export default function GreatCommission() {
         <ScrambleText
           as="h2"
           text="MISSIONS AREN'T A CALLING."
-          className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.03em] uppercase leading-[0.95]"
+          className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.03em] uppercase leading-[0.95]"
         />
         <ScrambleText
           as="h2"
           text="IT'S A COMMAND."
-          className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-ignition tracking-[-0.03em] uppercase leading-[0.95] mt-1"
+          className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-ignition tracking-[-0.03em] uppercase leading-[0.95] mt-1"
           delay={300}
         />
 

@@ -29,7 +29,7 @@ export default function AboutStory() {
         <ScrambleText
           as="h2"
           text="OUR STORY"
-          className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.02em] uppercase mb-4"
+          className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-4"
         />
         <p className="text-xs font-mono text-titanium max-w-lg mb-12">
           One man. Two friends. A stack of books and a calling.

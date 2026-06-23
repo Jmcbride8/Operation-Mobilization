@@ -36,25 +36,25 @@ export default function SacrificeStatement() {
         <ScrambleText
           as="h2"
           text="SOME KILL"
-          className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.03em] uppercase leading-[0.95]"
+          className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.03em] uppercase leading-[0.95]"
           delay={200}
         />
         <ScrambleText
           as="h2"
           text="FOR THEIR FAITH."
-          className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-titanium tracking-[-0.03em] uppercase leading-[0.95]"
+          className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-titanium tracking-[-0.03em] uppercase leading-[0.95]"
           delay={400}
         />
         <ScrambleText
           as="h2"
           text="CHRISTIANS ARE CALLED"
-          className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.03em] uppercase leading-[0.95] mt-4"
+          className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.03em] uppercase leading-[0.95] mt-4"
           delay={600}
         />
         <ScrambleText
           as="h2"
           text="TO DIE FOR OURS."
-          className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-ignition tracking-[-0.03em] uppercase leading-[0.95]"
+          className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-ignition tracking-[-0.03em] uppercase leading-[0.95]"
           delay={800}
         />
 

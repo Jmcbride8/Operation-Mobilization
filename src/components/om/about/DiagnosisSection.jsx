@@ -58,7 +58,7 @@ export default function DiagnosisSection() {
         <ScrambleText
           as="h2"
           text="THE SYMPTOM. THE CAUSE. THE CURE."
-          className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.03em] uppercase leading-[0.9] mb-12"
+          className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.03em] uppercase leading-[0.9] mb-12"
         />
 
         {/* Slide nav tabs */}

@@ -28,12 +28,12 @@ export default function AboutMission() {
             <ScrambleText
               as="h2"
               text="GOD'S LOVE,"
-              className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
+              className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
             />
             <ScrambleText
               as="h2"
               text="GOING GLOBAL."
-              className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-ignition tracking-[-0.03em] uppercase leading-[0.9]"
+              className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-ignition tracking-[-0.03em] uppercase leading-[0.9]"
               delay={300}
             />
           </div>

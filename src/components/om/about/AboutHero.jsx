@@ -23,7 +23,7 @@ export default function AboutHero() {
           <ScrambleText
             as="h1"
             text="ABOUT OM"
-            className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
           />
           <p className="text-xs md:text-sm font-mono text-titanium max-w-lg leading-relaxed">
             A global movement of ordinary people, sent to extraordinary places.
