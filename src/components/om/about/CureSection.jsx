@@ -7,7 +7,7 @@ const PILLARS = [
     id: "01",
     label: "THE MESSAGE",
     title: "WE SHARE IT",
-    desc: "We go to the hardest places and declare the truth that shatters every lie: you are loved. You have always been loved. God so loved the world that He gave His only Son — not for the worthy, but for the broken. This message is not optional. It is the power of God for salvation to everyone who believes, and it must be spoken.",
+    image: "https://images.unsplash.com/photo-1507692049790-de582fb0c0b5?w=1200&q=80",
     scripture: "ROMANS 1:16",
     scriptureText: "I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes.",
   },
@@ -15,7 +15,7 @@ const PILLARS = [
     id: "02",
     label: "THE PROOF",
     title: "WE SHOW IT",
-    desc: "Words alone are not enough. Love that is only spoken is not yet love. So we live it. We build water systems. We staff clinics. We sit with the dying. We hold the orphan. We feed the hungry. We stay — for years, not weeks. The love of God, made visible in hands and feet that refuse to look away.",
+    image: "https://images.unsplash.com/photo-1492321936769-b49830bc1d1f?w=1200&q=80",
     scripture: "1 JOHN 3:18",
     scriptureText: "Let us not love in word or talk, but in deed and in truth.",
   },
@@ -59,9 +59,15 @@ export default function CureSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="bg-obsidian p-8 md:p-12 space-y-6 group hover:bg-signal-white/[0.02] transition-colors"
+              className="relative p-8 md:p-12 space-y-6 group overflow-hidden"
             >
-              <div className="flex items-center gap-4">
+              {/* Background image */}
+              <div className="absolute inset-0">
+                <img src={p.image} alt="" className="w-full h-full object-cover opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/80 to-obsidian/40" />
+              </div>
+
+              <div className="relative z-10 flex items-center gap-4">
                 <span className="font-heading font-black text-5xl text-ignition/30 group-hover:text-ignition/50 transition-colors">
                   {p.id}
                 </span>
@@ -72,11 +78,7 @@ export default function CureSection() {
                 </div>
               </div>
 
-              <p className="text-xs md:text-sm font-mono text-titanium leading-relaxed">
-                {p.desc}
-              </p>
-
-              <div className="border-l-2 border-ignition pl-4 py-2">
+              <div className="relative z-10 border-l-2 border-ignition pl-4 py-2">
                 <p className="text-xs md:text-sm font-mono text-signal-white/80 italic leading-relaxed">
                   "{p.scriptureText}"
                 </p>
