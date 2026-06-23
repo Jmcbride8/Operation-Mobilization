@@ -41,7 +41,7 @@ const GROUPS = [
     ],
   },
   {
-    label: "THANKFULNESS, NOT PENANCE",
+    label: "HOW WE LIVE",
     accent: "ignition",
     cards: [
       {
@@ -49,23 +49,11 @@ const GROUPS = [
         title: "AND SO WE LIVE IN GRATEFUL RESPONSE",
         desc: "Once forgiven, Christians live differently — not to earn salvation, but to demonstrate gratitude. A life transformed by grace becomes a living thank you to God. Service, love, and growth flow from having received something we never deserved.",
       },
-    ],
-  },
-  {
-    label: "PAYING IT FORWARD",
-    accent: "ignition",
-    cards: [
       {
         num: "07",
         title: "THE ONLY HONEST PATH OF RIGHTEOUSNESS",
         desc: "Because our good works flow from gratitude for salvation — not attempts to earn it — Christianity offers the only truly honest path of righteousness. We're freed from transactional love and empowered to live sacrificially and volitionally. The church, family, and society become places where we aspire to live out these ideals together, even when we fall short.",
       },
-    ],
-  },
-  {
-    label: "HOW WE LIVE",
-    accent: "ignition",
-    cards: [
       {
         num: "08",
         title: "CALLED TO FORGIVE AND HEAL AS WE WERE HEALED",
