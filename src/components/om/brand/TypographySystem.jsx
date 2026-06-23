@@ -84,7 +84,7 @@ export default function TypographySystem() {
               { size: "lg / 18px", label: "SUBHEAD", className: "font-heading font-medium text-lg", text: "Workers who build, train, and lay down their lives.", tracking: "" },
               { size: "sm / 14px", label: "BODY", className: "font-mono text-sm", text: "Real stories, measured outcomes, no embellishment.", tracking: "" },
               { size: "xs / 12px", label: "META", className: "font-mono text-xs", text: "REPORT-2026-047 // 2026.06.18", tracking: "tracking-wider" },
-              { size: "10px", label: "LABEL", className: "font-mono text-[10px]", text: "SECTION_01", tracking: "tracking-[0.3em]" },
+              { size: "12px", label: "LABEL", className: "font-mono text-[12px]", text: "SECTION_01", tracking: "tracking-[0.3em]" },
             ].map((row, i) => (
               <TypeSpecimen key={row.label} label={row.label} font={row.className.split(" ")[0]} className={`${row.className} ${row.tracking} uppercase`} sample={row.text} meta={row.size} index={i} />
             ))}
