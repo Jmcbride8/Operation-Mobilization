@@ -28,6 +28,11 @@ const PILLARS = [
     title: "WE HAVE YOUR BACK",
     desc: "OM is an organization that has your back. We are here to equip, support, send, and serve the missionaries forward-deployed to the frontlines of the faith — for as long as they are called to stand.",
   },
+  {
+    id: "06",
+    title: "WE DON'T FLY SOLO",
+    desc: "We partner with local churches. We are on the same team. We don't fly solo — we complement, build, and strengthen what God is already doing through His people on the ground. The local church is the lasting legacy. We serve alongside it.",
+  },
 ];
 
 function generateCrosses(count) {
