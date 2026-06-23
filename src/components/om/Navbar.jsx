@@ -39,18 +39,28 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-1">
-          {NAV_ITEMS.map((item) => (
-            <button
-              key={item.label}
-              onClick={() => handleNav(item.href)}
-              className="px-3 py-1.5 text-[10px] font-mono tracking-[0.15em] text-titanium hover:text-signal-white hover:border hover:border-titanium/40 transition-all duration-200"
-            >
-              {item.label}
-            </button>
-          ))}
+          {NAV_ITEMS.map((item) =>
+            item.label === "GIVE" ? (
+              <button
+                key={item.label}
+                onClick={() => handleNav(item.href)}
+                className="ml-4 px-4 py-1.5 bg-ignition text-[10px] font-heading font-bold tracking-[0.15em] text-white hover:bg-ignition/90 transition-colors"
+              >
+                {item.label}
+              </button>
+            ) : (
+              <button
+                key={item.label}
+                onClick={() => handleNav(item.href)}
+                className="px-3 py-1.5 text-[10px] font-mono tracking-[0.15em] text-titanium hover:text-signal-white hover:border hover:border-titanium/40 transition-all duration-200"
+              >
+                {item.label}
+              </button>
+            )
+          )}
           <button
             onClick={() => handleNav("#deploy")}
-            className="ml-4 px-4 py-1.5 bg-ignition text-[10px] font-heading font-bold tracking-[0.15em] text-white hover:bg-ignition/90 transition-colors"
+            className="ml-4 px-4 py-1.5 border border-titanium/40 text-[10px] font-heading font-bold tracking-[0.15em] text-signal-white hover:border-signal-white transition-colors"
           >
             GO
           </button>
