@@ -65,12 +65,8 @@ export default function SacrificeStatement() {
           className="mt-12 max-w-2xl mx-auto"
         >
           <p className="text-xs md:text-sm font-mono text-signal-white/70 leading-relaxed">
-            The world has tried to lump us in with empires, with conquerors,
-            with men who came with swords for gold and land. It is a lie told
-            by those who have never read our stories. The colonialist took. The
-            missionary gave. The colonialist came for power. The missionary came
-            with nothing — and stayed until there was nothing left to give. The
-            record speaks for itself. <span className="text-signal-white">They did not come to rule.
+            The colonialist came for power. The missionary came with nothing —
+            and stayed until there was nothing left to give. <span className="text-signal-white">They did not come to rule.
             They came to serve. And many never went home.</span>
           </p>
         </motion.div>
