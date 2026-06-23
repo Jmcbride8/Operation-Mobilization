@@ -43,37 +43,39 @@ export default function HeroSection() {
                 <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">ON THE FIELD SINCE 1957</span>
               </div>
 
-              <motion.img
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                src={OM_LOGO}
-                alt="Operation Mobilization"
-                className="w-28 md:w-36 mb-6"
-              />
+              <div className="flex justify-center mb-6">
+                <motion.img
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
+                  src={OM_LOGO}
+                  alt="Operation Mobilization"
+                  className="w-56 md:w-72 lg:w-80"
+                />
+              </div>
 
               <ScrambleText
                 as="h1"
                 text="GOD DOES HARD."
-                className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
+                className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.03em] uppercase leading-[0.9] text-center"
                 delay={200}
               />
               <ScrambleText
                 as="h1"
                 text="WE GO HARD."
-                className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-ignition tracking-[-0.03em] uppercase leading-[0.9]"
+                className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-ignition tracking-[-0.03em] uppercase leading-[0.9] text-center"
                 delay={400}
               />
             </div>
 
-            <p className="text-xs md:text-sm font-mono text-titanium max-w-lg leading-relaxed">
+            <p className="text-xs md:text-sm font-mono text-titanium max-w-lg mx-auto leading-relaxed text-center">
               Operation Mobilization sends men and women to the hardest places on earth.
               Not tourists. Not spectators. Workers who build, train, and lay down their lives
               to see communities transformed at the root.
             </p>
 
             {/* Stats row */}
-            <div className="flex flex-wrap gap-8 md:gap-12 pt-4">
+            <div className="flex flex-wrap justify-center gap-8 md:gap-12 pt-4">
               <CounterDisplay target={5800} label="On the Field" />
               <CounterDisplay target={118} label="Countries" duration={1500} />
               <CounterDisplay target={67} label="Years Deployed" duration={1200} />
