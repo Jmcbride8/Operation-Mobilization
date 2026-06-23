@@ -68,7 +68,7 @@ export default function MissionaryTicker() {
         ref={scrollRef}
         className="flex items-center py-2.5 pl-20"
         style={{
-          animation: "ticker-scroll 60s linear infinite",
+          animation: "ticker-scroll 40s linear infinite",
         }}
       >
         {duplicated.map((country, i) => (
