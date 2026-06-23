@@ -68,21 +68,21 @@ const BRANCHES = [
   },
   {
     id: "08",
-    name: "ANGLICAN / EPISCOPAL",
-    tagline: "THE MIDDLE WAY",
-    desc: "A bridge between Catholic tradition and Reformation theology. Liturgical worship, episcopal structure, and the Book of Common Prayer. Unity in breadth — evangelical to Anglo-Catholic.",
-    strength: "Liturgical depth and theological breadth",
-    verse: "Colossians 3:16 — \"Let the message of Christ dwell among you richly... singing to God with gratitude in your hearts.\"",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/1628ee7b4_generated_image.png",
-  },
-  {
-    id: "09",
     name: "LUTHERAN",
     tagline: "JUSTIFICATION BY FAITH",
     desc: "Born from Martin Luther's Reformation. The doctrine that we are saved by grace through faith alone. Sacramental worship rooted in Scripture. Christ alone, faith alone, grace alone, Scripture alone.",
     strength: "Reformation clarity and sacramental rootedness",
     verse: "Ephesians 2:8-9 — \"For it is by grace you have been saved, through faith — and this is not from yourselves, it is the gift of God — not by works.\"",
     image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/9098d4c05_generated_image.png",
+  },
+  {
+    id: "09",
+    name: "AND MANY MORE",
+    tagline: "THE WHOLE BODY",
+    desc: "Anglican, Episcopal, Presbyterian, Quaker, Mennonite, Seventh-day Adventist, Nazarene, Salvation Army, Vineyard, non-denominational churches — and every gathering of believers who call Jesus Lord. The body of Christ is bigger than any list. If you believe the Creed, you are already on the team.",
+    strength: "The fullness of Christ's body",
+    verse: "Revelation 7:9 — \"A great multitude that no one could count, from every nation, tribe, people and language, standing before the throne and before the Lamb.\"",
+    image: "https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=800&auto=format&fit=crop",
   },
 ];
 
