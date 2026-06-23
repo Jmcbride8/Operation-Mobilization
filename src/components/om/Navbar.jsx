@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
@@ -13,6 +14,7 @@ const NAV_ITEMS = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -30,7 +32,7 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-obsidian/95 backdrop-blur-sm border-b border-titanium/20" : "bg-transparent"}`}>
       <div className="max-w-[1440px] mx-auto px-4 md:px-8 h-14 flex items-center justify-between">
         {/* Logo */}
-        <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="flex items-center gap-2 group">
+        <button onClick={() => navigate("/")} className="flex items-center gap-2 group">
           <div className="w-2 h-2 bg-ignition animate-pulse-dot" />
           <span className="font-heading font-black text-sm tracking-[0.2em] text-signal-white">
             OPERATION<span className="text-ignition">.</span>MOBILIZATION
