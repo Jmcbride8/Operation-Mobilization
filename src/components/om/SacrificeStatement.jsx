@@ -35,7 +35,7 @@ export default function SacrificeStatement() {
 
         <ScrambleText
           as="h2"
-          text="OTHERS KILL"
+          text="SOME KILL"
           className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.03em] uppercase leading-[0.95]"
           delay={200}
         />
@@ -47,7 +47,7 @@ export default function SacrificeStatement() {
         />
         <ScrambleText
           as="h2"
-          text="WE ARE CALLED"
+          text="CHRISTIANS ARE CALLED"
           className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.03em] uppercase leading-[0.95] mt-4"
           delay={600}
         />
@@ -65,9 +65,10 @@ export default function SacrificeStatement() {
           className="mt-12 max-w-2xl mx-auto"
         >
           <p className="text-xs md:text-sm font-mono text-signal-white/70 leading-relaxed">
-            The colonialist came for power. The missionary came with nothing —
-            and stayed until there was nothing left to give. <span className="text-signal-white">They did not come to rule.
-            They came to serve. And many never went home.</span>
+            We are called to die to our sin. To die to ourselves. To take up
+            a cross and follow the One who went first. <span className="text-signal-white">We do not come
+            to rule. We come to serve — and to lay down our lives for the ones
+            He loves.</span>
           </p>
         </motion.div>
 
