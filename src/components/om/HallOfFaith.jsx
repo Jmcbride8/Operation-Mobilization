@@ -4,6 +4,16 @@ import ScrambleText from "./ScrambleText";
 
 const HEROES = [
   {
+    name: "JESUS OF NAZARETH",
+    years: "ETERNITY — C. 33 AD",
+    field: "HEAVEN TO EARTH",
+    stat: "THE FIRST MISSIONARY",
+    sacrifice:
+      "He did not send someone else. He came Himself. Left the glory of heaven for a manger in a stable. Walked our dust. Felt our hunger. Bore our grief. Thirty-three years ending in a cross He did not deserve — so we could have a home He did not owe. Every missionary who came after Him is only following the trail He blazed first. The line begins here.",
+    quote: "The Son of Man came not to be served, but to serve, and to give His life as a ransom for many.",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/59f667692_generated_image.png",
+  },
+  {
     name: "THE APOSTLE PAUL",
     years: "C. 5 — C. 67 AD",
     field: "THE ROMAN WORLD",
