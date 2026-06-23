@@ -4,14 +4,24 @@ import ScrambleText from "./ScrambleText";
 
 const HEROES = [
   {
-    name: "HUDSON TAYLOR",
-    years: "1832 — 1905",
-    field: "INLAND CHINA",
-    stat: "800+ WORKERS SENT",
+    name: "THE APOSTLE PAUL",
+    years: "C. 5 — C. 67 AD",
+    field: "THE ROMAN WORLD",
+    stat: "10,000+ MILES ON FOOT",
     sacrifice:
-      "Left England at twenty-one. Founded the China Inland Mission. Adopted Chinese dress, Chinese customs, Chinese language — so the gospel would not arrive as a foreign thing. Lost his wife and children to disease. Served fifty-one years in a land that buried him.",
-    quote: "God's work done in God's way will never lack God's supply.",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/7122bdb5b_generated_image.png",
+      "The prototype. A Pharisee who met the risen Christ on a road and was never the same. Walked ten thousand miles across the Roman Empire. Shipwrecked. Beaten. Imprisoned. Stoned and left for dead. Wrote half the New Testament from jail cells. He was beheaded in Rome under Nero, and his letters outlived the Empire that killed him.",
+    quote: "I have been crucified with Christ. It is no longer I who live, but Christ who lives in me.",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/7198696f7_generated_image.png",
+  },
+  {
+    name: "WILLIAM CAREY",
+    years: "1761 — 1834",
+    field: "BENGAL, INDIA",
+    stat: "FATHER OF MODERN MISSIONS",
+    sacrifice:
+      "Shoemaker turned missionary. Told to sit down by men who believed the age of missions had passed. He didn't. Arrived in India and lost his five-year-old son to disease, then his wife to madness. Translated the Scriptures into Bengali, Sanskrit, and dozens more. He worked for forty years without returning home. He ended the practice of sati — the burning of widows.",
+    quote: "Expect great things from God. Attempt great things for God.",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/d1f83d3b0_generated_image.png",
   },
   {
     name: "DAVID LIVINGSTONE",
@@ -24,6 +34,16 @@ const HEROES = [
     image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/01f8a3506_generated_image.png",
   },
   {
+    name: "HUDSON TAYLOR",
+    years: "1832 — 1905",
+    field: "INLAND CHINA",
+    stat: "800+ WORKERS SENT",
+    sacrifice:
+      "Left England at twenty-one. Founded the China Inland Mission. Adopted Chinese dress, Chinese customs, Chinese language — so the gospel would not arrive as a foreign thing. Lost his wife and children to disease. Served fifty-one years in a land that buried him.",
+    quote: "God's work done in God's way will never lack God's supply.",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/7122bdb5b_generated_image.png",
+  },
+  {
     name: "AMY CARMICHAEL",
     years: "1867 — 1951",
     field: "SOUTH INDIA",
@@ -34,24 +54,24 @@ const HEROES = [
     image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/4aec35b71_generated_image.png",
   },
   {
-    name: "NATE SAINT",
-    years: "1923 — 1956",
-    field: "ECUADOR, AMAZON BASIN",
-    stat: "MARTYRED. AGE 32.",
+    name: "SAINT & ELLIOT",
+    years: "1956 — ECUADOR",
+    field: "AMAZON BASIN",
+    stat: "MARTYRED TOGETHER. RIVERBANK.",
     sacrifice:
-      "Pilot. Inventor. Developed a circular flight pattern to lower gifts to the Waorani — a people no outsider had reached in peace. Built friendship from the air, gift by gift, for months. He was thirty-two when the spears found him on a river sandbar. His son later returned to live among the people who killed his father.",
-    quote: "As we weigh the future, let us not think in terms of a long life.",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/436230b47_generated_image.png",
-  },
-  {
-    name: "JIM ELLIOT",
-    years: "1926 — 1956",
-    field: "ECUADOR, AMAZON BASIN",
-    stat: "MARTYRED. AGE 28.",
-    sacrifice:
-      "Twenty-eight years old. Reached out to the Waorani people he had never met, armed only with the gospel and a conviction that they were worth his life. He was killed on that riverbank beside Nate Saint. His wife Elisabeth returned to live among the people who killed him, and brought them the love that his death could not silence.",
+      "Nate Saint — pilot, inventor, thirty-two. Jim Elliot — twenty-eight. They reached out to the Waorani people no outsider had met in peace. For months Saint circled his plane overhead, lowering gifts on a line. On January 8, 1956, they landed on a sandbar. The spears came. Five men fell. But the story didn't end — Elliot's widow Elisabeth returned to live among the people who killed her husband. They came to know the God who sent them.",
     quote: "He is no fool who gives what he cannot keep to gain what he cannot lose.",
     image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/f711e1ed1_generated_image.png",
+  },
+  {
+    name: "GEORGE VERWER",
+    years: "1938 — 2023",
+    field: "THE WHOLE WORLD",
+    stat: "FOUNDER, OPERATION MOBILIZATION",
+    sacrifice:
+      "Received a Gospel of John at fourteen. Gave his life to Christ at a Billy Graham rally. Sold his record collection to buy Bibles. Founded Operation Mobilization — what began as a handful of students became a force of thousands representing 110 nationalities across 118 countries. He wore a globe jacket and prayed like a man on fire. He never stopped until his body gave out. The mission he built continues without him.",
+    quote: "We need a new generation of revolutionaries who will go to the ends of the earth.",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/7ba33378b_generated_image.png",
   },
 ];
 
