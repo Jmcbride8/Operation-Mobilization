@@ -9,6 +9,7 @@ const BRANCHES = [
     tagline: "THE EMOTIONAL & EXPRESSIVE",
     desc: "Vibrant, personal experience of God's presence. Joyful, expressive, interactive worship. Active work of the Holy Spirit — healing, gifts, and power for today.",
     strength: "Spiritual fire and boldness",
+    verse: "Acts 1:8 — \"You will receive power when the Holy Spirit comes on you; and you will be my witnesses.\"",
     image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/e581a8875_generated_image.png",
   },
   {
@@ -17,6 +18,7 @@ const BRANCHES = [
     tagline: "TRADITION, RITUAL & HERITAGE",
     desc: "Rich liturgical tradition, sacraments, and centuries of church teaching. Beauty in repetition and ritual that connects believers to history. Deep roots and a global institutional backbone.",
     strength: "Historical depth and sacred beauty",
+    verse: "Matthew 16:18 — \"You are Peter, and on this rock I will build my church, and the gates of Hades will not overcome it.\"",
     image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/4cd39d145_generated_image.png",
   },
   {
@@ -25,6 +27,7 @@ const BRANCHES = [
     tagline: "BELIEVER'S BAPTISM & LOCAL CHURCH",
     desc: "Baptism by immersion as a public declaration of personal faith. Autonomy of the local church. Deep commitment to Scripture, evangelism, and the priesthood of every believer.",
     strength: "Convictional faith and local church vitality",
+    verse: "Romans 6:4 — \"We were therefore buried with him through baptism into death, that just as Christ was raised, we too may live a new life.\"",
     image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/e12bcff10_generated_image.png",
   },
   {
@@ -33,6 +36,7 @@ const BRANCHES = [
     tagline: "ANCIENT TRADITION & MYSTERY",
     desc: "Roots in Eastern Christianity. Emphasis on the mystical and transcendent. Icons, liturgy, and unbroken historical continuity with the early church.",
     strength: "Mystical depth and ancient roots",
+    verse: "2 Corinthians 3:18 — \"We all, with unveiled faces, are being transformed into His image with ever-increasing glory.\"",
     image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/e6d82fe5a_generated_image.png",
   },
   {
@@ -41,6 +45,7 @@ const BRANCHES = [
     tagline: "SOVEREIGNTY & INTELLECT",
     desc: "Emphasis on God's ultimate control and authority. Deep theological reflection and careful study of Scripture alongside personal faith.",
     strength: "Theological rigor and discipline",
+    verse: "Ephesians 1:11 — \"In Him we were also chosen, having been predestined according to the plan of Him who works out everything in conformity with His will.\"",
     image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/38fcc4e21_generated_image.png",
   },
   {
@@ -49,6 +54,7 @@ const BRANCHES = [
     tagline: "CONVERSION & DISCIPLESHIP",
     desc: "Focus on a personal decision to follow Jesus ('born again') and actively sharing that faith. Centrality of Jesus' death and resurrection and the authority of the Bible.",
     strength: "Relational evangelism and action",
+    verse: "Romans 10:9 — \"If you declare with your mouth, 'Jesus is Lord,' and believe in your heart that God raised him from the dead, you will be saved.\"",
     image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/f5369f784_generated_image.png",
   },
   {
@@ -57,6 +63,7 @@ const BRANCHES = [
     tagline: "DISCIPLINE & SOCIAL HOLINESS",
     desc: "Born from John Wesley's movement. Emphasis on personal holiness, disciplined spiritual practices, and social action. A theology of grace that moves from justification to sanctification.",
     strength: "Disciplined discipleship and social witness",
+    verse: "Hebrews 12:14 — \"Make every effort to live in peace with everyone and to be holy; without holiness no one will see the Lord.\"",
     image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/4a4de1a72_generated_image.png",
   },
   {
@@ -65,6 +72,7 @@ const BRANCHES = [
     tagline: "THE MIDDLE WAY",
     desc: "A bridge between Catholic tradition and Reformation theology. Liturgical worship, episcopal structure, and the Book of Common Prayer. Unity in breadth — evangelical to Anglo-Catholic.",
     strength: "Liturgical depth and theological breadth",
+    verse: "Colossians 3:16 — \"Let the message of Christ dwell among you richly... singing to God with gratitude in your hearts.\"",
     image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/1628ee7b4_generated_image.png",
   },
   {
@@ -73,6 +81,7 @@ const BRANCHES = [
     tagline: "JUSTIFICATION BY FAITH",
     desc: "Born from Martin Luther's Reformation. The doctrine that we are saved by grace through faith alone. Sacramental worship rooted in Scripture. Christ alone, faith alone, grace alone, Scripture alone.",
     strength: "Reformation clarity and sacramental rootedness",
+    verse: "Ephesians 2:8-9 — \"For it is by grace you have been saved, through faith — and this is not from yourselves, it is the gift of God — not by works.\"",
     image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/9098d4c05_generated_image.png",
   },
 ];
@@ -105,6 +114,10 @@ function BranchCard({ branch, index }) {
       <div className="pt-3 border-t border-titanium/15">
         <span className="text-[9px] font-mono text-titanium/60 tracking-wider block">STRENGTH BROUGHT TO MISSION</span>
         <span className="text-[11px] font-heading font-bold text-ignition uppercase tracking-[0.02em]">{branch.strength}</span>
+      </div>
+      <div className="pt-3 mt-3 border-t border-titanium/15">
+        <span className="text-[9px] font-mono text-titanium/60 tracking-wider block">EMPHASIS VERSE</span>
+        <span className="text-[11px] font-mono text-signal-white/80 leading-relaxed italic">{branch.verse}</span>
       </div>
       </div>
     </motion.div>
