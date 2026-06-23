@@ -25,8 +25,8 @@ export default function HeroSection() {
         <div className="w-full h-full hero-map-container">
           <HeroMap />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-obsidian/80 via-obsidian/70 to-obsidian" />
-        <div className="absolute inset-0 bg-gradient-to-r from-obsidian/90 via-transparent to-obsidian/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-obsidian/60 via-obsidian/50 to-obsidian" />
+        <div className="absolute inset-0 bg-gradient-to-r from-obsidian/70 via-transparent to-obsidian/40" />
       </div>
 
       {/* Grid overlay */}
