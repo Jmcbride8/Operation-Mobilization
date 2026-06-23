@@ -13,8 +13,8 @@ export default function TheMessage() {
       <DataOverlay />
       <Navbar />
       <MessageHero />
-      <WhyDifferent />
       <TrinitySection />
+      <WhyDifferent />
       <OneBody />
       <Footer />
     </div>
