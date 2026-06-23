@@ -66,10 +66,10 @@ export default function CureSection() {
                   {p.id}
                 </span>
                 <div>
+                  <span className="text-[9px] font-mono text-ignition tracking-[0.3em] block">{p.label}</span>
                   <h3 className="font-heading font-black text-2xl md:text-3xl text-signal-white uppercase tracking-[-0.02em]">
                     {p.title}
                   </h3>
-                  <span className="text-[9px] font-mono text-ignition tracking-[0.3em] block mt-1">{p.label}</span>
                 </div>
               </div>
 
