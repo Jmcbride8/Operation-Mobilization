@@ -37,7 +37,7 @@ export default function WorldMap() {
             <ScrambleText
               as="h2"
               text="GLOBAL MISSION FIELD"
-              className="font-heading font-black text-3xl md:text-5xl text-signal-white tracking-[-0.02em] uppercase"
+              className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.02em] uppercase"
             />
             <p className="text-xs font-mono text-titanium mt-3 max-w-lg">
               Where our workers are right now. Every marker represents a long-term mission —
@@ -103,7 +103,7 @@ export default function WorldMap() {
               <CircleMarker
                 key={op.region}
                 center={op.coords}
-                radius={6}
+                radius={Math.max(6, op.personnel / 120)}
                 pathOptions={{
                   color: op.status === "ACTIVE" ? "#22c55e" : "#eab308",
                   fillColor: op.status === "ACTIVE" ? "#22c55e" : "#eab308",
@@ -115,16 +115,17 @@ export default function WorldMap() {
                   direction="top"
                   offset={[0, -8]}
                   className="om-tooltip"
+                  permanent
                 >
-                  <div style={{ background: "#080808", border: "1px solid #404040", padding: "8px" }}>
-                    <div style={{ fontSize: "9px", fontFamily: "monospace", color: "#FF4D00", marginBottom: "2px" }}>
-                      [{op.region}]
-                    </div>
+                  <div style={{ background: "#080808", border: "1px solid #404040", padding: "6px 8px" }}>
                     <div style={{ fontSize: "11px", fontFamily: "monospace", color: "#F2F2F2", fontWeight: "bold" }}>
                       {op.name}
                     </div>
-                    <div style={{ fontSize: "9px", fontFamily: "monospace", color: "#404040", marginTop: "2px" }}>
-                      {op.personnel} WORKERS // {op.status}
+                    <div style={{ fontSize: "10px", fontFamily: "monospace", color: "#B33939", marginTop: "2px", fontWeight: "bold" }}>
+                      {op.personnel.toLocaleString()} WORKERS
+                    </div>
+                    <div style={{ fontSize: "9px", fontFamily: "monospace", color: "#8C8C8C", marginTop: "1px" }}>
+                      {op.status}
                     </div>
                   </div>
                 </Tooltip>
