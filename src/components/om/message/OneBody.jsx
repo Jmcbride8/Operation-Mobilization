@@ -21,11 +21,11 @@ const BRANCHES = [
   },
   {
     id: "03",
-    name: "PROTESTANT",
-    tagline: "SCRIPTURE & PERSONAL FAITH",
-    desc: "Born from the Reformation. The Bible as primary authority and the importance of a personal relationship with God. Baptists, Methodists, Presbyterians, Evangelicals — each with unique flavor.",
-    strength: "Biblical conviction and personal faith",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/f4c0a6fb8_generated_image.png",
+    name: "BAPTIST",
+    tagline: "BELIEVER'S BAPTISM & LOCAL CHURCH",
+    desc: "Baptism by immersion as a public declaration of personal faith. Autonomy of the local church. Deep commitment to Scripture, evangelism, and the priesthood of every believer.",
+    strength: "Convictional faith and local church vitality",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/e12bcff10_generated_image.png",
   },
   {
     id: "04",
@@ -50,6 +50,22 @@ const BRANCHES = [
     desc: "Focus on a personal decision to follow Jesus ('born again') and actively sharing that faith. Centrality of Jesus' death and resurrection and the authority of the Bible.",
     strength: "Relational evangelism and action",
     image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/f5369f784_generated_image.png",
+  },
+  {
+    id: "07",
+    name: "METHODIST",
+    tagline: "DISCIPLINE & SOCIAL HOLINESS",
+    desc: "Born from John Wesley's movement. Emphasis on personal holiness, disciplined spiritual practices, and social action. A theology of grace that moves from justification to sanctification.",
+    strength: "Disciplined discipleship and social witness",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/4a4de1a72_generated_image.png",
+  },
+  {
+    id: "08",
+    name: "ANGLICAN / EPISCOPAL",
+    tagline: "THE MIDDLE WAY",
+    desc: "A bridge between Catholic tradition and Reformation theology. Liturgical worship, episcopal structure, and the Book of Common Prayer. Unity in breadth — evangelical to Anglo-Catholic.",
+    strength: "Liturgical depth and theological breadth",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/1628ee7b4_generated_image.png",
   },
 ];
 
