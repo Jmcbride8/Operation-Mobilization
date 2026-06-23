@@ -43,21 +43,15 @@ export default function HeroSection() {
 
               <ScrambleText
                 as="h1"
-                text="THE WORLD DOESN'T"
+                text="GOD DOES HARD."
                 className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
                 delay={200}
               />
               <ScrambleText
                 as="h1"
-                text="NEED MORE CHARITY."
-                className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
-                delay={400}
-              />
-              <ScrambleText
-                as="h1"
-                text="IT NEEDS OPERATORS."
+                text="WE GO HARD."
                 className="font-heading font-black text-4xl md:text-6xl lg:text-7xl text-ignition tracking-[-0.03em] uppercase leading-[0.9]"
-                delay={600}
+                delay={400}
               />
             </div>
 
