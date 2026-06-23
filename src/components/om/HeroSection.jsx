@@ -5,8 +5,8 @@ import CounterDisplay from "./CounterDisplay";
 import MissionLogs from "./MissionLogs";
 import { ChevronDown } from "lucide-react";
 
-const HERO_IMAGE = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/0bd7e036d_generated_image.png";
-const FOOT_WASHING_IMAGE = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/0bd7e036d_generated_image.png";
+const HERO_IMAGE = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/f4ecd5f2e_generated_image.png";
+const FOOT_WASHING_IMAGE = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/f4ecd5f2e_generated_image.png";
 
 export default function HeroSection() {
   const scrollToOps = () => {
