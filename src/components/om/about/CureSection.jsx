@@ -5,16 +5,16 @@ import ScrambleText from "@/components/om/ScrambleText";
 const PILLARS = [
   {
     id: "01",
-    label: "WE SHARE IT",
-    title: "THE MESSAGE",
+    label: "THE MESSAGE",
+    title: "WE SHARE IT",
     desc: "We go to the hardest places and declare the truth that shatters every lie: you are loved. You have always been loved. God so loved the world that He gave His only Son — not for the worthy, but for the broken. This message is not optional. It is the power of God for salvation to everyone who believes, and it must be spoken.",
     scripture: "ROMANS 1:16",
     scriptureText: "I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes.",
   },
   {
     id: "02",
-    label: "WE SHOW IT",
-    title: "THE PROOF",
+    label: "THE PROOF",
+    title: "WE SHOW IT",
     desc: "Words alone are not enough. Love that is only spoken is not yet love. So we live it. We build water systems. We staff clinics. We sit with the dying. We hold the orphan. We feed the hungry. We stay — for years, not weeks. The love of God, made visible in hands and feet that refuse to look away.",
     scripture: "1 JOHN 3:18",
     scriptureText: "Let us not love in word or talk, but in deed and in truth.",
