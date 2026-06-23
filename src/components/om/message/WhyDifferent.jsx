@@ -56,7 +56,7 @@ const GROUPS = [
       },
       {
         num: "08",
-        title: "FORGIVE AS WE WERE FORGIVEN",
+        title: "SAVED SINNERS SENT TO SAVE",
         desc: "You've been forgiven an infinite debt. So when someone wrongs you, you don't get to hold the receipt. And you don't get to stay home. Christians are commissioned — deployed — to carry the same mercy that rescued us into every dark corner of the map. To the ones who've never heard. To the places no one else will go. That's not a program. That's the inevitable consequence of having been saved. We go because we were sent. Forward.",
       },
     ],
