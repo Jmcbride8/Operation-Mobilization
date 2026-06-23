@@ -67,6 +67,14 @@ const BRANCHES = [
     strength: "Liturgical depth and theological breadth",
     image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/1628ee7b4_generated_image.png",
   },
+  {
+    id: "09",
+    name: "LUTHERAN",
+    tagline: "JUSTIFICATION BY FAITH",
+    desc: "Born from Martin Luther's Reformation. The doctrine that we are saved by grace through faith alone. Sacramental worship rooted in Scripture. Christ alone, faith alone, grace alone, Scripture alone.",
+    strength: "Reformation clarity and sacramental rootedness",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/9098d4c05_generated_image.png",
+  },
 ];
 
 function BranchCard({ branch, index }) {
