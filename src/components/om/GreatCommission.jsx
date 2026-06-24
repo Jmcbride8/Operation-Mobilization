@@ -26,8 +26,8 @@ export default function GreatCommission() {
           alt="The Great Commission"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/80" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/70" />
+        <div className="absolute inset-0 bg-white/85 dark:bg-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-white/55 to-white/75 dark:from-black dark:via-black/50 dark:to-black/70" />
       </motion.div>
 
       {/* Grid overlay */}
