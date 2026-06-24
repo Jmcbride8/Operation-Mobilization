@@ -73,6 +73,9 @@ export const SITE_IMAGES = [
   { key: "give.ministries", label: "Give - Ministries", category: "Give", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/4c8e732d6_generated_image.png" },
   { key: "give.missionaries", label: "Give - Missionaries", category: "Give", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/bcd0adbff_generated_image.png" },
 
+  // ── THE FIELDS PAGE ──
+  { key: "fields.hero", label: "The Fields - Hero Background", category: "The Fields", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/bd4f37d3f_generated_image.png" },
+
   // ── MISSION PAGES ──
   { key: "mission.churches", label: "Mission - Churches (Senders)", category: "Mission", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/25a99ae51_generated_image.png" },
   { key: "mission.supporters", label: "Mission - Supporters", category: "Mission", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/debd8522d_generated_image.png" },

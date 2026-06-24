@@ -6,7 +6,7 @@ import { Menu, X, Sun, Moon } from "lucide-react";
 const NAV_ITEMS = [
   { label: "THE MISSION", to: "/about" },
   { label: "THE MESSAGE", to: "/message" },
-  { label: "THE FIELDS", href: "#intel" },
+  { label: "THE FIELDS", to: "/fields" },
   { label: "GIVE", href: "#deploy" },
 ];
 
