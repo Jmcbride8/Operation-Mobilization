@@ -12,9 +12,9 @@ module.exports = {
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
-  			obsidian: '#080808',
-  			'signal-white': '#F2F2F2',
-  			titanium: '#8C8C8C',
+  			obsidian: 'var(--obsidian)',
+  			'signal-white': 'var(--signal-white)',
+  			titanium: 'var(--titanium)',
   			ignition: '#B33939',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
