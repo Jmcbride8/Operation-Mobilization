@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import ScrambleText from "./ScrambleText";
+import ReflowCycle from "./ReflowCycle";
 import { useSiteImages } from "@/hooks/useSiteImages";
 
 const HEROES = [
@@ -176,11 +177,13 @@ export default function HallOfFaith() {
             <span className="text-[10px] font-mono tracking-[0.3em] text-titanium block mb-3">
               THE GREATEST TRADITION
             </span>
-            <ScrambleText
-              as="h2"
-              text="GIVING YOUR LIFE"
-              className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
-            />
+            <ReflowCycle>
+              <ScrambleText
+                as="h2"
+                text="GIVING YOUR LIFE"
+                className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
+              />
+            </ReflowCycle>
             <ScrambleText
               as="h2"
               text="FOR THEIRS."
