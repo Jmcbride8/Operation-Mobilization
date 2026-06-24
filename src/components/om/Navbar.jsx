@@ -62,7 +62,7 @@ export default function Navbar() {
         {/* Logo */}
         <button onClick={() => navigate("/")} className="flex items-center gap-2 group">
           <div className="w-2 h-2 bg-ignition animate-pulse-dot" />
-          <span className="font-heading font-black text-sm tracking-[0.2em] text-signal-white">
+          <span className="font-heading font-black text-sm tracking-[0.2em] text-black dark:text-white">
             OPERATION<span className="text-ignition">.</span>MOBILIZATION
           </span>
         </button>
@@ -74,7 +74,7 @@ export default function Navbar() {
               <Link
                 key={item.label}
                 to={item.to}
-                className="px-3 py-1.5 text-[10px] font-mono tracking-[0.15em] text-titanium hover:text-signal-white hover:border hover:border-titanium/40 transition-all duration-200"
+                className="px-3 py-1.5 text-[10px] font-mono tracking-[0.15em] text-black dark:text-white hover:text-ignition hover:border hover:border-titanium/40 transition-all duration-200"
               >
                 {item.label}
               </Link>
@@ -82,7 +82,7 @@ export default function Navbar() {
               <button
                 key={item.label}
                 onClick={() => handleNav(item.href)}
-                className="px-3 py-1.5 text-[10px] font-mono tracking-[0.15em] text-titanium hover:text-signal-white hover:border hover:border-titanium/40 transition-all duration-200"
+                className="px-3 py-1.5 text-[10px] font-mono tracking-[0.15em] text-black dark:text-white hover:text-ignition hover:border hover:border-titanium/40 transition-all duration-200"
               >
                 {item.label}
               </button>
@@ -90,7 +90,7 @@ export default function Navbar() {
           )}
           <button
             onClick={toggleTheme}
-            className="ml-4 p-2 text-titanium hover:text-signal-white hover:border hover:border-titanium/40 transition-all duration-200"
+            className="ml-4 p-2 text-black dark:text-white hover:text-ignition hover:border hover:border-titanium/40 transition-all duration-200"
             aria-label="Toggle theme"
           >
             {isDark ? <Sun size={16} /> : <Moon size={16} />}
@@ -110,7 +110,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile toggle */}
-        <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden text-signal-white">
+        <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden text-black dark:text-white">
           {mobileOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
       </div>
@@ -131,7 +131,7 @@ export default function Navbar() {
                     key={item.label}
                     to={item.to}
                     onClick={() => setMobileOpen(false)}
-                    className="block px-3 py-3 text-xs font-mono tracking-[0.15em] text-titanium hover:text-signal-white border-b border-titanium/10 transition-colors"
+                    className="block px-3 py-3 text-xs font-mono tracking-[0.15em] text-black dark:text-white hover:text-ignition border-b border-titanium/10 transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -139,7 +139,7 @@ export default function Navbar() {
                   <button
                     key={item.label}
                     onClick={() => handleNav(item.href)}
-                    className="text-left px-3 py-3 text-xs font-mono tracking-[0.15em] text-titanium hover:text-signal-white border-b border-titanium/10 transition-colors"
+                    className="text-left px-3 py-3 text-xs font-mono tracking-[0.15em] text-black dark:text-white hover:text-ignition border-b border-titanium/10 transition-colors"
                   >
                     {item.label}
                   </button>
@@ -147,7 +147,7 @@ export default function Navbar() {
               )}
               <button
                 onClick={toggleTheme}
-                className="mt-2 px-4 py-3 text-xs font-mono tracking-[0.15em] text-titanium text-left flex items-center gap-2"
+                className="mt-2 px-4 py-3 text-xs font-mono tracking-[0.15em] text-black dark:text-white text-left flex items-center gap-2"
               >
                 {isDark ? <Sun size={16} /> : <Moon size={16} />}
                 TOGGLE THEME
