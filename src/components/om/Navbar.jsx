@@ -4,9 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Sun, Moon } from "lucide-react";
 
 const NAV_ITEMS = [
-  { label: "ABOUT OM", to: "/about" },
+  { label: "THE MISSION", to: "/about" },
   { label: "THE MESSAGE", to: "/message" },
-  { label: "FIELD REPORTS", href: "#intel" },
+  { label: "THE FIELDS", href: "#intel" },
   { label: "GIVE", href: "#deploy" },
 ];
 
@@ -84,7 +84,16 @@ export default function Navbar() {
           >
             HOME
           </Link>
-          {/* Mission dropdown */}
+          {NAV_ITEMS.filter((item) => ["THE MISSION", "THE MESSAGE"].includes(item.label)).map((item) => (
+            <Link
+              key={item.label}
+              to={item.to}
+              className="px-3 py-1.5 text-[10px] font-mono tracking-[0.15em] text-black dark:text-white hover:text-ignition hover:border hover:border-titanium/40 transition-all duration-200"
+            >
+              {item.label}
+            </Link>
+          ))}
+          {/* Team dropdown */}
           <div className="relative group">
             <button className="px-3 py-1.5 text-[10px] font-mono tracking-[0.15em] text-black dark:text-white hover:text-ignition hover:border hover:border-titanium/40 transition-all duration-200 flex items-center gap-1">
               THE TEAM
@@ -103,7 +112,7 @@ export default function Navbar() {
               ))}
             </div>
           </div>
-          {NAV_ITEMS.filter((item) => item.label !== "GIVE").map((item) =>
+          {NAV_ITEMS.filter((item) => item.label === "THE FIELDS").map((item) =>
             item.to ? (
               <Link
                 key={item.label}
@@ -159,6 +168,13 @@ export default function Navbar() {
             className="md:hidden bg-obsidian/98 border-b border-titanium/20 overflow-hidden"
           >
             <div className="px-4 py-4 flex flex-col gap-1">
+              <Link
+                to="/"
+                onClick={() => setMobileOpen(false)}
+                className="block px-3 py-3 text-xs font-mono tracking-[0.15em] text-black dark:text-white hover:text-ignition border-b border-titanium/10 transition-colors"
+              >
+                HOME
+              </Link>
               <span className="px-3 pt-2 pb-1 text-[9px] font-mono tracking-[0.25em] text-ignition">THE TEAM</span>
               {MISSION_LINKS.map((link) => (
                 <Link
