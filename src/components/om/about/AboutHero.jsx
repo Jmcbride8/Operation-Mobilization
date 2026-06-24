@@ -9,9 +9,9 @@ export default function AboutHero() {
     <section className="relative min-h-[70vh] flex items-center overflow-hidden pt-14">
       <div className="absolute inset-0">
         <img src={getImage("about.hero")} alt="OM field workers" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-white/80 dark:bg-black/80" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/50 to-white dark:from-black/60 dark:via-black/50 dark:to-black" />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-transparent to-white/60 dark:from-black/90 dark:via-transparent dark:to-black/60" />
+        <div className="absolute inset-0 bg-white/50 dark:bg-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/20 to-white/70 dark:from-black/30 dark:via-black/20 dark:to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-transparent to-white/30 dark:from-black/60 dark:via-transparent dark:to-black/30" />
       </div>
       <div className="absolute inset-0 grid-lines opacity-30 pointer-events-none" />
 
