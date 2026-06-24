@@ -13,15 +13,6 @@ const BRANCHES = [
     image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/e581a8875_generated_image.png",
   },
   {
-    id: "02",
-    name: "CATHOLIC",
-    tagline: "TRADITION, RITUAL & HERITAGE",
-    desc: "Rich liturgical tradition, sacraments, and centuries of church teaching. Beauty in repetition and ritual that connects believers to history. Deep roots and a global institutional backbone.",
-    strength: "Historical depth and sacred beauty",
-    verse: "Matthew 16:18 — \"You are Peter, and on this rock I will build my church, and the gates of Hades will not overcome it.\"",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/4cd39d145_generated_image.png",
-  },
-  {
     id: "03",
     name: "BAPTIST",
     tagline: "BELIEVER'S BAPTISM & LOCAL CHURCH",
@@ -31,15 +22,6 @@ const BRANCHES = [
     image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/e12bcff10_generated_image.png",
   },
   {
-    id: "04",
-    name: "ORTHODOX",
-    tagline: "ANCIENT TRADITION & MYSTERY",
-    desc: "Roots in Eastern Christianity. Emphasis on the mystical and transcendent. Icons, liturgy, and unbroken historical continuity with the early church.",
-    strength: "Mystical depth and ancient roots",
-    verse: "2 Corinthians 3:18 — \"We all, with unveiled faces, are being transformed into His image with ever-increasing glory.\"",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/e6d82fe5a_generated_image.png",
-  },
-  {
     id: "05",
     name: "REFORMED / CALVINIST",
     tagline: "SOVEREIGNTY & INTELLECT",
@@ -47,15 +29,6 @@ const BRANCHES = [
     strength: "Theological rigor and discipline",
     verse: "Ephesians 1:11 — \"In Him we were also chosen, having been predestined according to the plan of Him who works out everything in conformity with His will.\"",
     image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/38fcc4e21_generated_image.png",
-  },
-  {
-    id: "06",
-    name: "EVANGELICAL",
-    tagline: "CONVERSION & DISCIPLESHIP",
-    desc: "Focus on a personal decision to follow Jesus ('born again') and actively sharing that faith. Centrality of Jesus' death and resurrection and the authority of the Bible.",
-    strength: "Relational evangelism and action",
-    verse: "Romans 10:9 — \"If you declare with your mouth, 'Jesus is Lord,' and believe in your heart that God raised him from the dead, you will be saved.\"",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/f5369f784_generated_image.png",
   },
   {
     id: "07",
