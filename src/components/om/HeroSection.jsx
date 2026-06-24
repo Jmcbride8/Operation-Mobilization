@@ -93,7 +93,7 @@ export default function HeroSection() {
           </span>
           <div className="flex items-center gap-2 w-full md:w-auto">
             <button
-              onClick={scrollToDeploy}
+              onClick={() => navigate("/give")}
               className="flex-1 md:flex-none px-6 py-2 bg-ignition text-xs font-heading font-bold tracking-[0.15em] text-white hover:bg-ignition/90 transition-colors"
             >
               GIVE

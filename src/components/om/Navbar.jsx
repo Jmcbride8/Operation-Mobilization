@@ -96,7 +96,7 @@ export default function Navbar() {
             {isDark ? <Sun size={16} /> : <Moon size={16} />}
           </button>
           <button
-            onClick={() => handleNav("#deploy")}
+            onClick={() => navigate("/give")}
             className="ml-4 px-4 py-1.5 bg-ignition text-[10px] font-heading font-bold tracking-[0.15em] text-white hover:bg-ignition/90 transition-colors"
           >
             GIVE

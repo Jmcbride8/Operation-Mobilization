@@ -12,6 +12,7 @@ import AboutOM from '@/pages/AboutOM';
 import Admin from '@/pages/Admin';
 import TheMessage from '@/pages/TheMessage';
 import GoSignUp from '@/pages/GoSignUp';
+import Give from '@/pages/Give';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -46,6 +47,7 @@ const AuthenticatedApp = () => {
       <Route path="/admin" element={<Admin />} />
       <Route path="/message" element={<TheMessage />} />
       <Route path="/enlist" element={<GoSignUp />} />
+      <Route path="/give" element={<Give />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );

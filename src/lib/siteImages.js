@@ -65,6 +65,12 @@ export const SITE_IMAGES = [
   { key: "diagnosis.cure", label: "Diagnosis - The Cure", category: "Diagnosis & Cure", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/199f6f543_generated_image.png" },
   { key: "cure.message", label: "Cure - The Message", category: "Diagnosis & Cure", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/4fc318a22_generated_image.png" },
   { key: "cure.proof", label: "Cure - The Proof", category: "Diagnosis & Cure", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/b6c0da36b_generated_image.png" },
+
+  // ── GIVE PAGE ──
+  { key: "give.om", label: "Give - Operation Mobilization", category: "Give", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/fe6a49617_generated_image.png" },
+  { key: "give.fields", label: "Give - Fields", category: "Give", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/85ca3b211_generated_image.png" },
+  { key: "give.ministries", label: "Give - Ministries", category: "Give", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/4c8e732d6_generated_image.png" },
+  { key: "give.missionaries", label: "Give - Missionaries", category: "Give", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/bcd0adbff_generated_image.png" },
 ];
 
 // Quick lookup map: key → default url
