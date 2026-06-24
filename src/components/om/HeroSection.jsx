@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import ScrambleText from "./ScrambleText";
 import CounterDisplay from "./CounterDisplay";
 import MissionLogs from "./MissionLogs";
@@ -8,6 +9,7 @@ import { ChevronDown } from "lucide-react";
 import HeroMap from "./HeroMap";
 
 export default function HeroSection() {
+  const navigate = useNavigate();
   const scrollToOps = () => {
     const el = document.querySelector("#operations");
     if (el) el.scrollIntoView({ behavior: "smooth" });
@@ -97,7 +99,7 @@ export default function HeroSection() {
               GIVE
             </button>
             <button
-              onClick={scrollToDeploy}
+              onClick={() => navigate("/enlist")}
               className="flex-1 md:flex-none px-6 py-2 bg-ignition text-xs font-heading font-bold tracking-[0.15em] text-white hover:bg-ignition/90 transition-colors"
             >
               GO
