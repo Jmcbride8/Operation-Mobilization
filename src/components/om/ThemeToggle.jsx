@@ -1,43 +1,57 @@
 import React, { useEffect, useState } from "react";
-import { Sun, Moon } from "lucide-react";
+import { Sun, Moon, Monitor } from "lucide-react";
+
+const THEME_KEY = "theme";
+const ORDER = ["system", "light", "dark"];
+
+function resolveDark(mode) {
+  if (mode === "dark") return true;
+  if (mode === "light") return false;
+  return window.matchMedia("(prefers-color-scheme: dark)").matches;
+}
 
 export default function ThemeToggle() {
-  const [isDark, setIsDark] = useState(true);
+  const [mode, setMode] = useState("system");
+
+  useEffect(() => {
+    const saved = localStorage.getItem(THEME_KEY);
+    const initial = ORDER.includes(saved) ? saved : "system";
+    setMode(initial);
+  }, []);
 
   useEffect(() => {
     const root = document.documentElement;
-    const saved = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    
-    if (saved === "dark" || (!saved && prefersDark)) {
-      root.classList.add("dark");
-      setIsDark(true);
-    } else {
-      root.classList.remove("dark");
-      setIsDark(false);
-    }
-  }, []);
+    const apply = () => {
+      const dark = resolveDark(mode);
+      root.classList.toggle("dark", dark);
+    };
+    apply();
 
-  const toggleTheme = () => {
-    const root = document.documentElement;
-    if (isDark) {
-      root.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-      setIsDark(false);
-    } else {
-      root.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-      setIsDark(true);
+    if (mode === "system") {
+      const mq = window.matchMedia("(prefers-color-scheme: dark)");
+      mq.addEventListener("change", apply);
+      return () => mq.removeEventListener("change", apply);
     }
+  }, [mode]);
+
+  const cycleTheme = () => {
+    setMode((prev) => {
+      const next = ORDER[(ORDER.indexOf(prev) + 1) % ORDER.length];
+      localStorage.setItem(THEME_KEY, next);
+      return next;
+    });
   };
+
+  const Icon = mode === "system" ? Monitor : mode === "dark" ? Sun : Moon;
 
   return (
     <button
-      onClick={toggleTheme}
+      onClick={cycleTheme}
       className="p-2 text-titanium hover:text-signal-white hover:border hover:border-titanium/40 transition-all duration-200"
-      aria-label="Toggle theme"
+      aria-label={`Theme: ${mode}`}
+      title={`Theme: ${mode}`}
     >
-      {isDark ? <Sun size={16} /> : <Moon size={16} />}
+      <Icon size={16} />
     </button>
   );
 }
