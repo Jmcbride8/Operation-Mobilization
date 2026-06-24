@@ -4,7 +4,7 @@ import { useSiteImages } from "@/hooks/useSiteImages";
 
 export default function MessageHero() {
   const { getImage } = useSiteImages();
-  const heroImage = getImage("cure.message");
+  const heroImage = getImage("message.hero");
 
   return (
     <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden border-b border-titanium/10">
