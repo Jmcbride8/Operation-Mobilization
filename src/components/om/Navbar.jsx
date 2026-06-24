@@ -78,6 +78,12 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-1">
+          <Link
+            to="/"
+            className="px-3 py-1.5 text-[10px] font-mono tracking-[0.15em] text-black dark:text-white hover:text-ignition hover:border hover:border-titanium/40 transition-all duration-200"
+          >
+            HOME
+          </Link>
           {/* Mission dropdown */}
           <div className="relative group">
             <button className="px-3 py-1.5 text-[10px] font-mono tracking-[0.15em] text-black dark:text-white hover:text-ignition hover:border hover:border-titanium/40 transition-all duration-200 flex items-center gap-1">
