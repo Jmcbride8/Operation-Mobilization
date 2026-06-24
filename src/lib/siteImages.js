@@ -71,6 +71,16 @@ export const SITE_IMAGES = [
   { key: "give.fields", label: "Give - Fields", category: "Give", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/85ca3b211_generated_image.png" },
   { key: "give.ministries", label: "Give - Ministries", category: "Give", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/4c8e732d6_generated_image.png" },
   { key: "give.missionaries", label: "Give - Missionaries", category: "Give", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/bcd0adbff_generated_image.png" },
+
+  // ── MISSION PAGES ──
+  { key: "mission.churches", label: "Mission - Churches (Senders)", category: "Mission", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/25a99ae51_generated_image.png" },
+  { key: "mission.supporters", label: "Mission - Supporters", category: "Mission", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/debd8522d_generated_image.png" },
+  { key: "mission.joining", label: "Mission - Joining", category: "Mission", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/f5a77618f_generated_image.png" },
+  { key: "mission.training", label: "Mission - Training", category: "Mission", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/baae2a429_generated_image.png" },
+  { key: "mission.deploying", label: "Mission - Deploying", category: "Mission", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/564dc8e9b_generated_image.png" },
+  { key: "mission.service", label: "Mission - Service", category: "Mission", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/efb4a5afb_generated_image.png" },
+  { key: "mission.furlough", label: "Mission - Furlough & Debriefing", category: "Mission", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/9657987b2_generated_image.png" },
+  { key: "mission.retirement", label: "Mission - Retirement", category: "Mission", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/07cc42214_generated_image.png" },
 ];
 
 // Quick lookup map: key → default url

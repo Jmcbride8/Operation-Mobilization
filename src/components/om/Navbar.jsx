@@ -5,10 +5,15 @@ import { Menu, X, Sun, Moon } from "lucide-react";
 
 const NAV_ITEMS = [
   { label: "HOME", to: "/" },
-  { label: "THE MISSION", to: "/about" },
   { label: "THE MESSAGE", to: "/message" },
   { label: "FIELD REPORTS", href: "#intel" },
   { label: "GIVE", href: "#deploy" },
+];
+
+const MISSION_LINKS = [
+  { label: "THE SENDERS", to: "/mission/senders", desc: "Churches & OM — Your Partner" },
+  { label: "THE SUPPORTERS", to: "/mission/supporters", desc: "Prayer & financial backbone" },
+  { label: "THE SERVANTS", to: "/mission/servants", desc: "The missionary journey" },
 ];
 
 export default function Navbar() {
@@ -73,6 +78,25 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-1">
+          {/* Mission dropdown */}
+          <div className="relative group">
+            <button className="px-3 py-1.5 text-[10px] font-mono tracking-[0.15em] text-black dark:text-white hover:text-ignition hover:border hover:border-titanium/40 transition-all duration-200 flex items-center gap-1">
+              THE MISSION
+              <span className="text-[7px] opacity-60">▼</span>
+            </button>
+            <div className="absolute top-full left-0 hidden group-hover:block bg-obsidian border border-titanium/20 shadow-2xl min-w-[300px] z-50">
+              {MISSION_LINKS.map((link) => (
+                <Link
+                  key={link.label}
+                  to={link.to}
+                  className="block px-4 py-3 border-b border-titanium/10 last:border-0 hover:bg-signal-white/[0.03] transition-colors"
+                >
+                  <div className="text-[10px] font-mono tracking-[0.15em] text-black dark:text-white">{link.label}</div>
+                  <div className="text-[9px] font-mono text-titanium mt-0.5">{link.desc}</div>
+                </Link>
+              ))}
+            </div>
+          </div>
           {NAV_ITEMS.filter((item) => item.label !== "GIVE").map((item) =>
             item.to ? (
               <Link
@@ -129,6 +153,18 @@ export default function Navbar() {
             className="md:hidden bg-obsidian/98 border-b border-titanium/20 overflow-hidden"
           >
             <div className="px-4 py-4 flex flex-col gap-1">
+              <span className="px-3 pt-2 pb-1 text-[9px] font-mono tracking-[0.25em] text-ignition">THE MISSION</span>
+              {MISSION_LINKS.map((link) => (
+                <Link
+                  key={link.label}
+                  to={link.to}
+                  onClick={() => setMobileOpen(false)}
+                  className="block px-3 py-2.5 text-xs font-mono tracking-[0.15em] text-black dark:text-white hover:text-ignition border-b border-titanium/10 transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))}
+              <div className="h-px bg-titanium/10 my-2" />
               {NAV_ITEMS.map((item) =>
                 item.to ? (
                   <Link

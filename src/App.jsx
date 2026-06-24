@@ -13,6 +13,9 @@ import Admin from '@/pages/Admin';
 import TheMessage from '@/pages/TheMessage';
 import GoSignUp from '@/pages/GoSignUp';
 import Give from '@/pages/Give';
+import MissionSenders from '@/pages/MissionSenders';
+import MissionSupporters from '@/pages/MissionSupporters';
+import MissionServants from '@/pages/MissionServants';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -48,6 +51,9 @@ const AuthenticatedApp = () => {
       <Route path="/message" element={<TheMessage />} />
       <Route path="/enlist" element={<GoSignUp />} />
       <Route path="/give" element={<Give />} />
+      <Route path="/mission/senders" element={<MissionSenders />} />
+      <Route path="/mission/supporters" element={<MissionSupporters />} />
+      <Route path="/mission/servants" element={<MissionServants />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
