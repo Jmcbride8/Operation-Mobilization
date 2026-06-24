@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import ScrambleText from "@/components/om/ScrambleText";
+import DataReflowText from "@/components/om/DataReflowText";
 import { useSiteImages } from "@/hooks/useSiteImages";
 
 const PILLARS = [
@@ -81,12 +82,16 @@ export default function CureSection() {
                 </div>
               </div>
 
-              <div className="relative z-10 border-l-2 border-ignition pl-4 py-2">
-                <p className="text-xs md:text-sm font-mono text-signal-white/80 italic leading-relaxed">
-                  "{p.scriptureText}"
-                </p>
-                <span className="text-[9px] font-mono text-titanium tracking-wider block mt-2">{p.scripture}</span>
-              </div>
+              {p.id === "01" ? (
+                <DataReflowText text={p.scriptureText} reference={p.scripture} />
+              ) : (
+                <div className="relative z-10 border-l-2 border-ignition pl-4 py-2">
+                  <p className="text-xs md:text-sm font-mono text-signal-white/80 italic leading-relaxed">
+                    "{p.scriptureText}"
+                  </p>
+                  <span className="text-[9px] font-mono text-titanium tracking-wider block mt-2">{p.scripture}</span>
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
