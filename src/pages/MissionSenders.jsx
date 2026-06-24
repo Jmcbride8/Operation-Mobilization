@@ -103,6 +103,109 @@ export default function MissionSenders() {
         </div>
       </section>
 
+      {/* The Scope — Local and Global */}
+      <section className="py-24 border-t border-titanium/10 relative overflow-hidden">
+        <div className="absolute inset-0 grid-lines opacity-20 pointer-events-none" />
+        <div className="relative max-w-[1440px] mx-auto px-4 md:px-8">
+          <div className="flex items-center gap-3 mb-2">
+            <div className="w-8 h-px bg-ignition" />
+            <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">THE SCOPE</span>
+          </div>
+          <ScrambleText
+            as="h2"
+            text="LOCAL AND GLOBAL."
+            className="font-heading font-black text-[36px] md:text-[50px] text-signal-white tracking-[-0.02em] uppercase mb-4"
+          />
+          <ScrambleText
+            as="h2"
+            text="TOGETHER, COMPLETE."
+            className="font-heading font-black text-[36px] md:text-[50px] text-ignition tracking-[-0.02em] uppercase mb-8"
+            delay={200}
+          />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-titanium/15">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="relative min-h-[480px] flex flex-col justify-end p-8 md:p-12 overflow-hidden"
+            >
+              <img src={getImage("mission.local_church")} alt="" className="absolute inset-0 w-full h-full object-cover opacity-60 dark:opacity-50" />
+              <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/40 to-transparent" />
+              <div className="relative z-10">
+                <span className="text-[10px] font-mono tracking-[0.3em] text-ignition block mb-3">THE CHURCH</span>
+                <h3 className="font-heading font-black text-2xl md:text-3xl text-signal-white uppercase mb-3">YOUR FOCUS IS LOCAL.</h3>
+                <p className="text-xs md:text-sm font-mono text-titanium leading-relaxed max-w-md">
+                  The local church knows its neighborhood, its people, its pain.
+                  It disciples, shepherds, and loves the community God placed it
+                  in. That focus is sacred. That focus is the foundation.
+                </p>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.15 }}
+              className="relative min-h-[480px] flex flex-col justify-end p-8 md:p-12 overflow-hidden"
+            >
+              <img src={getImage("mission.global_reach")} alt="" className="absolute inset-0 w-full h-full object-cover opacity-60 dark:opacity-50" />
+              <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/40 to-transparent" />
+              <div className="relative z-10">
+                <span className="text-[10px] font-mono tracking-[0.3em] text-ignition block mb-3">OPERATION MOBILIZATION</span>
+                <h3 className="font-heading font-black text-2xl md:text-3xl text-signal-white uppercase mb-3">OURS IS NATIONAL AND GLOBAL.</h3>
+                <p className="text-xs md:text-sm font-mono text-titanium leading-relaxed max-w-md">
+                  OM carries the gospel across borders — national and global.
+                  118 countries. 5,800 workers. We go where the church's arms
+                  can't reach. Together, we fulfil the Great Commission.
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Awakening */}
+      <section className="py-24 border-t border-titanium/10 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={getImage("mission.awakening")} alt="" className="w-full h-full object-cover opacity-20 dark:opacity-15" />
+          <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/80 to-obsidian/60" />
+        </div>
+        <div className="absolute inset-0 grid-lines opacity-20 pointer-events-none" />
+        <div className="relative max-w-3xl mx-auto px-4 md:px-8 text-center">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="w-8 h-px bg-ignition" />
+            <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">THE AWAKENING</span>
+            <div className="w-8 h-px bg-ignition" />
+          </div>
+          <ScrambleText
+            as="h2"
+            text="WE BRING THE NEED."
+            className="font-heading font-black text-[36px] md:text-[50px] text-signal-white tracking-[-0.02em] uppercase mb-6"
+          />
+          <p className="text-sm md:text-base font-heading font-medium text-signal-white/90 leading-relaxed mb-8">
+            Mission organizations exist to bring the need before the church — to
+            carry the cries of the unreached into the sanctuary. We bring the
+            need, and in the hearing of it, passion is awakened. Faith catches
+            fire. This is the training ground of faith that so many young people
+            need — a place where conviction is forged not in comfort, but in the
+            tension between what is and what God says could be.
+          </p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="border-l-2 border-r-2 border-ignition/60 px-6 py-4 inline-block"
+          >
+            <p className="font-heading text-sm md:text-base text-signal-white italic leading-relaxed max-w-xl">
+              "The need is the call. When the church hears what God hears, faith
+              rises to meet it."
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* The Benefit */}
       <section className="py-24 border-t border-titanium/10 relative overflow-hidden">
         <div className="absolute inset-0 grid-lines opacity-20 pointer-events-none" />
@@ -164,6 +267,81 @@ export default function MissionSenders() {
                 <p className="text-xs md:text-sm font-mono text-titanium leading-relaxed">{t.desc}</p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Interlocking Roots — The Network */}
+      <section className="py-24 border-t border-titanium/10 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={getImage("mission.roots")} alt="" className="w-full h-full object-cover opacity-25 dark:opacity-20" />
+          <div className="absolute inset-0 bg-gradient-to-b from-obsidian via-obsidian/85 to-obsidian" />
+          <div className="absolute inset-0 bg-gradient-to-r from-obsidian/80 via-transparent to-obsidian/80" />
+        </div>
+        <div className="absolute inset-0 grid-lines opacity-20 pointer-events-none" />
+        <div className="relative max-w-[1440px] mx-auto px-4 md:px-8">
+          <div className="flex items-center gap-3 mb-2">
+            <div className="w-8 h-px bg-ignition" />
+            <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">THE NETWORK</span>
+          </div>
+          <ScrambleText
+            as="h2"
+            text="INTERLOCKING ROOTS."
+            className="font-heading font-black text-[36px] md:text-[50px] text-signal-white tracking-[-0.02em] uppercase mb-4"
+          />
+          <p className="text-xs md:text-sm font-mono text-titanium max-w-2xl mb-12 leading-relaxed">
+            By partnering with OM, your church doesn't just reach the nations —
+            it joins a network. Hundreds of churches, one shared vision, one
+            Great Commission. Like tree roots from different trees interlocking
+            underground, the bonds between sending churches grow strong and deep.
+            Exposure to bigger missions. Exposure to each other.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-titanium/15">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4 }}
+              className="bg-obsidian p-8 space-y-3"
+            >
+              <span className="text-[10px] font-mono text-ignition tracking-wider">[ 01 ]</span>
+              <h3 className="font-heading font-black text-xl text-signal-white uppercase">EXPOSURE TO BIGGER MISSIONS</h3>
+              <p className="text-[11px] font-mono text-titanium leading-relaxed">
+                Your church steps into a story far larger than itself — a global
+                movement of God's people spanning continents, cultures, and
+                generations. The vision expands. The ambition grows.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.1 }}
+              className="bg-obsidian p-8 space-y-3"
+            >
+              <span className="text-[10px] font-mono text-ignition tracking-wider">[ 02 ]</span>
+              <h3 className="font-heading font-black text-xl text-signal-white uppercase">EXPOSURE TO EACH OTHER</h3>
+              <p className="text-[11px] font-mono text-titanium leading-relaxed">
+                Churches that send together grow together. OM creates the
+                spaces where pastors and congregations meet, share, and build
+                bonds that outlast any single mission season.
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.2 }}
+              className="bg-obsidian p-8 space-y-3"
+            >
+              <span className="text-[10px] font-mono text-ignition tracking-wider">[ 03 ]</span>
+              <h3 className="font-heading font-black text-xl text-signal-white uppercase">ONE SHARED VISION</h3>
+              <p className="text-[11px] font-mono text-titanium leading-relaxed">
+                A network of churches united by one mandate — the Great
+                Commission. Not uniformity, but unity. Roots from different
+                trees, interlocked, holding the ground no storm can shake.
+              </p>
+            </motion.div>
           </div>
         </div>
       </section>
