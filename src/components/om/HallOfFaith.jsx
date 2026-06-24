@@ -105,7 +105,7 @@ function HeroCard({ hero, index, getImage }) {
           alt={hero.name}
           className="w-full h-full object-cover opacity-80 group-hover:opacity-50 group-hover:grayscale transition-all duration-1000 scale-105 group-hover:scale-100"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/20 to-transparent" />
 
         {/* Index number */}
         <span className="absolute top-3 left-3 text-[9px] font-mono text-titanium/50 tracking-wider">

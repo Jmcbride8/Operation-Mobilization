@@ -65,7 +65,7 @@ function OperationCard({ op, index, getImage }) {
           alt={`${op.region} operations`}
           className="w-full h-full object-cover group-hover:grayscale transition-all duration-700 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-obsidian/40 group-hover:bg-obsidian/20 transition-colors" />
+        <div className="absolute inset-0 bg-obsidian/20 group-hover:bg-obsidian/10 transition-colors" />
         <div className="absolute top-3 left-3 flex items-center gap-2">
           <div className={`w-1.5 h-1.5 animate-pulse-dot ${op.status === "ACTIVE" ? "bg-green-500" : "bg-yellow-500"}`} />
           <span className="text-[9px] font-mono tracking-[0.15em] text-signal-white/80">{op.status}</span>

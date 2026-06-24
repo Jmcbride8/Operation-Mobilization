@@ -102,7 +102,7 @@ function BranchCard({ branch, index }) {
           alt={branch.name}
           className="w-full h-full object-cover opacity-60 group-hover:opacity-40 group-hover:grayscale transition-all duration-700"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/25 to-transparent" />
         <span className="absolute top-2 left-2 text-[10px] font-mono text-ignition tracking-wider">[ {branch.id} ]</span>
         <span className="absolute top-3 right-3 text-[12px] font-mono text-signal-white tracking-[0.15em] text-right font-bold">{branch.tagline}</span>
       </div>

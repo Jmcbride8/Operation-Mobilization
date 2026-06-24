@@ -76,7 +76,7 @@ function IntelCard({ item, index, getImage }) {
           alt={item.title}
           className="w-full h-full object-cover opacity-70 group-hover:opacity-40 group-hover:grayscale transition-all duration-700 scale-105 group-hover:scale-100"
         />
-        <div className="absolute inset-0 bg-obsidian/60 group-hover:bg-obsidian/30 transition-colors duration-500" />
+        <div className="absolute inset-0 bg-obsidian/30 group-hover:bg-obsidian/15 transition-colors duration-500" />
         
         {/* Overlay data */}
         <div className="absolute top-3 left-3 flex items-center gap-2">
