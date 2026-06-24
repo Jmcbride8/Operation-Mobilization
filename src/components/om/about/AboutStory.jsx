@@ -47,7 +47,7 @@ export default function AboutStory() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="flex gap-6 md:gap-10 pb-12 last:pb-0"
             >
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center w-20 md:w-24 shrink-0">
                 <span className="font-heading font-black text-2xl md:text-3xl text-ignition tracking-tight whitespace-nowrap">{m.year}</span>
                 {i < MILESTONES.length - 1 && <div className="w-px flex-1 bg-titanium/20 mt-3" />}
               </div>
