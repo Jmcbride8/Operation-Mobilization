@@ -87,7 +87,7 @@ export default function Navbar() {
           {/* Mission dropdown */}
           <div className="relative group">
             <button className="px-3 py-1.5 text-[10px] font-mono tracking-[0.15em] text-black dark:text-white hover:text-ignition hover:border hover:border-titanium/40 transition-all duration-200 flex items-center gap-1">
-              THE MISSION
+              THE TEAM
               <span className="text-[7px] opacity-60">▼</span>
             </button>
             <div className="absolute top-full left-0 hidden group-hover:block bg-obsidian border border-titanium/20 shadow-2xl min-w-[300px] z-50">
@@ -159,7 +159,7 @@ export default function Navbar() {
             className="md:hidden bg-obsidian/98 border-b border-titanium/20 overflow-hidden"
           >
             <div className="px-4 py-4 flex flex-col gap-1">
-              <span className="px-3 pt-2 pb-1 text-[9px] font-mono tracking-[0.25em] text-ignition">THE MISSION</span>
+              <span className="px-3 pt-2 pb-1 text-[9px] font-mono tracking-[0.25em] text-ignition">THE TEAM</span>
               {MISSION_LINKS.map((link) => (
                 <Link
                   key={link.label}
