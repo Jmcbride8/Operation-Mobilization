@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import ScrambleText from "./ScrambleText";
+import ReflowCycle from "./ReflowCycle";
 import { useSiteImages } from "@/hooks/useSiteImages";
 
 export default function GreatCommission() {
@@ -53,12 +54,14 @@ export default function GreatCommission() {
           text="MISSIONS AREN'T A CALLING."
           className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.03em] uppercase leading-[0.95]"
         />
-        <ScrambleText
-          as="h2"
-          text="IT'S A COMMAND."
-          className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-ignition tracking-[-0.03em] uppercase leading-[0.95] mt-1"
-          delay={300}
-        />
+        <ReflowCycle>
+          <ScrambleText
+            as="h2"
+            text="IT'S A COMMAND."
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-ignition tracking-[-0.03em] uppercase leading-[0.95] mt-1"
+            delay={300}
+          />
+        </ReflowCycle>
 
         {/* Scripture quote */}
         <motion.div

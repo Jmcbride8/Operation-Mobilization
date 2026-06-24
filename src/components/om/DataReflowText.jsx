@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const REFLOW_TRANSITION = {
   duration: 0.4,
   repeat: Infinity,
-  repeatDelay: 6,
+  repeatDelay: 3,
   ease: "easeInOut",
 };
 
@@ -38,7 +38,7 @@ export default function DataReflowText({ text, reference }) {
         transition={{
           duration: 0.4,
           repeat: Infinity,
-          repeatDelay: 6,
+          repeatDelay: 3,
           ease: "linear",
         }}
       />

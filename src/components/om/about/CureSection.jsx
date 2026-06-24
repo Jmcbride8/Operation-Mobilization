@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import ScrambleText from "@/components/om/ScrambleText";
 import DataReflowText from "@/components/om/DataReflowText";
+import ReflowCycle from "@/components/om/ReflowCycle";
 import { useSiteImages } from "@/hooks/useSiteImages";
 
 const PILLARS = [
@@ -38,11 +39,13 @@ export default function CureSection() {
           <div className="w-8 h-px bg-ignition" />
           <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">THE RESPONSE</span>
         </div>
-        <ScrambleText
-          as="h2"
-          text="WE BRING THE CURE."
-          className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
-        />
+        <ReflowCycle>
+          <ScrambleText
+            as="h2"
+            text="WE BRING THE CURE."
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
+          />
+        </ReflowCycle>
         <ScrambleText
           as="h2"
           text="BOTH. ALWAYS."
