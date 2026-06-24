@@ -65,8 +65,9 @@ export default function CureSection() {
             >
               {/* Background image */}
               <div className="absolute inset-0">
-                <img src={getImage(p.imageKey)} alt="" className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
-                <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/60 to-transparent" />
+                <img src={getImage(p.imageKey)} alt="" className="w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500" />
+                <div className="absolute inset-0 bg-white/50 dark:bg-black/50" />
+                <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-white/20 dark:from-black dark:via-black/50 dark:to-black/20" />
               </div>
 
               <div className="relative z-10 flex items-center gap-4">
