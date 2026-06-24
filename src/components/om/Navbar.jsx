@@ -69,16 +69,8 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-1">
-          {NAV_ITEMS.map((item) =>
-            item.label === "GIVE" ? (
-              <button
-                key={item.label}
-                onClick={() => handleNav(item.href)}
-                className="ml-4 px-4 py-1.5 bg-ignition text-[10px] font-heading font-bold tracking-[0.15em] text-white hover:bg-ignition/90 transition-colors"
-              >
-                {item.label}
-              </button>
-            ) : item.to ? (
+          {NAV_ITEMS.filter((item) => item.label !== "GIVE").map((item) =>
+            item.to ? (
               <Link
                 key={item.label}
                 to={item.to}
@@ -98,7 +90,7 @@ export default function Navbar() {
           )}
           <button
             onClick={toggleTheme}
-            className="p-2 text-titanium hover:text-signal-white hover:border hover:border-titanium/40 transition-all duration-200"
+            className="ml-4 p-2 text-titanium hover:text-signal-white hover:border hover:border-titanium/40 transition-all duration-200"
             aria-label="Toggle theme"
           >
             {isDark ? <Sun size={16} /> : <Moon size={16} />}
@@ -106,6 +98,12 @@ export default function Navbar() {
           <button
             onClick={() => handleNav("#deploy")}
             className="ml-4 px-4 py-1.5 bg-ignition text-[10px] font-heading font-bold tracking-[0.15em] text-white hover:bg-ignition/90 transition-colors"
+          >
+            GIVE
+          </button>
+          <button
+            onClick={() => handleNav("#deploy")}
+            className="ml-2 px-4 py-1.5 bg-ignition text-[10px] font-heading font-bold tracking-[0.15em] text-white hover:bg-ignition/90 transition-colors"
           >
             GO
           </button>
