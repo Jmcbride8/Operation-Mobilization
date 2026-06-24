@@ -18,19 +18,21 @@ const OPERATIONS = [
 ];
 
 export default function HeroMap() {
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(
+    typeof document !== "undefined" && document.documentElement.classList.contains("dark")
+  );
 
   useEffect(() => {
     const root = document.documentElement;
-    const observer = new MutationObserver(() => {
-      setIsDark(root.classList.contains("dark"));
-    });
+    const update = () => setIsDark(root.classList.contains("dark"));
+    const observer = new MutationObserver(update);
     observer.observe(root, { attributes: true, attributeFilter: ["class"] });
     return () => observer.disconnect();
   }, []);
 
   return (
     <MapContainer
+      key={isDark ? "dark" : "light"}
       center={[20, 15]}
       zoom={2}
       minZoom={2}
