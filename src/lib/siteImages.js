@@ -63,7 +63,7 @@ export const SITE_IMAGES = [
   { key: "diagnosis.symptom", label: "Diagnosis - The Symptom", category: "Diagnosis & Cure", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/62ecb575d_generated_image.png" },
   { key: "diagnosis.cause", label: "Diagnosis - The Cause", category: "Diagnosis & Cure", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/c89850f6d_generated_image.png" },
   { key: "diagnosis.cure", label: "Diagnosis - The Cure", category: "Diagnosis & Cure", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/199f6f543_generated_image.png" },
-  { key: "cure.message", label: "Cure - The Message", category: "Diagnosis & Cure", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/821cb991b_generated_image.png" },
+  { key: "cure.message", label: "Cure - The Message", category: "Diagnosis & Cure", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/70c7621e0_generated_image.png" },
   { key: "cure.proof", label: "Cure - The Proof", category: "Diagnosis & Cure", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/b6c0da36b_generated_image.png" },
 ];
 
