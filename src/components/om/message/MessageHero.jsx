@@ -8,11 +8,12 @@ export default function MessageHero() {
 
   return (
     <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden border-b border-titanium/10">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-b from-obsidian/85 via-obsidian/75 to-obsidian pointer-events-none" />
+      <div className="absolute inset-0">
+        <img src={heroImage} alt="Illuminated Bible" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-white/50 dark:bg-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-white/20 to-white/70 dark:from-black/30 dark:via-black/20 dark:to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-transparent to-white/30 dark:from-black/60 dark:via-transparent dark:to-black/30" />
+      </div>
       <div className="absolute inset-0 grid-lines opacity-20 pointer-events-none" />
 
       <div className="relative z-10 text-center max-w-3xl mx-auto px-4 py-32">
