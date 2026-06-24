@@ -11,6 +11,7 @@ import BrandIdentity from '@/pages/BrandIdentity';
 import AboutOM from '@/pages/AboutOM';
 import Admin from '@/pages/Admin';
 import TheMessage from '@/pages/TheMessage';
+import GoSignUp from '@/pages/GoSignUp';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -44,6 +45,7 @@ const AuthenticatedApp = () => {
       <Route path="/about" element={<AboutOM />} />
       <Route path="/admin" element={<Admin />} />
       <Route path="/message" element={<TheMessage />} />
+      <Route path="/enlist" element={<GoSignUp />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );

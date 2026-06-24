@@ -102,7 +102,7 @@ export default function Navbar() {
             GIVE
           </button>
           <button
-            onClick={() => handleNav("#deploy")}
+            onClick={() => navigate("/enlist")}
             className="ml-2 px-4 py-1.5 bg-ignition text-[10px] font-heading font-bold tracking-[0.15em] text-white hover:bg-ignition/90 transition-colors"
           >
             GO
@@ -153,7 +153,7 @@ export default function Navbar() {
                 TOGGLE THEME
               </button>
               <button
-                onClick={() => handleNav("#deploy")}
+                onClick={() => { setMobileOpen(false); navigate("/enlist"); }}
                 className="mt-2 px-4 py-3 bg-ignition text-xs font-heading font-bold tracking-[0.15em] text-white text-center"
               >
                 GO
