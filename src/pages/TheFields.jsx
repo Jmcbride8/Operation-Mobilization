@@ -8,7 +8,7 @@ import DataOverlay from "@/components/om/DataOverlay";
 import ScrambleText from "@/components/om/ScrambleText";
 import { useSiteImages } from "@/hooks/useSiteImages";
 import { base44 } from "@/api/base44Client";
-import CriteriaBars from "@/components/om/fields/CriteriaBars";
+import CriteriaBars, { COUNTRY_CRITERIA, SHIP_CRITERIA } from "@/components/om/fields/CriteriaBars";
 
 const SHIPS = [
   {
@@ -164,6 +164,12 @@ export default function TheFields() {
                     <span className="font-mono text-lg font-bold text-ignition">{(country.missionaries || 0).toLocaleString()}</span>
                     <span className="text-[9px] font-mono text-titanium">workers</span>
                   </div>
+                  {COUNTRY_CRITERIA[country.code]?.cost && (
+                    <div className="mt-1.5 flex items-center justify-between">
+                      <span className="text-[8px] font-mono tracking-[0.15em] text-titanium">MO. SUPPORT</span>
+                      <span className="text-[10px] font-mono font-bold text-signal-white">${COUNTRY_CRITERIA[country.code].cost.toLocaleString()}</span>
+                    </div>
+                  )}
                   <CriteriaBars type="country" code={country.code} />
                 </motion.div>
               ))}
@@ -207,6 +213,12 @@ export default function TheFields() {
                 </div>
                 <h3 className="font-heading font-black text-xl md:text-2xl text-signal-white mb-3">{ship.name}</h3>
                 <p className="text-xs font-mono text-titanium leading-relaxed">{ship.desc}</p>
+                {SHIP_CRITERIA[ship.name]?.cost && (
+                  <div className="mt-4 pt-3 border-t border-titanium/10 flex items-center justify-between">
+                    <span className="text-[9px] font-mono tracking-[0.2em] text-titanium">MONTHLY SUPPORT / PERSON</span>
+                    <span className="font-mono font-bold text-lg text-ignition">${SHIP_CRITERIA[ship.name].cost.toLocaleString()}</span>
+                  </div>
+                )}
                 <CriteriaBars type="ship" code={ship.name} />
               </motion.div>
             ))}
