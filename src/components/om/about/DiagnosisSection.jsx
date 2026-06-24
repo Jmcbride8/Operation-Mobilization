@@ -97,9 +97,9 @@ export default function DiagnosisSection() {
                 <img
                   src={getImage(slide.imageKey)}
                   alt={slide.title}
-                  className="w-full h-full object-cover opacity-70 group-hover:opacity-50 group-hover:grayscale transition-all duration-700"
+                  className="w-full h-full object-cover opacity-90 group-hover:opacity-70 group-hover:grayscale transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent" />
                 <div className="absolute top-3 left-3">
                   <span className="text-[9px] font-mono text-signal-white/40 tracking-wider">[ {slide.id} ]</span>
                 </div>
