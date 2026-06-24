@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Sun, Moon } from "lucide-react";
 
 const NAV_ITEMS = [
-  { label: "HOME", href: "#command" },
+  { label: "HOME", to: "/" },
   { label: "THE MISSION", to: "/about" },
   { label: "THE MESSAGE", to: "/message" },
   { label: "FIELD REPORTS", href: "#intel" },
@@ -52,6 +52,10 @@ export default function Navbar() {
 
   const handleNav = (href) => {
     setMobileOpen(false);
+    if (href === "#command") {
+      navigate("/");
+      return;
+    }
     const el = document.querySelector(href);
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
