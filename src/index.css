@@ -4,6 +4,45 @@
 
 @layer base {
   :root {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 52% 46%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89%;
+    --input: 0 0% 89%;
+    --ring: 0 52% 46%;
+    --chart-1: 0 52% 46%;
+    --chart-2: 200 30% 40%;
+    --chart-3: 0 0% 60%;
+    --chart-4: 40 60% 50%;
+    --chart-5: 0 0% 80%;
+    --radius: 0px;
+    --font-heading: 'Inter Tight', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+    --font-display: 'Inter Tight', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 3.9%;
+    --sidebar-primary: 0 52% 46%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 96%;
+    --sidebar-accent-foreground: 0 0% 9%;
+    --sidebar-border: 0 0% 89%;
+    --sidebar-ring: 0 52% 46%;
+  }
+  .dark {
     --background: 0 0% 3.1%;
     --foreground: 0 0% 94.9%;
     --card: 0 0% 5%;
@@ -28,11 +67,6 @@
     --chart-3: 0 0% 60%;
     --chart-4: 40 60% 50%;
     --chart-5: 0 0% 80%;
-    --radius: 0px;
-    --font-heading: 'Inter Tight', ui-sans-serif, system-ui, sans-serif;
-    --font-body: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
-    --font-display: 'Inter Tight', ui-sans-serif, system-ui, sans-serif;
-    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
     --sidebar-background: 0 0% 5%;
     --sidebar-foreground: 0 0% 94.9%;
     --sidebar-primary: 0 52% 46%;

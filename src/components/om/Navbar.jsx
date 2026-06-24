@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 
 const NAV_ITEMS = [
   { label: "HOME", href: "#command" },
@@ -14,6 +14,7 @@ const NAV_ITEMS = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -21,6 +22,33 @@ export default function Navbar() {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    const saved = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    
+    if (saved === "dark" || (!saved && prefersDark)) {
+      root.classList.add("dark");
+      setIsDark(true);
+    } else {
+      root.classList.remove("dark");
+      setIsDark(false);
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    const root = document.documentElement;
+    if (isDark) {
+      root.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+      setIsDark(false);
+    } else {
+      root.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      setIsDark(true);
+    }
+  };
 
   const handleNav = (href) => {
     setMobileOpen(false);
@@ -69,6 +97,13 @@ export default function Navbar() {
             )
           )}
           <button
+            onClick={toggleTheme}
+            className="p-2 text-titanium hover:text-signal-white hover:border hover:border-titanium/40 transition-all duration-200"
+            aria-label="Toggle theme"
+          >
+            {isDark ? <Sun size={16} /> : <Moon size={16} />}
+          </button>
+          <button
             onClick={() => handleNav("#deploy")}
             className="ml-4 px-4 py-1.5 bg-ignition text-[10px] font-heading font-bold tracking-[0.15em] text-white hover:bg-ignition/90 transition-colors"
           >
@@ -112,6 +147,13 @@ export default function Navbar() {
                   </button>
                 )
               )}
+              <button
+                onClick={toggleTheme}
+                className="mt-2 px-4 py-3 text-xs font-mono tracking-[0.15em] text-titanium text-left flex items-center gap-2"
+              >
+                {isDark ? <Sun size={16} /> : <Moon size={16} />}
+                TOGGLE THEME
+              </button>
               <button
                 onClick={() => handleNav("#deploy")}
                 className="mt-2 px-4 py-3 bg-ignition text-xs font-heading font-bold tracking-[0.15em] text-white text-center"
