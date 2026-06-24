@@ -38,7 +38,7 @@ export const SITE_IMAGES = [
   { key: "faith.paul", label: "The Apostle Paul", category: "Hall of Faith", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/7198696f7_generated_image.png" },
   { key: "faith.carey", label: "William Carey", category: "Hall of Faith", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/d1f83d3b0_generated_image.png" },
   { key: "faith.livingstone", label: "David Livingstone", category: "Hall of Faith", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/01f8a3506_generated_image.png" },
-  { key: "faith.taylor", label: "Hudson Taylor", category: "Hall of Faith", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/7122bdb5b_generated_image.png" },
+  { key: "faith.taylor", label: "Hudson Taylor", category: "Hall of Faith", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/dfa5b188e_generated_image.png" },
   { key: "faith.carmichael", label: "Amy Carmichael", category: "Hall of Faith", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/4aec35b71_generated_image.png" },
   { key: "faith.saint_elliot", label: "Saint & Elliot", category: "Hall of Faith", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/f711e1ed1_generated_image.png" },
   { key: "faith.verwer", label: "George Verwer", category: "Hall of Faith", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/7ba33378b_generated_image.png" },
