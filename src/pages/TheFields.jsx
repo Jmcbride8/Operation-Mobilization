@@ -8,6 +8,7 @@ import DataOverlay from "@/components/om/DataOverlay";
 import ScrambleText from "@/components/om/ScrambleText";
 import { useSiteImages } from "@/hooks/useSiteImages";
 import { base44 } from "@/api/base44Client";
+import CriteriaBars from "@/components/om/fields/CriteriaBars";
 
 const SHIPS = [
   {
@@ -163,6 +164,7 @@ export default function TheFields() {
                     <span className="font-mono text-lg font-bold text-ignition">{(country.missionaries || 0).toLocaleString()}</span>
                     <span className="text-[9px] font-mono text-titanium">workers</span>
                   </div>
+                  <CriteriaBars type="country" code={country.code} />
                 </motion.div>
               ))}
             </div>
@@ -205,6 +207,7 @@ export default function TheFields() {
                 </div>
                 <h3 className="font-heading font-black text-xl md:text-2xl text-signal-white mb-3">{ship.name}</h3>
                 <p className="text-xs font-mono text-titanium leading-relaxed">{ship.desc}</p>
+                <CriteriaBars type="ship" code={ship.name} />
               </motion.div>
             ))}
           </div>
