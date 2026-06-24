@@ -38,7 +38,7 @@ export default function AboutStory() {
           This is how God built a global mission force.
         </p>
 
-        <div className="relative" ref={ref}>
+        <div className="relative lg:pl-10" ref={ref}>
           {MILESTONES.map((m, i) => (
             <motion.div
               key={m.year}
