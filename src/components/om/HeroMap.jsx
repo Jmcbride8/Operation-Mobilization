@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer, CircleMarker } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -18,6 +18,17 @@ const OPERATIONS = [
 ];
 
 export default function HeroMap() {
+  const [isDark, setIsDark] = useState(true);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    const observer = new MutationObserver(() => {
+      setIsDark(root.classList.contains("dark"));
+    });
+    observer.observe(root, { attributes: true, attributeFilter: ["class"] });
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <MapContainer
       center={[20, 15]}
@@ -29,11 +40,13 @@ export default function HeroMap() {
       doubleClickZoom={false}
       zoomControl={false}
       attributionControl={false}
-      style={{ width: "100%", height: "100%", background: "#080808" }}
+      style={{ width: "100%", height: "100%", background: "var(--obsidian)" }}
       worldCopyJump={true}
     >
       <TileLayer
-        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+        url={isDark
+          ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+          : "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"}
       />
       {OPERATIONS.map((op, i) => (
         <CircleMarker

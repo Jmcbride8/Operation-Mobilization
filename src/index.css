@@ -98,7 +98,7 @@
   width: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: #080808;
+  background: var(--obsidian);
 }
 ::-webkit-scrollbar-thumb {
   background: #404040;
@@ -146,7 +146,7 @@
   z-index: 0 !important;
 }
 .hero-map-container .leaflet-container {
-  background: #080808 !important;
+  background: var(--obsidian) !important;
 }
 
 /* Leaflet tooltip override */
