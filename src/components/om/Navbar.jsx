@@ -5,9 +5,9 @@ import { Menu, X } from "lucide-react";
 
 const NAV_ITEMS = [
   { label: "HOME", href: "#command" },
+  { label: "THE MISSION", to: "/about" },
   { label: "THE MESSAGE", to: "/message" },
   { label: "FIELD REPORTS", href: "#intel" },
-  { label: "ABOUT", to: "/about" },
   { label: "GIVE", href: "#deploy" },
 ];
 
