@@ -97,9 +97,9 @@ export default function WhatWeAreNot() {
                 <img
                   src={getImage(item.imageKey)}
                   alt={item.is}
-                  className="w-full h-full object-cover opacity-50 group-hover:opacity-30 group-hover:grayscale transition-all duration-700"
+                  className="w-full h-full object-cover opacity-90 group-hover:opacity-70 group-hover:grayscale transition-all duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/5 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent" />
                 <span className="absolute top-2 right-2 text-[9px] font-mono text-titanium/40">[ {String(i + 1).padStart(2, "0")} ]</span>
               </div>
 
