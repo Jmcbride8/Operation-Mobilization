@@ -14,8 +14,7 @@ export default function LoveGoesHard() {
           alt="Christ on the Cross"
           className="w-full h-full object-cover opacity-40"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-obsidian via-obsidian/40 to-obsidian" />
-        <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-obsidian/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-obsidian/60 via-transparent to-obsidian/80" />
         <div className="absolute inset-0 grid-lines opacity-20" />
       </div>
 
