@@ -126,7 +126,7 @@ export default function IntelSection() {
       <div className="max-w-[1440px] mx-auto px-4 md:px-8">
         <div className="flex items-center gap-3 mb-2">
           <div className="w-8 h-px bg-ignition" />
-          <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">SECTION_04</span>
+          <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">FIELD INTELLIGENCE</span>
         </div>
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
           <div>

@@ -56,7 +56,7 @@ export default function WhatWeAreNot() {
       <div className="relative max-w-[1440px] mx-auto px-4 md:px-8">
         <div className="flex items-center gap-3 mb-2">
           <div className="w-8 h-px bg-ignition" />
-          <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">SECTION_02</span>
+          <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">WHO WE ARE</span>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12">
