@@ -15,7 +15,7 @@ const SHIPS = [
     name: "MV Logos Hope",
     status: "ACTIVE",
     launched: "2004",
-    image: "https://images.unsplash.com/photo-1577416412292-747c6607f055?auto=format&fit=crop&w=1200&q=80",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/c532b08d1_image.png",
     desc: "The largest book fair ship in the world. Currently serving ports across the globe, carrying over 5,000 crew and volunteers through her decks since launch.",
   },
   {
