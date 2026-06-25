@@ -62,7 +62,7 @@ export default function TestimonialsSection() {
         </div>
         <ScrambleText
           as="h2"
-          text="WHY OM IS INDISPENSABLE."
+          text="BETTER TOGETHER."
           className="font-heading font-black text-[36px] md:text-[50px] text-signal-white tracking-[-0.02em] uppercase mb-16"
         />
 
