@@ -15,24 +15,28 @@ const SHIPS = [
     name: "MV Logos Hope",
     status: "ACTIVE",
     launched: "2004",
+    image: "https://images.unsplash.com/photo-1577416412292-747c6607f055?auto=format&fit=crop&w=1200&q=80",
     desc: "The largest book fair ship in the world. Currently serving ports across the globe, carrying over 5,000 crew and volunteers through her decks since launch.",
   },
   {
     name: "MV Doulos",
     status: "DECOMMISSIONED",
     launched: "1978",
+    image: "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?auto=format&fit=crop&w=1200&q=80",
     desc: "Served for 31 years as the world's oldest active ocean-going passenger ship. Visited over 100 countries before retirement in 2009.",
   },
   {
     name: "MV Logos II",
     status: "DECOMMISSIONED",
     launched: "1988",
+    image: "https://images.unsplash.com/photo-1572730120360-41b79a7d8ca2?auto=format&fit=crop&w=1200&q=80",
     desc: "Served 20 years visiting ports in the Americas, Europe, and Africa. Retired in 2008 after welcoming over 10 million visitors.",
   },
   {
     name: "MV Logos",
     status: "DECOMMISSIONED",
     launched: "1970",
+    image: "https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?auto=format&fit=crop&w=1200&q=80",
     desc: "OM's first ship. Sailed for 18 years before being retired in 1988 after running aground off Tierra del Fuego.",
   },
 ];
@@ -200,16 +204,25 @@ export default function TheFields() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: i * 0.08 }}
-                className={`relative border ${ship.status === "ACTIVE" ? "border-ignition/50" : "border-titanium/20"} bg-signal-white/[0.02] p-6 md:p-8`}
+                className={`relative border ${ship.status === "ACTIVE" ? "border-ignition/50" : "border-titanium/20"} bg-signal-white/[0.02] overflow-hidden`}
               >
-                <div className="flex items-start justify-between mb-4">
-                  <div className="flex items-center gap-3">
-                    <Anchor size={20} className={ship.status === "ACTIVE" ? "text-ignition" : "text-titanium"} />
-                    <span className="text-[9px] font-mono text-titanium tracking-[0.2em]">LAUNCHED {ship.launched}</span>
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={ship.image}
+                    alt={ship.name}
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/40 to-transparent" />
+                  <div className="absolute top-4 right-4">
+                    <span className={`text-[9px] font-mono tracking-[0.2em] px-2 py-1 ${ship.status === "ACTIVE" ? "bg-ignition text-white" : "bg-titanium/20 text-titanium"}`}>
+                      {ship.status}
+                    </span>
                   </div>
-                  <span className={`text-[9px] font-mono tracking-[0.2em] px-2 py-1 ${ship.status === "ACTIVE" ? "bg-ignition text-white" : "bg-titanium/20 text-titanium"}`}>
-                    {ship.status}
-                  </span>
+                </div>
+                <div className="p-6 md:p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <Anchor size={20} className={ship.status === "ACTIVE" ? "text-ignition" : "text-titanium"} />
+                  <span className="text-[9px] font-mono text-titanium tracking-[0.2em]">LAUNCHED {ship.launched}</span>
                 </div>
                 <h3 className="font-heading font-black text-xl md:text-2xl text-signal-white mb-3">{ship.name}</h3>
                 <p className="text-xs font-mono text-titanium leading-relaxed">{ship.desc}</p>
@@ -220,6 +233,7 @@ export default function TheFields() {
                   </div>
                 )}
                 <CriteriaBars type="ship" code={ship.name} />
+                </div>
               </motion.div>
             ))}
           </div>
