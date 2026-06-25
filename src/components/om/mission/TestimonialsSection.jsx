@@ -25,6 +25,27 @@ const TESTIMONIALS = [
     quote:
       "We give to missionaries, not organizations. But without OM, the missionaries we love couldn't survive the field. Tax receipts, medical coverage, crisis response — it's all invisible to us, and that's the point. They make giving simple and safe.",
   },
+  {
+    persona: "MISSIONARY",
+    name: "David & Anna M.",
+    location: "Field Workers, East Africa",
+    quote:
+      "I've never seen an organization do what OM does. The depth of care, the strategic vision, the relentless commitment to the unreached — it's extraordinary. What OM has built across the hardest places on earth is nothing short of a miracle of dedication and sacrifice.",
+  },
+  {
+    persona: "MISSIONARY",
+    name: "Michael R.",
+    location: "Field Worker, South Asia",
+    quote:
+      "What struck me most was the people. OM's teams are the most dedicated, passionate, and selfless believers I've ever worked alongside. They don't clock in and out — they live the mission. Being surrounded by that kind of fire shaped my entire walk with Christ.",
+  },
+  {
+    persona: "MISSIONARY",
+    name: "Rebecca L.",
+    location: "Field Worker, Southeast Asia",
+    quote:
+      "I didn't have to start from zero. OM had already pioneered an incredible work on the field — relationships, language roots, trust built over decades. I got to step into something God had been preparing long before I arrived. That's the power of joining what OM has already built.",
+  },
 ];
 
 export default function TestimonialsSection() {
