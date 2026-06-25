@@ -10,7 +10,7 @@ export default function LoveGoesHard() {
     <section ref={ref} className="relative min-h-[80vh] flex items-center justify-center overflow-hidden border-t border-titanium/10">
       <div className="absolute inset-0">
         <img
-          src="https://media.base44.com/images/public/6a39d712e094663f23e0cf53/65588226f_generated_image.png"
+          src="https://media.base44.com/images/public/6a39d712e094663f23e0cf53/6258de976_image.png"
           alt="Christ on the Cross"
           className="w-full h-full object-cover opacity-50"
         />
