@@ -62,7 +62,7 @@ const STAGES = [
   {
     id: "08",
     name: "POST-SERVICE DEBRIEFING",
-    imageKey: "mission.furlough",
+    imageKey: "mission.debriefing",
     desc: "Returning from the field is harder than going. Culture shock, identity questions, and reverse adjustment are real. OM provides structured debriefing to help you process and reintegrate.",
     omSupport: "Professional debriefing, re-entry counseling, transition support, and reintegration resources.",
   },
