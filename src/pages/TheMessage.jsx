@@ -14,8 +14,8 @@ export default function TheMessage() {
       <Navbar />
       <MessageHero />
       <WhyDifferent />
-      <OneBody />
       <LoveGoesHard />
+      <OneBody />
       <Footer />
     </div>
   );
