@@ -8,6 +8,7 @@ import DimensionVision from "@/components/om/recapitalize/DimensionVision";
 import DimensionCommitment from "@/components/om/recapitalize/DimensionCommitment";
 import DimensionMissional from "@/components/om/recapitalize/DimensionMissional";
 import DimensionInnovate from "@/components/om/recapitalize/DimensionInnovate";
+import LoveGoesHard from "@/components/om/recapitalize/LoveGoesHard";
 import RecapitalizeCTA from "@/components/om/recapitalize/RecapitalizeCTA";
 
 export default function Recapitalize() {
@@ -32,6 +33,7 @@ export default function Recapitalize() {
       <DimensionCommitment />
       <DimensionMissional />
       <DimensionInnovate />
+      <LoveGoesHard />
       <RecapitalizeCTA />
       <Footer />
     </div>
