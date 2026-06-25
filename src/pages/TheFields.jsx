@@ -22,7 +22,7 @@ const SHIPS = [
     name: "MV Doulos",
     status: "DECOMMISSIONED",
     launched: "1978",
-    image: "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?auto=format&fit=crop&w=1200&q=80",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/c2c3841a3_image.png",
     desc: "Served for 31 years as the world's oldest active ocean-going passenger ship. Visited over 100 countries before retirement in 2009.",
   },
   {
