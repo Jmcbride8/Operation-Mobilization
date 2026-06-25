@@ -14,9 +14,8 @@ export default function LoveGoesHard() {
           alt="Christ on the Cross"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-obsidian/40 via-obsidian/20 to-obsidian/60" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(8,8,8,0.4)_0%,transparent_70%)]" />
-        <div className="absolute inset-0 grid-lines opacity-10" />
+        <div className="absolute inset-x-0 top-0 h-[8%] bg-gradient-to-b from-obsidian to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-[8%] bg-gradient-to-t from-obsidian to-transparent" />
       </div>
 
       <div className="relative max-w-[1440px] mx-auto px-4 md:px-8 text-center py-24">
@@ -26,15 +25,15 @@ export default function LoveGoesHard() {
           transition={{ duration: 0.8 }}
           className="space-y-6"
         >
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-8 h-px bg-ignition" />
-            <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">THE ULTIMATE DEPLOYMENT</span>
-            <div className="w-8 h-px bg-ignition" />
+          <div className="flex items-center justify-center gap-3 mb-4 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+            <div className="w-8 h-px bg-signal-white" />
+            <span className="text-[10px] font-mono tracking-[0.3em] text-signal-white">THE ULTIMATE DEPLOYMENT</span>
+            <div className="w-8 h-px bg-signal-white" />
           </div>
           <ScrambleText
             as="h2"
             text="LOVE GOES HARD."
-            className="font-heading font-black text-[46px] md:text-[80px] lg:text-[100px] text-signal-white tracking-[-0.02em] uppercase leading-[0.95] drop-shadow-[0_4px_24px_rgba(0,0,0,0.9)]"
+            className="font-heading font-black text-[46px] md:text-[80px] lg:text-[100px] text-signal-white tracking-[-0.02em] uppercase leading-[0.95] drop-shadow-[0_8px_16px_rgba(0,0,0,0.95)]"
           />
         </motion.div>
       </div>
