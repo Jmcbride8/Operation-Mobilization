@@ -16,7 +16,7 @@ const TESTIMONIALS = [
     name: "Sarah K.",
     location: "Field Worker, Central Asia",
     quote:
-      "When my country closed overnight, OM had an extraction plan before I even asked. When I came home broken, they had a debrief counselor waiting. I didn't just have a sending agency — I had a lifeline through every stage.",
+      "OM evacuated us before the USA embassy was able to get their people out. They had a temporary house ready for us to stay in until our family could find our footing. I didn't just have a sending agency — I had a lifeline through every stage.",
   },
   {
     persona: "SUPPORTER",
