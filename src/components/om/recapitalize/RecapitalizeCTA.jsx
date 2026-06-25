@@ -46,12 +46,13 @@ export default function RecapitalizeCTA() {
           </div>
           <ScrambleText
             as="h2"
-            text="THREE MOVES."
+            text="YOUR MOVE."
             className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-6"
           />
           <p className="text-sm md:text-base font-mono text-titanium leading-relaxed max-w-2xl mx-auto">
-            The moment is here. The recipe is known. The team is assembled.
-            These are the three moves that turn momentum into a movement.
+            You built the momentum. Now embrace the mission. There is no defense —
+            only offense. Press the advantage. Go. This is do or die, and the only
+            move that counts is the next one.
           </p>
         </div>
 
