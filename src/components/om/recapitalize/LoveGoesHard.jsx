@@ -16,7 +16,7 @@ export default function LoveGoesHard() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/50 to-obsidian/30" />
         <div className="absolute inset-0 bg-gradient-to-r from-obsidian/95 via-obsidian/60 to-obsidian/20" />
-        <div className="absolute inset-0 bg-gradient-to-b from-obsidian/80 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-obsidian/80 via-transparent to-obsidian/80" />
       </div>
 
       <div className="relative max-w-[1440px] mx-auto px-4 md:px-8 w-full pt-24 pb-24">
