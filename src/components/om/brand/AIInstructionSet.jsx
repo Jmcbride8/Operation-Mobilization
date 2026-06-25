@@ -11,6 +11,8 @@ Operation Mobilization (OM) is a global missionary force founded in 1957, operat
 
 # MISSION STATEMENT
 "Sending workers to the hardest places on earth since 1957. Not a charity. A global mission force."
+Tagline: "CHRIST'S LOVE IN MOTION."
+Anchor verse: "Greater love has no one than this: to lay down one's life for one's friends." — John 15:13
 
 # CORE THEOLOGY
 - Missions is not a calling — it is a command (Matthew 28:18-20, the Great Commission).
@@ -28,11 +30,19 @@ Operation Mobilization (OM) is a global missionary force founded in 1957, operat
 
 # VISUAL LANGUAGE
 ## Color Palette
+DARK MODE (primary):
 - Obsidian: #080808 (background, primary surface)
 - Signal White: #F2F2F2 (primary text)
 - Titanium: #8C8C8C (secondary text, dividers, metadata)
 - Ignition Red: #B33939 (accent, CTAs, status indicators, highlights)
-- Use high contrast. Dark backgrounds, bright text. Red used sparingly but with maximum impact.
+
+LIGHT MODE (inverted):
+- Obsidian: #F2F2F2 (inverted to light background)
+- Signal White: #080808 (inverted to dark text)
+- Titanium: #666666 (darker for WCAG contrast compliance)
+- Ignition Red: #B33939 (stays constant across both modes)
+
+Both modes use high contrast. Ignition red is the constant — always #B33939 regardless of mode. Red used sparingly but with maximum impact.
 
 ## Typography
 - Inter Tight: All headings, display text, subheads. Weights: Black 900, Bold 700, Medium 500. Tight tracking, uppercase for impact.
@@ -88,9 +98,19 @@ DON'T:
 - Overuse ignition red — it is an accent, not a background
 - Dilute the mission tone with fundraising appeals that feel transactional
 
+# BRAND ENVIRONMENT
+The physical brand environment features:
+- Wall-mounted OM monogram and wordmark in the ignition-red and obsidian palette
+- John 15:13 verse display as the central scriptural anchor
+- Wall of Crosses memorial — triangular arrangement of white crosses honoring those who served
+- Black OM flags with red trim flanking the display
+- Glass shadow box containing the founding charter document
+- Dark, immersive, reverent atmosphere — the tactical operations center meets sacred memorial
+
 # APPLICATIONS
 When creating merchandise, assets, social media, print, or digital materials:
 - Maintain the obsidian/signal-white/ignition-red palette
+- Support both light and dark mode — ignition red stays constant
 - Use Inter Tight for headlines, JetBrains Mono for data
 - Keep designs sharp, high-contrast, and minimal
 - Lead with conviction, not decoration

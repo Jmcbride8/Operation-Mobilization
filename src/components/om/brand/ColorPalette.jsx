@@ -67,12 +67,12 @@ export default function ColorPalette() {
 
         {/* Hierarchy */}
         <div className="mt-8 border border-titanium/20 p-6">
-          <span className="text-[9px] font-mono text-ignition tracking-wider block mb-4">CONTRAST HIERARCHY</span>
+          <span className="text-[9px] font-mono text-ignition tracking-wider block mb-4">CONTRAST HIERARCHY — DARK MODE</span>
           <div className="space-y-3">
             {[
               { bg: "#080808", fg: "#F2F2F2", label: "PRIMARY — Obsidian / Signal White", ratio: "16:1" },
               { bg: "#080808", fg: "#B33939", label: "ACCENT — Obsidian / Ignition", ratio: "4.0:1" },
-              { bg: "#080808", fg: "#404040", label: "SUPPORT — Obsidian / Titanium", ratio: "3.2:1" },
+              { bg: "#080808", fg: "#8C8C8C", label: "SUPPORT — Obsidian / Titanium", ratio: "3.2:1" },
             ].map((row) => (
               <div key={row.label} className="flex items-center gap-4">
                 <div className="flex-shrink-0 w-32 h-10 flex items-center px-3" style={{ backgroundColor: row.bg }}>
@@ -83,6 +83,30 @@ export default function ColorPalette() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Light mode palette */}
+        <div className="mt-4 border border-titanium/20 p-6 bg-signal-white">
+          <span className="text-[9px] font-mono text-ignition tracking-wider block mb-4">CONTRAST HIERARCHY — LIGHT MODE (INVERTED)</span>
+          <div className="space-y-3">
+            {[
+              { bg: "#F2F2F2", fg: "#080808", label: "PRIMARY — Signal White / Obsidian (inverted)", ratio: "16:1" },
+              { bg: "#F2F2F2", fg: "#B33939", label: "ACCENT — Ignition (constant across modes)", ratio: "4.2:1" },
+              { bg: "#F2F2F2", fg: "#666666", label: "SUPPORT — Titanium #666666 (darker for contrast)", ratio: "5.3:1" },
+            ].map((row) => (
+              <div key={row.label} className="flex items-center gap-4">
+                <div className="flex-shrink-0 w-32 h-10 flex items-center px-3" style={{ backgroundColor: row.bg }}>
+                  <span className="text-[10px] font-mono tracking-wider" style={{ color: row.fg }}>Aa 0123</span>
+                </div>
+                <span className="text-[11px] font-mono text-obsidian/70 flex-1">{row.label}</span>
+                <span className="text-[10px] font-mono text-obsidian/50">{row.ratio}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-[11px] font-mono text-obsidian/50 leading-relaxed mt-4">
+            Light mode inverts obsidian and signal-white. Ignition red stays constant at #B33939 in both modes.
+            Titanium shifts from #8C8C8C (dark) to #666666 (light) for WCAG contrast compliance.
+          </p>
         </div>
       </div>
     </section>
