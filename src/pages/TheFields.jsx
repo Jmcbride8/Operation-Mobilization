@@ -157,7 +157,7 @@ export default function TheFields() {
                     <img
                       src={`https://flagcdn.com/40x30/${country.code?.toLowerCase()}.png`}
                       alt={country.name}
-                      className="h-6 w-8 object-cover"
+                      className="h-6 w-8 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                     />
                     <span className="text-[8px] font-mono text-titanium/50 tracking-[0.15em]">
                       {String(i + 1).padStart(2, "0")}
@@ -204,7 +204,7 @@ export default function TheFields() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: i * 0.08 }}
-                className={`relative border ${ship.status === "ACTIVE" ? "border-ignition/50" : "border-titanium/20"} bg-signal-white/[0.02] overflow-hidden`}
+                className={`group relative border ${ship.status === "ACTIVE" ? "border-ignition/50" : "border-titanium/20"} bg-signal-white/[0.02] overflow-hidden`}
               >
                 <div className="relative h-48 overflow-hidden">
                   <img
