@@ -5,6 +5,7 @@ import Footer from "@/components/om/Footer";
 import MessageHero from "@/components/om/message/MessageHero";
 import WhyDifferent from "@/components/om/message/WhyDifferent";
 import OneBody from "@/components/om/message/OneBody";
+import LoveGoesHard from "@/components/om/recapitalize/LoveGoesHard";
 
 export default function TheMessage() {
   return (
@@ -14,6 +15,7 @@ export default function TheMessage() {
       <MessageHero />
       <WhyDifferent />
       <OneBody />
+      <LoveGoesHard />
       <Footer />
     </div>
   );
