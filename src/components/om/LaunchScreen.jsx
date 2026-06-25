@@ -84,7 +84,7 @@ export default function LaunchScreen({ onComplete }) {
             transition={{ duration: 1.2, ease: "easeOut", delay: 0.45 }}
             className="text-center mb-8 px-4 max-w-4xl"
           >
-            <h1 className="font-heading font-black text-3xl md:text-5xl lg:text-6xl text-signal-white tracking-[-0.02em] uppercase leading-[1.05]">
+            <h1 className="font-heading font-black text-5xl md:text-7xl lg:text-8xl text-signal-white tracking-[-0.02em] uppercase leading-[1.05]">
               WELCOME TO THE
               <br />
               <span className="text-ignition">FRONTLINES OF FAITH</span>
