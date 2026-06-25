@@ -74,24 +74,29 @@ export default function TurnaroundStory() {
         </div>
 
         {/* The Vision */}
-        <div className="border border-titanium/20 p-8 md:p-12 relative overflow-hidden">
-          <div className="absolute inset-0 grid-lines opacity-10" />
-          <div className="relative">
-            <div className="flex items-center gap-3 mb-4">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <div className="lg:col-span-5">
+            <div className="flex items-center gap-3 mb-2">
               <div className="w-8 h-px bg-ignition" />
               <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">03 — THE VISION</span>
             </div>
             <ScrambleText
               as="h2"
               text="NOT RECOVER. RESURGE."
-              className="font-heading font-black text-[34px] md:text-[44px] text-signal-white tracking-[-0.02em] uppercase mb-6"
+              className="font-heading font-black text-[34px] md:text-[44px] text-signal-white tracking-[-0.02em] uppercase"
             />
-            <p className="text-sm md:text-base font-mono text-titanium leading-relaxed max-w-3xl">
+          </div>
+          <div className="lg:col-span-7 space-y-6">
+            <p className="text-sm md:text-base font-mono text-titanium leading-relaxed">
               We are leveraging the dark night to radically refocus on the very courage and edge that made OM
               the tip of the spear in the missions world. With newfound resolve and clarity, we are determined
               to create an epic second act — returning to the great bones and daring do. Not a recovery.
               A resurgence.
             </p>
+            <div className="grid grid-cols-2 gap-px bg-titanium/20">
+              <StatBlock label="POSTURE" value="RESURGENT" sub="Not recovery — offense" color="text-signal-white" />
+              <StatBlock label="TARGET" value="THE SPEAR TIP" sub="Return to the daring edge" color="text-signal-white" />
+            </div>
           </div>
         </div>
       </div>
