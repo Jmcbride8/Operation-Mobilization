@@ -37,7 +37,7 @@ const BRANCHES = [
     desc: "Doctors, nurses, paramedics, and caregivers who tend the sick and comfort the dying. They are the hands of the Great Physician — bringing healing, dignity, and presence to the suffering.",
     strength: "Compassion and the ministry of healing",
     verse: "Matthew 25:36 — \"I was sick and you looked after me... whatever you did for one of the least of these brothers and sisters of mine, you did for me.\"",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1666214280557-f1b5022eb634?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "05",
