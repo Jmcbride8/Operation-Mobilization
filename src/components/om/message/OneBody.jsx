@@ -5,57 +5,84 @@ import ScrambleText from "@/components/om/ScrambleText";
 const BRANCHES = [
   {
     id: "01",
-    name: "PENTECOSTAL / CHARISMATIC",
-    tagline: "THE EMOTIONAL & EXPRESSIVE",
-    desc: "Vibrant, personal experience of God's presence. Joyful, expressive, interactive worship. Active work of the Holy Spirit — healing, gifts, and power for today.",
-    strength: "Spiritual fire and boldness",
-    verse: "Acts 1:8 — \"You will receive power when the Holy Spirit comes on you; and you will be my witnesses.\"",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/e581a8875_generated_image.png",
+    name: "PASTORS & MINISTERS",
+    tagline: "SHEPHERDS OF THE FLOCK",
+    desc: "Those who preach, counsel, and lead the local church. They carry the weight of spiritual oversight — feeding, guiding, and guarding the people of God with the Word.",
+    strength: "Spiritual leadership and care",
+    verse: "1 Peter 5:2-3 — \"Be shepherds of God's flock that is under your care, watching over them — not because you must, but because you are willing, as God wants you to be.\"",
+    image: "https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=800&auto=format&fit=crop",
+  },
+  {
+    id: "02",
+    name: "BUSINESS LEADERS",
+    tagline: "STEWARDS OF RESOURCES",
+    desc: "Entrepreneurs, executives, and managers who generate capital, create jobs, and steward resources. Their work funds the mission, sustains families, and extends the reach of the Gospel through enterprise.",
+    strength: "Provision and strategic stewardship",
+    verse: "Colossians 3:23 — \"Whatever you do, work at it with all your heart, as working for the Lord, not for human masters.\"",
+    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "03",
-    name: "BAPTIST",
-    tagline: "BELIEVER'S BAPTISM & LOCAL CHURCH",
-    desc: "Baptism by immersion as a public declaration of personal faith. Autonomy of the local church. Deep commitment to Scripture, evangelism, and the priesthood of every believer.",
-    strength: "Convictional faith and local church vitality",
-    verse: "Romans 6:4 — \"We were therefore buried with him through baptism into death, that just as Christ was raised, we too may live a new life.\"",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/e12bcff10_generated_image.png",
+    name: "TRADESPEOPLE",
+    tagline: "BUILDERS & MAKERS",
+    desc: "Plumbers, electricians, carpenters, welders, mechanics. They build, fix, and sustain the physical world. Every pipe laid, every wire run, every structure raised is an act of service to Christ and neighbor.",
+    strength: "Skilled labor and faithful craftsmanship",
+    verse: "1 Thessalonians 4:11-12 — \"Make it your ambition to lead a quiet life: You should mind your own business and work with your hands, so that your daily life may win the respect of outsiders.\"",
+    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop",
+  },
+  {
+    id: "04",
+    name: "HEALERS & CAREGIVERS",
+    tagline: "HANDS OF MERCY",
+    desc: "Doctors, nurses, paramedics, and caregivers who tend the sick and comfort the dying. They are the hands of the Great Physician — bringing healing, dignity, and presence to the suffering.",
+    strength: "Compassion and the ministry of healing",
+    verse: "Matthew 25:36 — \"I was sick and you looked after me... whatever you did for one of the least of these brothers and sisters of mine, you did for me.\"",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "05",
-    name: "REFORMED / CALVINIST",
-    tagline: "SOVEREIGNTY & INTELLECT",
-    desc: "Emphasis on God's ultimate control and authority. Deep theological reflection and careful study of Scripture alongside personal faith.",
-    strength: "Theological rigor and discipline",
-    verse: "Ephesians 1:11 — \"In Him we were also chosen, having been predestined according to the plan of Him who works out everything in conformity with His will.\"",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/38fcc4e21_generated_image.png",
+    name: "EDUCATORS",
+    tagline: "TRAINERS OF MINDS",
+    desc: "Teachers, professors, and mentors who shape the next generation. They cultivate wisdom, discipline, and truth — forming minds and character in a world desperate for both.",
+    strength: "Wisdom and the formation of the next generation",
+    verse: "Proverbs 22:6 — \"Train up a child in the way he should go; even when he is old he will not depart from it.\"",
+    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800&auto=format&fit=crop",
+  },
+  {
+    id: "06",
+    name: "ENGINEERS & TECHNICIANS",
+    tagline: "ARCHITECTS OF SYSTEMS",
+    desc: "Software developers, engineers, and technologists who design the systems that connect and sustain the modern world. Their work amplifies the Gospel's reach — translating truth into tools that serve millions.",
+    strength: "Innovation and infrastructure for the mission",
+    verse: "Exodus 31:3-5 — \"I have filled him with the Spirit of God, with wisdom, with understanding, with knowledge and with all kinds of skills — to make artistic designs.\"",
+    image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "07",
-    name: "METHODIST",
-    tagline: "DISCIPLINE & SOCIAL HOLINESS",
-    desc: "Born from John Wesley's movement. Emphasis on personal holiness, disciplined spiritual practices, and social action. A theology of grace that moves from justification to sanctification.",
-    strength: "Disciplined discipleship and social witness",
-    verse: "Hebrews 12:14 — \"Make every effort to live in peace with everyone and to be holy; without holiness no one will see the Lord.\"",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/4a4de1a72_generated_image.png",
+    name: "ARTISTS & MUSICIANS",
+    tagline: "BEARERS OF BEAUTY",
+    desc: "Painters, writers, musicians, and filmmakers who create beauty that points beyond itself. Their work carries truth, stirs the soul, and echoes the creativity of the Creator.",
+    strength: "Beauty that awakens worship",
+    verse: "Psalm 33:3 — \"Sing to Him a new song; play skillfully, and shout for joy.\"",
+    image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "08",
-    name: "LUTHERAN",
-    tagline: "JUSTIFICATION BY FAITH",
-    desc: "Born from Martin Luther's Reformation. The doctrine that we are saved by grace through faith alone. Sacramental worship rooted in Scripture. Christ alone, faith alone, grace alone, Scripture alone.",
-    strength: "Reformation clarity and sacramental rootedness",
-    verse: "Ephesians 2:8-9 — \"For it is by grace you have been saved, through faith — and this is not from yourselves, it is the gift of God — not by works.\"",
-    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/9098d4c05_generated_image.png",
+    name: "FARMERS & LABORERS",
+    tagline: "CULTIVATORS OF THE EARTH",
+    desc: "Those who work the land, harvest the fields, and feed the nations. Their labor is the most ancient calling — sustaining life through sweat, patience, and trust in God's provision.",
+    strength: "Sustenance and the dignity of labor",
+    verse: "1 Corinthians 3:7 — \"So neither the one who plants nor the one who waters is anything, but only God, who makes things grow.\"",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed74794?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "09",
     name: "AND MANY MORE",
     tagline: "THE WHOLE BODY",
-    desc: "Anglican, Episcopal, Presbyterian, Quaker, Mennonite, Seventh-day Adventist, Nazarene, Salvation Army, Vineyard, non-denominational churches — and every gathering of believers who call Jesus Lord. The body of Christ is bigger than any list. If you believe the Creed, you are already on the team.",
+    desc: "Homemakers, soldiers, scientists, athletes, cooks, lawyers, janitors, students, retirees — every ethnicity, every nation, every vocation. If your work is offered to Christ, it is holy. The body of Christ is bigger than any list. If you believe the Creed, you are already on the team.",
     strength: "The fullness of Christ's body",
     verse: "Revelation 7:9 — \"A great multitude that no one could count, from every nation, tribe, people and language, standing before the throne and before the Lamb.\"",
-    image: "https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1529390079861-591de354faf5?q=80&w=800&auto=format&fit=crop",
   },
 ];
 
@@ -118,13 +145,13 @@ export default function OneBody() {
           <div className="lg:col-span-7">
             <div className="border-l-2 border-ignition pl-6">
               <p className="text-sm md:text-base font-mono text-signal-white/90 leading-relaxed">
-                OM is non-denominational. If you believe the Christian Creed —
-                we are on the same team. Same Savior. Same mission.
+                Pastors and plumbers. Surgeons and soldiers. Teachers and tradespeople.
+                If you believe the Christian Creed — we are on the same team. Same Savior. Same mission.
               </p>
               <p className="text-xs md:text-sm font-mono text-titanium leading-relaxed mt-4">
-                We give honor to the diversity of denominations and the strengths
-                they bring to the mission of Christ. Different branches. One root.
-                One Lord. One Great Commission. We don't uniform the body — we deploy it.
+                We honor the diversity of Christian vocations, ethnicities, and callings —
+                every profession is noble, every contribution needed, every worker a minister.
+                Different roles. One body. One Lord. One Great Commission. We don't uniform the body — we deploy it.
               </p>
             </div>
           </div>
