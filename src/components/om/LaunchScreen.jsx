@@ -17,13 +17,13 @@ export default function LaunchScreen({ onComplete }) {
         }
         return p + 2;
       });
-    }, 40);
+    }, 60);
 
     // Complete
     const completeTimer = setTimeout(() => {
       setDone(true);
-      setTimeout(() => onComplete && onComplete(), 900);
-    }, 2800);
+      setTimeout(() => onComplete && onComplete(), 1350);
+    }, 4200);
 
     return () => {
       clearInterval(progressInterval);
@@ -36,7 +36,7 @@ export default function LaunchScreen({ onComplete }) {
       {!done && (
         <motion.div
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
+          transition={{ duration: 1.2, ease: "easeInOut" }}
           className="fixed inset-0 z-[100] bg-obsidian flex flex-col items-center justify-center overflow-hidden"
         >
           {/* Grid backdrop */}
@@ -46,7 +46,7 @@ export default function LaunchScreen({ onComplete }) {
           <motion.div
             initial={{ y: "-100%" }}
             animate={{ y: "100vh" }}
-            transition={{ duration: 2.5, ease: "linear", repeat: Infinity }}
+            transition={{ duration: 3.75, ease: "linear", repeat: Infinity }}
             className="absolute inset-x-0 h-32 bg-gradient-to-b from-transparent via-ignition/5 to-transparent"
           />
 
@@ -54,7 +54,7 @@ export default function LaunchScreen({ onComplete }) {
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
             className="relative flex items-center gap-3 mb-8"
           >
             <div className="relative w-14 h-14 flex items-center justify-center">
@@ -81,7 +81,7 @@ export default function LaunchScreen({ onComplete }) {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+            transition={{ duration: 1.2, ease: "easeOut", delay: 0.45 }}
             className="text-center mb-8 px-4 max-w-4xl"
           >
             <h1 className="font-heading font-black text-3xl md:text-5xl lg:text-6xl text-signal-white tracking-[-0.02em] uppercase leading-[1.05]">
@@ -95,7 +95,7 @@ export default function LaunchScreen({ onComplete }) {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1 }}
+            transition={{ duration: 1.2, delay: 1.5 }}
             className="text-center px-4 max-w-2xl"
           >
             <p className="text-sm md:text-base font-heading font-medium text-signal-white/80 italic leading-relaxed">
