@@ -7,33 +7,55 @@ const INITIATIVES = [
     title: "DIGITAL PLATFORM",
     subtitle: "The Downpayment on a Vision",
     body: "This website is the downpayment on a vision and a promise. A digital command center that signals to the world: OM is back, and we mean it. We need funds to move to production and execute — turning this prototype into the operational nerve center of a resurgent mission force.",
-    bullets: [],
+    timeline: {
+      then: "OM's digital presence was a neglected brochure site — static, dated, invisible. It reflected an organization in decline, not a mission force on the move.",
+      now: "A tactical command-center prototype — live, functional, and proving the vision. Scramble-text effects, live data overlays, the aesthetic of a deployed operation. But it's a prototype running on borrowed infrastructure.",
+      after: "A production-grade platform: real-time field worker tracking, a secure missionary portal, donation processing, recruitment funnels, and a content engine that publishes the story of the resurgence as it unfolds. A living nerve center, not a brochure.",
+      invest: ["Production build & hosting infrastructure", "Secure missionary portal & field comms system", "Integrated donation processing pipeline", "Content engine for ongoing resurgence storytelling"],
+    },
   },
   {
     num: "02",
     title: "HQ REVITALIZATION & LAUNCHPAD",
     subtitle: "Reignite the Hearth",
     body: "The headquarters fell into disrepair during the COVID remote era, then was stripped of all branding and mission — intentionally demoralizing, erasing history, the mission, and the soul. We aim to reignite the smouldering embers back into the roaring hearth of the organization.",
-    bullets: [
-      "Commercial branded interiors — the mission, visible in every surface",
-      "The Launchpad — HQ becomes a mandatory step in the journey to the field, where missionaries get amped up, trained, and meet the team who has their back before they go out like lone wolves into the far-flung places God has for them",
-      "Wall of the Fallen — restoring the gravitas, weight, and heritage that was erased",
-    ],
+    timeline: {
+      then: "The HQ was a hollow shell — stripped of all branding, history, and mission. Generic hotel-lobby interiors. Demoralizing by design. A physical erasure of everything OM stood for.",
+      now: "The building is occupied again. The team is back. But the walls are still blank, the spaces still soulless — the hearth is smouldering, not roaring. The infrastructure of neglect is still visible in every surface.",
+      after: "A branded command center and mandatory Launchpad. Commercial-grade tactical interiors. The Wall of the Fallen — engraved marble honoring every martyr. A physical hearth where every missionary passes through before deploying: amped, trained, and face-to-face with the team that has their back.",
+      invest: ["Commercial branded interiors & tactical design buildout", "Wall of the Fallen — engraved marble memorial installation", "Launchpad training facility & program infrastructure", "Mission heritage restoration across all HQ surfaces"],
+    },
   },
   {
     num: "03",
     title: "MARKETING & RECRUITMENT",
     subtitle: "Full Tilt Offense",
     body: "Manifest this rebrand in marketing collateral and onboard retired missionary legends — the men and women who built OM — to put the fire back in the org, the soul, and to inspire and drive the next generation to the same. Full tilt offense.",
-    bullets: [],
+    timeline: {
+      then: "Recruitment went dark during the decline. No collateral, no campaigns, no presence. The pipeline of new missionaries dried up entirely as OM became invisible to the very people it needed to reach.",
+      now: "The rebrand is defined. The tactical identity is live on this site. But it hasn't been deployed at scale — the materials, the campaigns, and the legendary voices that will carry the message haven't been mobilized yet.",
+      after: "A full-tilt marketing and recruitment offensive: campaign collateral across digital, print, and video. Retired missionary legends onboarded as ambassadors — the men and women who built OM putting fire back into the next generation. A recruitment engine driving 500+ new applicants per year.",
+      invest: ["Multi-channel campaign production: digital, print, video", "Missionary legend ambassador program & onboarding", "Recruitment funnel infrastructure & applicant pipeline", "Documentary content capturing the OM story & legacy"],
+    },
   },
   {
     num: "04",
     title: "NATIONAL EXPANSION",
     subtitle: "The Frontline Is Here",
     body: "The USA went from 90% Christian to 60%. The frontline is no longer just over there — it is here. OM has a pioneering pilot program, a proven template for partnering with churches to drive permanent revival and renewal in the USA. It fills the regional gap between local churches and international missions — leveraging the very capabilities OM built to exact the same turnaround here at home.",
-    bullets: [],
+    timeline: {
+      then: "The USA was written off as a sending nation, not a mission field. OM had no domestic strategy. Meanwhile, the country slid from 90% to 60% Christian — the frontline moved to our own doorstep and no one was deployed to meet it.",
+      now: "A pilot program is proven. OM has a tested template: partnering with local churches to drive permanent revival and renewal. It works. But it's one pilot in one region — the template hasn't been scaled to the national footprint that the crisis demands.",
+      after: "A national deployment: the pilot template scaled to 12 regional hubs across the US in 3 years. Each hub partners with 20+ churches, deploying trained teams into communities that need exactly what OM has spent 68 years perfecting abroad — now applied at home. The turnaround, replicated.",
+      invest: ["12 regional hub launches across the US over 3 years", "Church partnership framework & training curriculum", "Regional staff deployment & field operations", "Impact measurement & replication playbook"],
+    },
   },
+];
+
+const TIMELINE_PHASES = [
+  { key: "then", label: "THEN", color: "text-ignition" },
+  { key: "now", label: "NOW", color: "text-signal-white" },
+  { key: "after", label: "AFTER", color: "text-ignition" },
 ];
 
 export default function TurnaroundInitiatives() {
@@ -62,19 +84,33 @@ export default function TurnaroundInitiatives() {
                   <div className="text-[10px] font-mono text-titanium mt-2 tracking-[0.1em]">{item.subtitle}</div>
                 </div>
                 <div className="lg:col-span-9">
-                  <p className="text-sm md:text-base font-mono text-titanium leading-relaxed mb-6">
+                  <p className="text-sm md:text-base font-mono text-titanium leading-relaxed mb-8">
                     {item.body}
                   </p>
-                  {item.bullets.length > 0 && (
-                    <ul className="space-y-3">
-                      {item.bullets.map((b, i) => (
-                        <li key={i} className="flex gap-3 text-xs md:text-sm font-mono text-signal-white/80 leading-relaxed">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-titanium/20 mb-8">
+                    {TIMELINE_PHASES.map((phase) => (
+                      <div key={phase.key} className="bg-obsidian p-5">
+                        <div className={`text-[10px] font-mono tracking-[0.3em] ${phase.color} mb-3`}>{phase.label}</div>
+                        <p className="text-xs font-mono text-titanium leading-relaxed">
+                          {item.timeline[phase.key]}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="border border-titanium/20 p-5 bg-signal-white/[0.02]">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-6 h-px bg-ignition" />
+                      <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">INVESTMENT PLAN</span>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-2">
+                      {item.timeline.invest.map((b, i) => (
+                        <div key={i} className="flex gap-3 text-xs font-mono text-signal-white/80 leading-relaxed">
                           <span className="text-ignition mt-0.5">▸</span>
                           <span>{b}</span>
-                        </li>
+                        </div>
                       ))}
-                    </ul>
-                  )}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
