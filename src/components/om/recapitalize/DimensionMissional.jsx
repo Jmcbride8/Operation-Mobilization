@@ -84,13 +84,21 @@ export default function DimensionMissional() {
           </div>
         </div>
 
-        <div className="mt-8 border border-ignition/40 bg-ignition/[0.04] p-6 md:p-8 text-center">
-          <p className="text-lg md:text-2xl font-heading font-black text-signal-white tracking-[-0.01em]">
-            SEAL TEAM 6 NEVER WORKED REMOTE.
-          </p>
-          <p className="text-[10px] font-mono text-titanium tracking-[0.2em] mt-2">
-            PRESENCE IS STRATEGY. PROXIMITY IS CULTURE. THE HEARTH IS THE HQ.
-          </p>
+        <div className="relative mt-8 border border-ignition/40 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1595590424283-b8f17842773f?q=80&w=2070&auto=format&fit=crop"
+            alt="Special operations operator"
+            className="absolute inset-0 w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-obsidian via-obsidian/80 to-obsidian/60" />
+          <div className="relative p-8 md:p-12 text-center">
+            <p className="text-lg md:text-2xl font-heading font-black text-signal-white tracking-[-0.01em]">
+              SEAL TEAM 6 NEVER WORKED REMOTE.
+            </p>
+            <p className="text-[10px] font-mono text-titanium tracking-[0.2em] mt-2">
+              PRESENCE IS STRATEGY. PROXIMITY IS CULTURE. THE HEARTH IS THE HQ.
+            </p>
+          </div>
         </div>
       </div>
     </section>
