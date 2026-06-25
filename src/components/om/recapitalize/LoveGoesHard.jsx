@@ -10,12 +10,13 @@ export default function LoveGoesHard() {
     <section ref={ref} className="relative min-h-[80vh] flex items-center justify-center overflow-hidden border-t border-titanium/10">
       <div className="absolute inset-0">
         <img
-          src="https://media.base44.com/images/public/6a39d712e094663f23e0cf53/6258de976_image.png"
+          src="https://media.base44.com/images/public/6a39d712e094663f23e0cf53/92252f092_image.png"
           alt="Christ on the Cross"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-obsidian/70 via-obsidian/20 to-obsidian/90" />
-        <div className="absolute inset-0 bg-gradient-to-r from-obsidian/40 via-transparent to-obsidian/40" />
+        <div className="absolute inset-0 bg-obsidian/55" />
+        <div className="absolute inset-0 bg-gradient-to-b from-obsidian via-obsidian/30 to-obsidian" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(8,8,8,0.65)_0%,transparent_70%)]" />
         <div className="absolute inset-0 grid-lines opacity-10" />
       </div>
 
@@ -34,7 +35,7 @@ export default function LoveGoesHard() {
           <ScrambleText
             as="h2"
             text="LOVE GOES HARD."
-            className="font-heading font-black text-[46px] md:text-[80px] lg:text-[100px] text-signal-white tracking-[-0.02em] uppercase leading-[0.95]"
+            className="font-heading font-black text-[46px] md:text-[80px] lg:text-[100px] text-signal-white tracking-[-0.02em] uppercase leading-[0.95] drop-shadow-[0_4px_24px_rgba(0,0,0,0.9)]"
           />
         </motion.div>
       </div>
