@@ -19,7 +19,11 @@ const MISSION_LINKS = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(() => {
+    const saved = localStorage.getItem("theme");
+    if (saved) return saved === "dark";
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  });
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -32,8 +36,9 @@ export default function Navbar() {
     const root = document.documentElement;
     const saved = localStorage.getItem("theme");
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const shouldDark = saved ? saved === "dark" : prefersDark;
     
-    if (saved === "dark" || (!saved && prefersDark)) {
+    if (shouldDark) {
       root.classList.add("dark");
       setIsDark(true);
     } else {
