@@ -4,6 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { base44 } from "@/api/base44Client";
 import ScrambleText from "@/components/om/ScrambleText";
+import EnlistConfirmation from "@/components/om/EnlistConfirmation";
 
 export default function GoSignUp() {
   const navigate = useNavigate();
@@ -12,6 +13,7 @@ export default function GoSignUp() {
   const [confirm, setConfirm] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [confirmed, setConfirmed] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -51,7 +53,17 @@ export default function GoSignUp() {
 
       {/* Content */}
       <div className="flex-1 flex items-center justify-center px-4 py-12">
-        <div className="w-full max-w-md">
+        {!confirmed ? (
+          <EnlistConfirmation
+            onConfirm={() => setConfirmed(true)}
+            onBack={() => navigate("/")}
+          />
+        ) : (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="w-full max-w-md">
           {/* Header */}
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-2 mb-6">
@@ -141,7 +153,8 @@ export default function GoSignUp() {
               SIGN IN
             </Link>
           </p>
-        </div>
+        </motion.div>
+        )}
       </div>
     </div>
   );
