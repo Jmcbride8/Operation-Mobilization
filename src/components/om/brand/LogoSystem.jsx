@@ -97,7 +97,7 @@ export default function LogoSystem() {
               <span className="text-[9px] font-mono text-obsidian/40 mt-1">Red on Signal White</span>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5, delay: 0.4 }} className="bg-signal-white p-12 flex flex-col items-center justify-center min-h-[280px]">
-              <img src={EMBLEM} alt="OM Emblem — Light" className="w-28 h-28 object-contain" />
+              <img src="https://media.base44.com/images/public/6a39d712e094663f23e0cf53/c7ecab672_ChatGPTImageJun22202609_30_33PM.png" alt="OM Emblem — Light" className="w-28 h-28 object-contain" />
               <span className="text-[10px] font-mono text-obsidian/60 tracking-[0.2em] mt-6">EMBLEM</span>
               <span className="text-[9px] font-mono text-obsidian/40 mt-1">Red on Signal White</span>
             </motion.div>
