@@ -12,7 +12,7 @@ export default function DimensionInnovate() {
         </div>
         <ScrambleText
           as="h2"
-          text="INNOVATE."
+          text="GO ON THE OFFENSE."
           className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-12"
         />
 
