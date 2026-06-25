@@ -7,7 +7,7 @@ export default function LoveGoesHard() {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section ref={ref} className="relative min-h-[115vh] flex items-center overflow-hidden border-t border-titanium/10">
+    <section ref={ref} className="relative min-h-[115vh] flex flex-col overflow-hidden border-t border-titanium/10">
       <div className="absolute inset-0">
         <img
           src="https://media.base44.com/images/public/6a39d712e094663f23e0cf53/2aa6a269b_image.png"
@@ -19,16 +19,17 @@ export default function LoveGoesHard() {
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian/80 via-transparent to-transparent" />
       </div>
 
-      <div className="relative max-w-[1440px] mx-auto px-4 md:px-8 w-full py-24">
+      <div className="relative max-w-[1440px] mx-auto px-4 md:px-8 w-full pt-24 pb-24">
         <motion.div
-          initial={{ opacity: 0, x: -30 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
+          initial={{ opacity: 0, y: -20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="max-w-2xl space-y-8"
+          className="text-center space-y-8"
         >
-          <div className="flex items-center gap-4">
+          <div className="flex items-center justify-center gap-4">
             <div className="w-16 h-px bg-ignition" />
             <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">THE ULTIMATE DEPLOYMENT</span>
+            <div className="w-16 h-px bg-ignition" />
           </div>
           <ScrambleText
             as="h2"
