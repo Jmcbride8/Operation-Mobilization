@@ -86,12 +86,12 @@ export default function DimensionMissional() {
 
         <div className="relative mt-8 border border-ignition/40 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1595590424283-b8f17842773f?q=80&w=2070&auto=format&fit=crop"
-            alt="Special operations operator"
-            className="absolute inset-0 w-full h-full object-cover opacity-30"
+            src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2070&auto=format&fit=crop"
+            alt="Special forces operators"
+            className="absolute inset-0 w-full h-full object-cover opacity-40"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-obsidian via-obsidian/80 to-obsidian/60" />
-          <div className="relative p-8 md:p-12 text-center">
+          <div className="relative py-32 md:py-44 px-8 md:px-12 text-center flex flex-col items-center justify-center min-h-[400px] md:min-h-[500px]">
             <p className="text-lg md:text-2xl font-heading font-black text-signal-white tracking-[-0.01em]">
               SEAL TEAM 6 NEVER WORKED REMOTE.
             </p>
