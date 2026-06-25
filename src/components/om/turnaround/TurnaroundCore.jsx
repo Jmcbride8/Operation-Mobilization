@@ -10,6 +10,7 @@ const PILLARS = [
     title: "THE HARDEST PLACES",
     body: "OM doesn't go where it's safe. We go where the gospel has never reached, where the cost is highest, and the need is greatest. The 10/40 Window. Closed nations. Hostile territories. Since 1957, we've deployed to the places no one else would go.",
     return: "The world's hardest places are harder than ever. 3.2 billion people still have no access to the gospel. The need hasn't shrunk — it's grown. The recipe for reaching them hasn't changed: people willing to go.",
+    img: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/698407e3c_generated_image.png",
   },
   {
     icon: Flame,
@@ -17,6 +18,7 @@ const PILLARS = [
     title: "SELF-SACRIFICE",
     body: "From Hudson Taylor to Amy Carmichael to the martyrs on the Wall of the Fallen — OM was built by men and women who counted their lives as loss for the sake of the gospel. Not a career. A calling. Not a salary. A sacrifice. This is the DNA.",
     return: "A generation raised on comfort needs to see it again. The missionary legends who built OM are still among us — and the fire they carry is exactly what the next generation is starving for. We're not inventing a recipe. We're returning to it.",
+    img: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/ba09df380_generated_image.png",
   },
   {
     icon: Cross,
@@ -24,6 +26,7 @@ const PILLARS = [
     title: "THE GREAT COMMISSION",
     body: "Go and make disciples of all nations. It's not a suggestion, a program, or a department. It's the final command of Christ — the operating order of the church. OM exists to execute it, literally, on the field. Everything else is supporting infrastructure.",
     return: "The church in the West has drifted into self-preservation. The Great Commission has been treated as optional. OM exists to embody the unchanging mandate — and the world needs that embodiment now more than ever.",
+    img: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/02d3a9fbe_generated_image.png",
   },
   {
     icon: Ship,
@@ -31,6 +34,7 @@ const PILLARS = [
     title: "SHIPS & SOIL",
     body: "OM pioneered the ship-based ministry — floating libraries of hope that docked in ports the world over. And we pioneered on soil — planting churches, training leaders, and staying for decades. Both sea and land. Both word and deed. Both arrival and abiding.",
     return: "The ships are being restored. The field teams are rebounding. The dual-engine method that made OM unique — mobility AND permanence — is the blueprint for a resurgence that reaches both the coasts and the interiors.",
+    img: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/a22d96963_generated_image.png",
   },
   {
     icon: Church,
@@ -38,6 +42,7 @@ const PILLARS = [
     title: "THE LOCAL CHURCH",
     body: "OM doesn't replace the local church — we arm it. We are the bridge between the pew and the field, between the sending church and the deployed missionary. Churches don't need to build visa systems, crisis protocols, or retirement plans. OM absorbs all of it. That's why we're indispensable.",
     return: "Churches are waking up to the missions mandate again — but they need a partner who can actually deploy their people. The gap between 'we want to send' and 'they're on the field' is exactly the gap OM was built to fill. The partnership model is the recipe.",
+    img: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/209322be3_generated_image.png",
   },
   {
     icon: Globe2,
@@ -45,6 +50,7 @@ const PILLARS = [
     title: "118 NATIONS",
     body: "From one man in a truck in Mexico to a global force across 118 countries. OM built the largest missionary mobilization network in history — not by accident, but by a relentless, sacrificial, decade-by-decade push into every corner of the earth. The infrastructure is unmatched.",
     return: "The network survived the dark night. 118 countries, 250+ missionaries and climbing, 68 years of relationships and trust. This is not a startup. This is a resurgence of the most proven mission infrastructure on earth. The bones are great. The second act starts now.",
+    img: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/d58b973d7_generated_image.png",
   },
 ];
 
@@ -58,11 +64,19 @@ function PillarCard({ pillar, index }) {
       className="group relative border border-titanium/20 bg-obsidian hover:border-ignition/40 transition-all duration-300 overflow-hidden"
     >
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-ignition/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-      <div className="p-8">
-        <div className="flex items-center gap-3 mb-6">
-          <Icon size={20} className="text-ignition" />
+      <div className="relative h-48 overflow-hidden border-b border-titanium/20">
+        <img
+          src={pillar.img}
+          alt={pillar.title}
+          className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/40 to-transparent" />
+        <div className="absolute top-4 left-4 flex items-center gap-2">
+          <Icon size={16} className="text-ignition" />
           <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">{pillar.label}</span>
         </div>
+      </div>
+      <div className="p-8">
         <h3 className="font-heading font-black text-xl md:text-2xl text-signal-white uppercase tracking-[-0.01em] mb-4">
           {pillar.title}
         </h3>
