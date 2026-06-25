@@ -29,7 +29,7 @@ const SHIPS = [
     name: "MV Logos II",
     status: "DECOMMISSIONED",
     launched: "1988",
-    image: "https://images.unsplash.com/photo-1572730120360-41b79a7d8ca2?auto=format&fit=crop&w=1200&q=80",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/b55f7f866_image.png",
     desc: "Served 20 years visiting ports in the Americas, Europe, and Africa. Retired in 2008 after welcoming over 10 million visitors.",
   },
   {
