@@ -157,7 +157,7 @@ export default function MissionServants() {
           <ScrambleText
             as="h2"
             text="NINE STAGES. ONE PARTNER."
-            className="font-heading font-black text-[36px] md:text-[50px] text-signal-white tracking-[-0.02em] uppercase"
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase"
           />
         </div>
 
@@ -179,7 +179,7 @@ export default function MissionServants() {
           <ScrambleText
             as="h2"
             text="THE WEIGHT WE BEAR."
-            className="font-heading font-black text-[36px] md:text-[50px] text-signal-white tracking-[-0.02em] uppercase mb-12"
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-12"
           />
           <div className="flex flex-wrap gap-3">
             {BRIDGE_SERVICES.map((service, i) => (
@@ -206,7 +206,7 @@ export default function MissionServants() {
           <ScrambleText
             as="h2"
             text="THE CALL IS OPEN."
-            className="font-heading font-black text-[36px] md:text-[50px] text-signal-white tracking-[-0.02em] uppercase mb-4"
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-4"
           />
           <p className="text-xs md:text-sm font-mono text-titanium max-w-xl mx-auto mb-8 leading-relaxed">
             Step one is a conversation. The rest, you don't walk alone.

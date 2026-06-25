@@ -74,7 +74,7 @@ export default function MissionSupporters() {
           <ScrambleText
             as="h2"
             text="HOW TO STAND."
-            className="font-heading font-black text-[36px] md:text-[50px] text-signal-white tracking-[-0.02em] uppercase mb-12"
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-12"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-titanium/15">
             {WAYS.map((way, i) => (
@@ -128,7 +128,7 @@ export default function MissionSupporters() {
           <ScrambleText
             as="h2"
             text="OM BRIDGES THE GAP."
-            className="font-heading font-black text-[36px] md:text-[50px] text-signal-white tracking-[-0.02em] uppercase mb-4"
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-4"
           />
           <p className="text-xs md:text-sm font-mono text-titanium max-w-2xl mb-12 leading-relaxed">
             Supporters don't give into a void. OM connects every supporter to
@@ -157,7 +157,7 @@ export default function MissionSupporters() {
           <ScrambleText
             as="h2"
             text="HOLD THE ROPE."
-            className="font-heading font-black text-[36px] md:text-[50px] text-signal-white tracking-[-0.02em] uppercase mb-4"
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-4"
           />
           <p className="text-xs md:text-sm font-mono text-titanium max-w-xl mx-auto mb-8 leading-relaxed">
             William Carey said it: "I will go down into the pit, if you will

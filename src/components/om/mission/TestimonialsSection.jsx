@@ -63,7 +63,7 @@ export default function TestimonialsSection() {
         <ScrambleText
           as="h2"
           text="BETTER TOGETHER."
-          className="font-heading font-black text-[36px] md:text-[50px] text-signal-white tracking-[-0.02em] uppercase mb-16"
+          className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-16"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

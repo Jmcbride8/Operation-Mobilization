@@ -82,7 +82,7 @@ export default function MissionSenders() {
           <ScrambleText
             as="h2"
             text="WHAT CHURCHES DO."
-            className="font-heading font-black text-[36px] md:text-[50px] text-signal-white tracking-[-0.02em] uppercase mb-12"
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-12"
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-titanium/15">
             {ROLES.map((role, i) => (
@@ -114,12 +114,12 @@ export default function MissionSenders() {
           <ScrambleText
             as="h2"
             text="LOCAL AND GLOBAL."
-            className="font-heading font-black text-[36px] md:text-[50px] text-signal-white tracking-[-0.02em] uppercase mb-4"
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-4"
           />
           <ScrambleText
             as="h2"
             text="TOGETHER, COMPLETE."
-            className="font-heading font-black text-[36px] md:text-[50px] text-ignition tracking-[-0.02em] uppercase mb-8"
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-ignition tracking-[-0.02em] uppercase mb-8"
             delay={200}
           />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-titanium/15">
@@ -181,7 +181,7 @@ export default function MissionSenders() {
           <ScrambleText
             as="h2"
             text="WE BRING THE NEED."
-            className="font-heading font-black text-[36px] md:text-[50px] text-signal-white tracking-[-0.02em] uppercase mb-6"
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-6"
           />
           <p className="text-sm md:text-base font-heading font-medium text-signal-white/90 leading-relaxed mb-8">
             Mission organizations exist to bring the need before the church — to
@@ -217,7 +217,7 @@ export default function MissionSenders() {
           <ScrambleText
             as="h2"
             text="WHY PARTNER."
-            className="font-heading font-black text-[36px] md:text-[50px] text-signal-white tracking-[-0.02em] uppercase mb-4"
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-4"
           />
           <p className="text-xs md:text-sm font-mono text-titanium max-w-2xl mb-12 leading-relaxed">
             Churches have the heart and the mandate. OM has the field experience
@@ -252,7 +252,7 @@ export default function MissionSenders() {
           <ScrambleText
             as="h2"
             text="WHAT CHANGES."
-            className="font-heading font-black text-[36px] md:text-[50px] text-signal-white tracking-[-0.02em] uppercase mb-12"
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-12"
           />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {TRANSFORMATIONS.map((t, i) => (
@@ -287,7 +287,7 @@ export default function MissionSenders() {
           <ScrambleText
             as="h2"
             text="INTERLOCKING ROOTS."
-            className="font-heading font-black text-[36px] md:text-[50px] text-signal-white tracking-[-0.02em] uppercase mb-4"
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-4"
           />
           <p className="text-xs md:text-sm font-mono text-titanium max-w-2xl mb-12 leading-relaxed">
             By partnering with OM, your church doesn't just reach the nations —
@@ -357,7 +357,7 @@ export default function MissionSenders() {
           <ScrambleText
             as="h2"
             text="OPERATION MOBILIZATION."
-            className="font-heading font-black text-[36px] md:text-[50px] text-signal-white tracking-[-0.02em] uppercase mb-4"
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-4"
           />
           <p className="text-xs md:text-sm font-mono text-titanium max-w-2xl mx-auto mb-8 leading-relaxed">
             Since 1957, OM has been the bridge between sending churches and the
