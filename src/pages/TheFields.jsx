@@ -36,7 +36,7 @@ const SHIPS = [
     name: "MV Logos",
     status: "DECOMMISSIONED",
     launched: "1970",
-    image: "https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?auto=format&fit=crop&w=1200&q=80",
+    image: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/53330d15e_image.png",
     desc: "OM's first ship. Sailed for 18 years before being retired in 1988 after running aground off Tierra del Fuego.",
   },
 ];
