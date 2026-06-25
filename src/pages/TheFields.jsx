@@ -157,7 +157,7 @@ export default function TheFields() {
                     <img
                       src={`https://flagcdn.com/40x30/${country.code?.toLowerCase()}.png`}
                       alt={country.name}
-                      className="h-6 w-8 object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                      className="h-6 w-8 object-cover group-hover:grayscale transition-all duration-500"
                     />
                     <span className="text-[8px] font-mono text-titanium/50 tracking-[0.15em]">
                       {String(i + 1).padStart(2, "0")}
@@ -210,7 +210,7 @@ export default function TheFields() {
                   <img
                     src={ship.image}
                     alt={ship.name}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                    className="w-full h-full object-cover group-hover:grayscale transition-all duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/40 to-transparent" />
                   <div className="absolute top-4 right-4">
