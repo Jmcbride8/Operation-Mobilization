@@ -10,9 +10,9 @@ export default function LoveGoesHard() {
     <section ref={ref} className="relative min-h-[80vh] flex items-center justify-center overflow-hidden border-t border-titanium/10">
       <div className="absolute inset-0">
         <img
-          src="https://media.base44.com/images/public/6a39d712e094663f23e0cf53/6258de976_image.png"
+          src="https://media.base44.com/images/public/6a39d712e094663f23e0cf53/2aa6a269b_image.png"
           alt="Christ on the Cross"
-          className="w-full h-full object-cover opacity-50"
+          className="w-full h-full object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian via-obsidian/40 to-obsidian" />
         <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-obsidian/60" />
