@@ -33,10 +33,10 @@ const STAGES = [
   },
   {
     id: "04",
-    name: "TRAINING",
+    name: "LAUNCHPAD",
     imageKey: "mission.training",
-    desc: "Cross-cultural preparation, language acquisition, spiritual formation, and field-specific skills. You don't deploy unprepared — OM trains you for the realities you'll face.",
-    omSupport: "Intensive training programs, language school partnerships, cultural orientation, and field-safety preparation.",
+    desc: "You visit the OM Hub office — the Launchpad. This is where you meet the team that has your back. You get inspired by those who've gone before, trained for the realities you'll face, and equipped for the journey ahead. Cross-cultural preparation, language acquisition, spiritual formation, and field-specific skills — all forged here, before you ever set foot on the field.",
+    omSupport: "On-site Launchpad program at the OM Hub office: team integration, intensive training, language school partnerships, cultural orientation, and field-safety preparation.",
   },
   {
     id: "05",
