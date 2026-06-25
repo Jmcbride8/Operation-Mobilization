@@ -18,6 +18,7 @@ import MissionSupporters from '@/pages/MissionSupporters';
 import MissionServants from '@/pages/MissionServants';
 import TheFields from '@/pages/TheFields';
 import Turnaround from '@/pages/Turnaround';
+import Recapitalize from '@/pages/Recapitalize';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -58,6 +59,7 @@ const AuthenticatedApp = () => {
       <Route path="/mission/servants" element={<MissionServants />} />
       <Route path="/fields" element={<TheFields />} />
       <Route path="/turnaround" element={<Turnaround />} />
+      <Route path="/recapitalize" element={<Recapitalize />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
