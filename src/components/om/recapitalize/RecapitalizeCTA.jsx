@@ -74,15 +74,9 @@ export default function RecapitalizeCTA() {
                 <h3 className="font-heading font-black text-2xl md:text-3xl text-signal-white uppercase tracking-[-0.01em] mb-4">
                   {step.title}
                 </h3>
-                <p className="text-xs md:text-sm font-mono text-titanium leading-relaxed mb-8 flex-grow">
+                <p className="text-xs md:text-sm font-mono text-titanium leading-relaxed flex-grow">
                   {step.body}
                 </p>
-                <a
-                  href="mailto:recapitalize@om.org?subject=OM 2.0 — Charter, Mobilize, Invest"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-ignition/40 text-ignition font-heading font-bold text-[10px] tracking-[0.2em] hover:bg-ignition hover:text-white transition-colors"
-                >
-                  {step.action}
-                </a>
               </motion.div>
             );
           })}
