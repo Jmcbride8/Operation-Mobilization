@@ -61,7 +61,7 @@ export default function EnlistConfirmation({ onConfirm, onBack }) {
       >
         <button
           onClick={onConfirm}
-          className="w-full py-3 bg-ignition text-xs font-heading font-bold tracking-[0.2em] text-white hover:bg-ignition/90 transition-colors flex items-center justify-center gap-2"
+          className="w-full py-3 bg-ignition text-xs font-heading font-bold tracking-[0.2em] text-white hover:bg-ignition/90 transition-colors flex items-center justify-center gap-2 animate-go-pulse"
         >
           I&apos;M SURE — CONTINUE <ArrowRight size={14} />
         </button>

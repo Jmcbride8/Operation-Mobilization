@@ -151,7 +151,7 @@ export default function Navbar() {
           </button>
           <button
             onClick={() => navigate("/enlist")}
-            className="ml-2 px-4 py-1.5 bg-ignition text-[10px] font-heading font-bold tracking-[0.15em] text-white hover:bg-ignition/90 transition-colors"
+            className="ml-2 px-4 py-1.5 bg-ignition text-[10px] font-heading font-bold tracking-[0.15em] text-white hover:bg-ignition/90 transition-colors animate-go-pulse"
           >
             GO
           </button>
@@ -221,7 +221,7 @@ export default function Navbar() {
               </button>
               <button
                 onClick={() => { setMobileOpen(false); navigate("/enlist"); }}
-                className="mt-2 px-4 py-3 bg-ignition text-xs font-heading font-bold tracking-[0.15em] text-white text-center"
+                className="mt-2 px-4 py-3 bg-ignition text-xs font-heading font-bold tracking-[0.15em] text-white text-center animate-go-pulse"
               >
                 GO
               </button>
