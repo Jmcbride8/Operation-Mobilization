@@ -37,7 +37,7 @@ export default function DimensionVision() {
           <div className="lg:col-span-7">
             <div className="flex items-center gap-2 mb-4">
               <Eye size={16} className="text-ignition" />
-              <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">THE METAPHOR — EMBED CLIP HERE</span>
+              <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">YOUR FINGERS WOULD REMEMBER THEIR OLD STRENGTH, IF YOU HELD YOUR SWORD AGAIN</span>
             </div>
             <div className="aspect-video relative bg-black border border-titanium/20 overflow-hidden">
               <iframe
