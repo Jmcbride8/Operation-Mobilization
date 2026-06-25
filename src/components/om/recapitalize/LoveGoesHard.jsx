@@ -12,9 +12,10 @@ export default function LoveGoesHard() {
         <img
           src="https://media.base44.com/images/public/6a39d712e094663f23e0cf53/6258de976_image.png"
           alt="Christ on the Cross"
-          className="w-full h-full object-cover opacity-90"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-obsidian/60 via-transparent to-obsidian/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-obsidian/70 via-obsidian/20 to-obsidian/90" />
+        <div className="absolute inset-0 bg-gradient-to-r from-obsidian/40 via-transparent to-obsidian/40" />
         <div className="absolute inset-0 grid-lines opacity-10" />
       </div>
 
