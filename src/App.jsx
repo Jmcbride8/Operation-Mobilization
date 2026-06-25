@@ -17,6 +17,7 @@ import MissionSenders from '@/pages/MissionSenders';
 import MissionSupporters from '@/pages/MissionSupporters';
 import MissionServants from '@/pages/MissionServants';
 import TheFields from '@/pages/TheFields';
+import Turnaround from '@/pages/Turnaround';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -56,6 +57,7 @@ const AuthenticatedApp = () => {
       <Route path="/mission/supporters" element={<MissionSupporters />} />
       <Route path="/mission/servants" element={<MissionServants />} />
       <Route path="/fields" element={<TheFields />} />
+      <Route path="/turnaround" element={<Turnaround />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
