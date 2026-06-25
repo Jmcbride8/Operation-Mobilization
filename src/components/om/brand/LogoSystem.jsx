@@ -104,7 +104,7 @@ export default function LogoSystem() {
               <span className="text-[9px] font-mono text-obsidian/40 mt-1">Red on Signal White</span>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5, delay: 0.5 }} className="bg-signal-white p-12 flex flex-col items-center justify-center min-h-[280px]">
-              <img src="https://media.base44.com/images/public/6a39d712e094663f23e0cf53/955cec1e1_generated_image.png" alt="OM Full Wordmark — Light" className="max-w-[200px] object-contain" />
+              <img src="https://media.base44.com/images/public/6a39d712e094663f23e0cf53/580f41e36_ChatGPTImageJun25202610_45_57AM.png" alt="OM Full Wordmark — Light" className="max-w-[200px] object-contain" />
               <span className="text-[10px] font-mono text-obsidian/60 tracking-[0.2em] mt-6">FULL WORDMARK</span>
               <span className="text-[9px] font-mono text-obsidian/40 mt-1">Black + Red on Signal White</span>
             </motion.div>
