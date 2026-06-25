@@ -39,26 +39,14 @@ export default function DimensionVision() {
               <Eye size={16} className="text-ignition" />
               <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">THE METAPHOR — EMBED CLIP HERE</span>
             </div>
-            <div className="aspect-video relative bg-black border border-titanium/20 overflow-hidden group">
-              {/* Replace this div with a YouTube iframe when the clip URL is ready:
-                  <iframe src="https://www.youtube.com/embed/VIDEO_ID" className="w-full h-full" allowFullScreen />
-              */}
-              <div className="absolute inset-0 flex items-center justify-center p-8 text-center">
-                <div className="space-y-4">
-                  <p className="text-lg md:text-xl font-heading font-bold text-signal-white/80 italic leading-relaxed max-w-lg">
-                    "Your fingers would remember their old strength
-                    if they grasped the sword."
-                  </p>
-                  <p className="text-[10px] font-mono text-ignition tracking-[0.3em]">
-                    ▸ THE LORD OF THE RINGS: THE TWO TOWERS
-                  </p>
-                  <div className="w-12 h-px bg-ignition/40 mx-auto" />
-                  <p className="text-[9px] font-mono text-titanium tracking-[0.2em] max-w-sm">
-                    THEODEN, AWAKENED. THE PARALLEL IS DELIBERATE.<br />
-                    GRASP THE SWORD. REMEMBER YOUR STRENGTH.
-                  </p>
-                </div>
-              </div>
+            <div className="aspect-video relative bg-black border border-titanium/20 overflow-hidden">
+              <iframe
+                src="https://www.youtube.com/embed/4JEC08MUiqY?si=Od8SUIedtB--pxlG"
+                title="Your fingers would remember their old strength if they grasped the sword"
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>
