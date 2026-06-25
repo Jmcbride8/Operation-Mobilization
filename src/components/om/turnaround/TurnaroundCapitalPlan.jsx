@@ -71,7 +71,7 @@ export default function TurnaroundCapitalPlan() {
         </div>
         <ScrambleText
           as="h2"
-          text="THE CAPITAL PLAN."
+          text="THE FOUR FRONTS FORWARD."
           className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-6"
         />
         <p className="text-sm md:text-base font-mono text-titanium leading-relaxed max-w-3xl mb-16">
