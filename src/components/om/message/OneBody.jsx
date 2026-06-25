@@ -73,7 +73,7 @@ const BRANCHES = [
     desc: "Those who work the land, harvest the fields, and feed the nations. Their labor is the most ancient calling — sustaining life through sweat, patience, and trust in God's provision.",
     strength: "Sustenance and the dignity of labor",
     verse: "1 Corinthians 3:7 — \"So neither the one who plants nor the one who waters is anything, but only God, who makes things grow.\"",
-    image: "https://images.unsplash.com/photo-1500382017468-9049fed74794?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1574943320219-553eb213f72b?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "09",
