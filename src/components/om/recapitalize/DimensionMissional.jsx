@@ -86,9 +86,9 @@ export default function DimensionMissional() {
 
         <div className="relative mt-8 border border-ignition/40 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2070&auto=format&fit=crop"
+            src="https://media.base44.com/images/public/6a39d712e094663f23e0cf53/96bcb65c2_generated_image.png"
             alt="Special forces operators"
-            className="absolute inset-0 w-full h-full object-cover opacity-40"
+            className="absolute inset-0 w-full h-full object-cover opacity-50"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-obsidian via-obsidian/80 to-obsidian/60" />
           <div className="relative py-32 md:py-44 px-8 md:px-12 text-center flex flex-col items-center justify-center min-h-[400px] md:min-h-[500px]">
