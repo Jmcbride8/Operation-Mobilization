@@ -7,6 +7,7 @@ const MONOGRAM = "https://media.base44.com/images/public/6a39d712e094663f23e0cf5
 const EMBLEM = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/30d7cd0ae_ChatGPTImageJun22202609_26_10PM.png";
 const FULL_WORDMARK = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/d41b9c24f_ChatGPTImageJun22202610_12_32PM.png";
 const WALL_DISPLAY = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/0d0e3fc52_ChatGPTImageJun23202612_06_25PM.png";
+const WALL_DISPLAY_LIGHT = "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/5bcb22ba7_ChatGPTImageJun25202610_40_41AM.png";
 
 
 
@@ -38,8 +39,22 @@ export default function LogoSystem() {
             <img src={WALL_DISPLAY} alt="OM Brand Environment — Wall of Crosses" className="w-full h-full object-cover" />
           </div>
           <div className="p-4 flex items-center justify-between border-t border-titanium/20">
-            <span className="text-[10px] font-mono text-ignition tracking-[0.2em]">BRAND ENVIRONMENT</span>
+            <span className="text-[10px] font-mono text-ignition tracking-[0.2em]">BRAND ENVIRONMENT — DARK</span>
             <span className="text-[9px] font-mono text-titanium/50">Wall of Crosses · John 15:13 · OM Flags · Charter Display</span>
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.15 }}
+          className="mt-4 border border-titanium/20 overflow-hidden"
+        >
+          <div className="relative aspect-[16/9] bg-signal-white">
+            <img src={WALL_DISPLAY_LIGHT} alt="OM Brand Environment — Light Mode" className="w-full h-full object-cover" />
+          </div>
+          <div className="p-4 flex items-center justify-between border-t border-titanium/20 bg-signal-white">
+            <span className="text-[10px] font-mono text-ignition tracking-[0.2em]">BRAND ENVIRONMENT — LIGHT</span>
+            <span className="text-[9px] font-mono text-titanium/50">Marble Wall · John 15:13 · OM Flags · Charter Display</span>
           </div>
         </motion.div>
 
