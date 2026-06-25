@@ -1,16 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const BOOT_LINES = [
-  "INITIALIZING SYSTEM...",
-  "ESTABLISHING SECURE LINK...",
-  "LOADING FIELD INTEL...",
-  "CALIBRATING GLOBAL NETWORK...",
-  "DEPLOYMENT READY.",
-];
+
 
 export default function LaunchScreen({ onComplete }) {
-  const [phase, setPhase] = useState(0);
   const [progress, setProgress] = useState(0);
   const [done, setDone] = useState(false);
 
@@ -26,11 +19,6 @@ export default function LaunchScreen({ onComplete }) {
       });
     }, 40);
 
-    // Boot line sequence
-    const lineTimers = BOOT_LINES.map((_, i) =>
-      setTimeout(() => setPhase(i), i * 700)
-    );
-
     // Complete
     const completeTimer = setTimeout(() => {
       setDone(true);
@@ -39,7 +27,6 @@ export default function LaunchScreen({ onComplete }) {
 
     return () => {
       clearInterval(progressInterval);
-      lineTimers.forEach(clearTimeout);
       clearTimeout(completeTimer);
     };
   }, [onComplete]);
@@ -90,21 +77,34 @@ export default function LaunchScreen({ onComplete }) {
             </span>
           </motion.div>
 
-          {/* Boot lines */}
-          <div className="h-5 mb-6 overflow-hidden">
-            <AnimatePresence mode="wait">
-              <motion.p
-                key={phase}
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.2 }}
-                className="text-[10px] font-mono tracking-[0.2em] text-titanium"
-              >
-                {BOOT_LINES[phase]}
-              </motion.p>
-            </AnimatePresence>
-          </div>
+          {/* Welcome headline */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+            className="text-center mb-8 px-4 max-w-4xl"
+          >
+            <h1 className="font-heading font-black text-3xl md:text-5xl lg:text-6xl text-signal-white tracking-[-0.02em] uppercase leading-[1.05]">
+              WELCOME TO THE
+              <br />
+              <span className="text-ignition">FRONTLINES OF FAITH</span>
+            </h1>
+          </motion.div>
+
+          {/* Scripture */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 1 }}
+            className="text-center px-4 max-w-2xl"
+          >
+            <p className="text-sm md:text-base font-heading font-medium text-signal-white/80 italic leading-relaxed">
+              "Go into all the world and preach the gospel to all creation."
+            </p>
+            <p className="mt-2 text-[10px] font-mono tracking-[0.25em] text-ignition">
+              MARK 16:15 (NIV)
+            </p>
+          </motion.div>
 
           {/* Progress bar */}
           <div className="w-48 md:w-64 h-px bg-titanium/15 relative overflow-hidden">
