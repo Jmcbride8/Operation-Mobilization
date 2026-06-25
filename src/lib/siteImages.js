@@ -84,7 +84,7 @@ export const SITE_IMAGES = [
   { key: "mission.deploying", label: "Mission - Deploying", category: "Mission", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/564dc8e9b_generated_image.png" },
   { key: "mission.service", label: "Mission - Service", category: "Mission", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/efb4a5afb_generated_image.png" },
   { key: "mission.furlough", label: "Mission - Furlough & Debriefing", category: "Mission", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/9657987b2_generated_image.png" },
-  { key: "mission.debriefing", label: "Mission - Post-Service Debriefing", category: "Mission", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/8febf71fe_generated_image.png" },
+  { key: "mission.debriefing", label: "Mission - Post-Service Debriefing", category: "Mission", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/55dd14670_generated_image.png" },
   { key: "mission.retirement", label: "Mission - Retirement", category: "Mission", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/07cc42214_generated_image.png" },
   { key: "mission.local_church", label: "Mission - Local Church Focus", category: "Mission", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/5bbcb3231_generated_image.png" },
   { key: "mission.global_reach", label: "Mission - Global Reach", category: "Mission", url: "https://media.base44.com/images/public/6a39d712e094663f23e0cf53/4eed42e03_generated_image.png" },
