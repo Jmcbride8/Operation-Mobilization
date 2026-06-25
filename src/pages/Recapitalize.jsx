@@ -31,9 +31,9 @@ export default function Recapitalize() {
       <RecapitalizeLetter />
       <DimensionVision />
       <DimensionCommitment />
+      <LoveGoesHard />
       <DimensionMissional />
       <DimensionInnovate />
-      <LoveGoesHard />
       <RecapitalizeCTA />
       <Footer />
     </div>

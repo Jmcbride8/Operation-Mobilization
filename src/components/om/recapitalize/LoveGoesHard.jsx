@@ -7,7 +7,7 @@ export default function LoveGoesHard() {
   const isInView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section ref={ref} className="relative min-h-[96vh] flex items-center overflow-hidden border-t border-titanium/10">
+    <section ref={ref} className="relative min-h-[115vh] flex items-center overflow-hidden border-t border-titanium/10">
       <div className="absolute inset-0">
         <img
           src="https://media.base44.com/images/public/6a39d712e094663f23e0cf53/2aa6a269b_image.png"
