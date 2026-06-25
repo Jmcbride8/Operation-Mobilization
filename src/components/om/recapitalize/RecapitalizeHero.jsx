@@ -22,11 +22,11 @@ export default function RecapitalizeHero() {
           </div>
           <ScrambleText
             as="h1"
-            text="CAPITALIZE & RECAPITALIZE."
+            text="REVITALIZE & RECAPITALIZE."
             className="font-heading font-black text-[40px] md:text-[60px] lg:text-[72px] text-signal-white tracking-[-0.02em] uppercase leading-[0.95]"
           />
           <p className="mt-6 text-lg md:text-xl font-heading font-bold text-ignition tracking-[-0.01em]">
-            Capitalize on momentum, recapitalize to resurge.
+            Re·vital·ize /rēˈvīd(ə)līz/: to imbue with new life and vitality. &nbsp;&nbsp; Re·ca·pit·al·ize /ˌrēkəˈpit(ə)lˌīz/: to furnish with new capital; to restructure and rebuild from the ground up.
           </p>
           <p className="mt-8 text-sm md:text-base font-mono text-titanium leading-relaxed max-w-2xl">
             A consultant's letter to leadership. Not a postmortem — a battle plan.
