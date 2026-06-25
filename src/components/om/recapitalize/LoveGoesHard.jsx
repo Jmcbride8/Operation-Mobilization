@@ -36,11 +36,6 @@ export default function LoveGoesHard() {
             text="LOVE GOES HARD."
             className="font-heading font-black text-[46px] md:text-[80px] lg:text-[100px] text-signal-white tracking-[-0.02em] uppercase leading-[0.95]"
           />
-          <p className="text-sm md:text-lg font-mono text-signal-white/70 leading-relaxed max-w-2xl mx-auto pt-4">
-            God went hard. The cross was not gentle. The cross was not safe.
-            The cross was the full weight of love poured out — violently, completely, without reservation.
-            That is the standard. That is the mission. That is the call.
-          </p>
         </motion.div>
       </div>
     </section>
