@@ -6,6 +6,7 @@ import Navbar from "@/components/om/Navbar";
 import Footer from "@/components/om/Footer";
 import ScrambleText from "@/components/om/ScrambleText";
 import LifecycleStage from "@/components/om/mission/LifecycleStage";
+import TestimonialsSection from "@/components/om/mission/TestimonialsSection";
 import { useSiteImages } from "@/hooks/useSiteImages";
 
 const STAGES = [
@@ -195,6 +196,9 @@ export default function MissionServants() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <TestimonialsSection />
 
       {/* CTA */}
       <section className="py-24 border-t border-titanium/10 text-center">
