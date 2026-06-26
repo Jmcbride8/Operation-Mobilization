@@ -36,7 +36,7 @@ export default function WorldMap() {
           <div>
             <ScrambleText
               as="h2"
-              text="GLOBAL MISSION FIELD"
+              text="GOD'S LOVE GOING GLOBAL"
               className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase"
             />
             <p className="text-xs font-mono text-titanium mt-3 max-w-lg">
