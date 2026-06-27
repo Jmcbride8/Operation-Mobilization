@@ -7,7 +7,6 @@ import WhatWeAreNot from "@/components/om/WhatWeAreNot";
 import DiagnosisSection from "@/components/om/about/DiagnosisSection";
 import CureSection from "@/components/om/about/CureSection";
 import WorldMap from "@/components/om/WorldMap";
-import OperationsSection from "@/components/om/OperationsSection";
 import HallOfFaith from "@/components/om/HallOfFaith";
 import TestimonialsSection from "@/components/om/mission/TestimonialsSection";
 import DeploySection from "@/components/om/DeploySection";
@@ -24,7 +23,6 @@ export default function Home() {
       <DiagnosisSection />
       <CureSection />
       <WorldMap />
-      <OperationsSection />
       <HallOfFaith />
       <TestimonialsSection />
       <DeploySection />
