@@ -10,7 +10,6 @@ import WorldMap from "@/components/om/WorldMap";
 import OperationsSection from "@/components/om/OperationsSection";
 import HallOfFaith from "@/components/om/HallOfFaith";
 import TestimonialsSection from "@/components/om/mission/TestimonialsSection";
-import IntelSection from "@/components/om/IntelSection";
 import DeploySection from "@/components/om/DeploySection";
 import Footer from "@/components/om/Footer";
 
@@ -26,7 +25,6 @@ export default function Home() {
       <CureSection />
       <WorldMap />
       <OperationsSection />
-      <IntelSection />
       <HallOfFaith />
       <TestimonialsSection />
       <DeploySection />

@@ -46,7 +46,6 @@ export default function Footer() {
                 { label: "Command", href: "#command" },
                 { label: "Operations", href: "#operations" },
                 { label: "Logistics", href: "#logistics" },
-                { label: "Field Intel", href: "#intel" },
                 { label: "Deploy", href: "#deploy" },
               ].map((item) => (
                 <button
