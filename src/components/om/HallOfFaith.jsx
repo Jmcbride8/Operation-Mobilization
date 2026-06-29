@@ -97,7 +97,7 @@ function HeroCard({ hero, index, getImage }) {
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      className="border border-titanium/20 bg-obsidian group"
+      className="border border-titanium/20 bg-obsidian group flex-shrink-0 w-[85%] sm:w-[300px] md:w-auto snap-start"
     >
       {/* Image */}
       <div className="relative aspect-[4/5] overflow-hidden">
@@ -232,7 +232,7 @@ export default function HallOfFaith() {
         </motion.div>
 
         {/* Hero cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 overflow-x-auto md:overflow-visible pb-6 md:pb-0 snap-x snap-mandatory horizontal-scroll -mx-4 md:mx-0 px-4 md:px-0">
           {HEROES.map((hero, i) => (
             <HeroCard key={hero.name} hero={hero} index={i} getImage={getImage} />
           ))}
@@ -242,7 +242,7 @@ export default function HallOfFaith() {
             initial={{ opacity: 0, y: 40 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: HEROES.length * 0.1 }}
-            className="border border-ignition/40 bg-ignition/[0.03] flex flex-col items-center justify-center text-center p-8 min-h-[300px]"
+            className="border border-ignition/40 bg-ignition/[0.03] flex flex-col items-center justify-center text-center p-8 min-h-[300px] flex-shrink-0 w-[85%] sm:w-[300px] md:w-auto snap-start"
           >
             <span className="text-[9px] font-mono text-titanium tracking-[0.2em] mb-4">
               [ POSITION OPEN ]

@@ -83,14 +83,14 @@ export default function WhatWeAreNot() {
         </div>
 
         {/* Contrasts grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-titanium/15">
+        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-px bg-titanium/15 overflow-x-auto md:overflow-visible pb-6 md:pb-0 snap-x snap-mandatory horizontal-scroll -mx-4 md:mx-0 px-4 md:px-0">
           {CONTRASTS.map((item, i) => (
             <motion.div
               key={item.not}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="bg-obsidian group hover:bg-signal-white/[0.02] transition-colors overflow-hidden"
+              className="bg-obsidian group hover:bg-signal-white/[0.02] transition-colors overflow-hidden flex-shrink-0 w-[85%] sm:w-[300px] md:w-auto snap-start border md:border-0 border-titanium/20"
             >
               {/* Image */}
               <div className="relative h-32 overflow-hidden">
