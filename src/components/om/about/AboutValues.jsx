@@ -21,7 +21,7 @@ const PILLARS = [
   {
     id: "04",
     title: "WE DO NOT EVACUATE THE CALLED",
-    desc: "Based on our legacy of service, OM does not require you to evacuate warzones or run to safety when you feel called to stay. We don't do the bureaucratic bullshit. We put love above life. Forward.",
+    desc: "Based on our legacy of service, OM does not require you to evacuate warzones or run to safety when you feel called to stay. We don't do the bureaucratic runaround. We put love above life. Forward.",
   },
   {
     id: "05",
