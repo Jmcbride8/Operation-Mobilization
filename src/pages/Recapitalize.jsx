@@ -8,6 +8,7 @@ import FrontWebsite from "@/components/om/recapitalize/FrontWebsite";
 import FrontHQ from "@/components/om/recapitalize/FrontHQ";
 import FrontRecruitment from "@/components/om/recapitalize/FrontRecruitment";
 import LoveGoesHard from "@/components/om/recapitalize/LoveGoesHard";
+import RememberWhy from "@/components/om/recapitalize/RememberWhy";
 import RecapitalizeCTA from "@/components/om/recapitalize/RecapitalizeCTA";
 
 export default function Recapitalize() {
@@ -32,6 +33,7 @@ export default function Recapitalize() {
       <FrontHQ />
       <LoveGoesHard />
       <FrontRecruitment />
+      <RememberWhy />
       <RecapitalizeCTA />
       <Footer />
     </div>
