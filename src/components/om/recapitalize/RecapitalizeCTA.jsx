@@ -22,7 +22,7 @@ const STEPS = [
     num: "03",
     icon: DollarSign,
     title: "INVEST",
-    body: "Fund the four fronts. Capital in, execution out, turnaround delivered. Lead donors unlock Phases 1-2. Monthly sustainers keep the hearth burning. Every dollar mapped to a front. Every front mapped to a phase.",
+    body: "Fund the three fronts. Capital in, execution out, turnaround delivered. Lead donors unlock Phases 1-2. Monthly sustainers keep the hearth burning. Every dollar mapped to a front. Every front mapped to a phase.",
     action: "CAPITALIZE THE RESURGENCE",
   },
 ];

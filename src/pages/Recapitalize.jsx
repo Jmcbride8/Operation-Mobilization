@@ -4,10 +4,9 @@ import Footer from "@/components/om/Footer";
 import RecapitalizeGate from "@/components/om/recapitalize/RecapitalizeGate";
 import RecapitalizeHero from "@/components/om/recapitalize/RecapitalizeHero";
 import RecapitalizeLetter from "@/components/om/recapitalize/RecapitalizeLetter";
-import DimensionVision from "@/components/om/recapitalize/DimensionVision";
-import DimensionCommitment from "@/components/om/recapitalize/DimensionCommitment";
-import DimensionMissional from "@/components/om/recapitalize/DimensionMissional";
-import DimensionInnovate from "@/components/om/recapitalize/DimensionInnovate";
+import FrontWebsite from "@/components/om/recapitalize/FrontWebsite";
+import FrontHQ from "@/components/om/recapitalize/FrontHQ";
+import FrontRecruitment from "@/components/om/recapitalize/FrontRecruitment";
 import LoveGoesHard from "@/components/om/recapitalize/LoveGoesHard";
 import RecapitalizeCTA from "@/components/om/recapitalize/RecapitalizeCTA";
 
@@ -29,11 +28,10 @@ export default function Recapitalize() {
       <Navbar />
       <RecapitalizeHero />
       <RecapitalizeLetter />
-      <DimensionVision />
-      <DimensionCommitment />
+      <FrontWebsite />
+      <FrontHQ />
       <LoveGoesHard />
-      <DimensionMissional />
-      <DimensionInnovate />
+      <FrontRecruitment />
       <RecapitalizeCTA />
       <Footer />
     </div>

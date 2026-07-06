@@ -1,43 +1,47 @@
 import React from "react";
 import ScrambleText from "@/components/om/ScrambleText";
 
-export default function DimensionInnovate() {
+export default function FrontRecruitment() {
   return (
     <section className="py-24 border-t border-titanium/10 relative overflow-hidden bg-signal-white/[0.01]">
       <div className="absolute inset-0 grid-lines opacity-20 pointer-events-none" />
       <div className="relative max-w-[1440px] mx-auto px-4 md:px-8">
         <div className="flex items-center gap-3 mb-2">
           <div className="w-8 h-px bg-ignition" />
-          <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">DIMENSION 04</span>
+          <span className="text-[10px] font-mono tracking-[0.3em] text-ignition">FRONT 03</span>
         </div>
         <ScrambleText
           as="h2"
-          text="GO ON THE OFFENSE."
+          text="RECRUITMENT."
           className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-12"
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           <div>
             <p className="text-sm md:text-base font-mono text-titanium leading-relaxed mb-6">
-              Go National. 90% of the US was Christian. Today, 60%. The mission field frontlines
-              are no longer over there — they are here. The same capabilities OM built for the hardest
-              places on earth are exactly what the American church needs now.
+              100% of missionaries found OM through the website — and that is the problem.
+              There is no active recruitment. No offense. No momentum. A mission force that
+              does not recruit is a mission force in retreat.
             </p>
             <p className="text-sm md:text-base font-mono text-titanium leading-relaxed">
-              Leverage the wedge pilot program Dave McBride pioneered. Replicate. Innovate.
-              The template is proven. The need is urgent. The opportunity is national.
+              Rebuild the recruitment team. Go to churches. Go to campuses. Go to the places
+              where the called are waiting. Build the pipeline. Market the mission. Scale the
+              force. Go on offense.
             </p>
           </div>
-          <div>
-            <p className="text-sm md:text-base font-mono text-titanium leading-relaxed mb-6">
-              Charlie Kirk created a movement. Courageous, edgy, confrontational heroes like
-              Jordan Peterson, Michael Knowles, Elon — and yes, even Trump — showed that the
-              American soul is vigorous and alive.
+
+          <div className="border-l-2 border-ignition pl-6">
+            <div className="text-[10px] font-mono text-ignition tracking-[0.3em] mb-4">THE MAN IN THE ARENA</div>
+            <p className="text-sm md:text-base font-mono text-signal-white/70 leading-relaxed italic">
+              "It is not the critic who counts; not the man who points out how the strong man stumbles...
+              The credit belongs to the man who is actually in the arena, whose face is marred by dust and
+              sweat and blood; who strives valiantly; who errs, who comes short again and again...
+              who at the best knows in the end the triumph of high achievement, and who at the worst,
+              if he fails, at least fails while daring greatly, so that his place shall never be with those
+              <span className="text-ignition not-italic font-bold"> cold and timid souls who know neither victory nor defeat.</span>"
             </p>
-            <p className="text-sm md:text-base font-mono text-titanium leading-relaxed">
-              Shame on us if we aren't. The church has the greatest message, the greatest mandate,
-              and the greatest force on earth. If culture warriors can mobilize millions for politics,
-              what should missionaries be able to do for the kingdom of God?
+            <p className="text-[10px] font-mono text-titanium tracking-[0.2em] mt-4">
+              — THEODORE ROOSEVELT, SORBONNE, 1910
             </p>
           </div>
         </div>
@@ -56,7 +60,7 @@ export default function DimensionInnovate() {
             { stat: "90%", label: "US CHRISTIAN (CIRCA 1990)", sub: "The sending nation" },
             { stat: "60%", label: "US CHRISTIAN (TODAY)", sub: "The mission field" },
             { stat: "30PT", label: "DECLINE IN ONE GENERATION", sub: "The frontline moved home" },
-            { stat: "1", label: "PROVEN PILOT PROGRAM", sub: "Dave McBride's template. Replicate." },
+            { stat: "100%", label: "MISSIONARIES FROM THE WEBSITE", sub: "No active recruitment. Yet." },
           ].map((item, i) => (
             <div key={i} className="bg-obsidian p-6 text-center">
               <div className="font-heading font-black text-3xl md:text-4xl text-ignition tracking-[-0.02em] mb-2">
