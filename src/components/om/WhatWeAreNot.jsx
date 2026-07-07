@@ -7,7 +7,7 @@ import { X, Check } from "lucide-react";
 const CONTRASTS = [
   {
     not: "A CHARITY",
-    is: "A LIVING MOVEMENT",
+    is: "THE BRIDE OF CHRIST",
     desc: "Charities write checks. We send people. Men and women who move into the communities they serve — for years, not weeks.",
     imageKey: "identity.charity",
   },
