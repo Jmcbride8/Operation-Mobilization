@@ -9,6 +9,7 @@ import TurnaroundStory from "@/components/om/turnaround/TurnaroundStory";
 import TurnaroundCore from "@/components/om/turnaround/TurnaroundCore";
 import FrontWebsite from "@/components/om/recapitalize/FrontWebsite";
 import FrontHQ from "@/components/om/recapitalize/FrontHQ";
+import HQRevitalizationGallery from "@/components/om/shared/HQRevitalizationGallery";
 import FrontRecruitment from "@/components/om/recapitalize/FrontRecruitment";
 import TurnaroundCapitalPlan from "@/components/om/turnaround/TurnaroundCapitalPlan";
 
@@ -38,6 +39,7 @@ export default function Recapitalize() {
       <TurnaroundCore />
       <FrontWebsite />
       <FrontHQ />
+      <HQRevitalizationGallery />
       <FrontRecruitment />
       <TurnaroundCapitalPlan />
       <RememberWhy />
