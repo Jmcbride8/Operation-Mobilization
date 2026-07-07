@@ -59,7 +59,7 @@ export default function DiagnosisSection() {
         </div>
         <ScrambleText
           as="h2"
-          text="THE SYMPTOM. THE CAUSE. THE CURE."
+          text="WHY WE GO."
           className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.03em] uppercase leading-[0.9] mb-12"
         />
 
