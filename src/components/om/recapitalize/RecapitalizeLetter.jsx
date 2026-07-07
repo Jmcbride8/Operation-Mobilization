@@ -31,10 +31,18 @@ export default function RecapitalizeLetter() {
             fire never fully died — they are waiting for someone to blow on them. This is that moment.
           </p>
           <p className="text-sm md:text-base font-mono text-titanium leading-relaxed">
-            OM 2.0 is not a rebrand. It is a resurrection. The mission hasn't changed — the hardest
-            places, the highest cost, the greatest love. What is new is the will to say it loud, build
-            it strong, and go hard. This is an invitation to leverage this moment of rebirth into an OM
-            reborn — a new story to inspire the team, and a clear call for donors to rearm the force.
+            OM 2.0 is not a rebrand. It is not merely a rebirth. It is a resurgence. The mission hasn't
+            changed — the hardest places, the highest cost, the greatest love. What is new is the will
+            to say it loud, build it strong, and go hard. This moment — the fall, the turnaround, the
+            rising — is not a liability to manage. It is the greatest asset OM has ever had.
+          </p>
+          <p className="text-sm md:text-base font-mono text-titanium leading-relaxed">
+            Before this, OM had a ho-hum carry-on story. Now you have a saga. People want to participate
+            in this kind of moment — not out of pity, but out of conviction. Fundraising is no longer a
+            rescue appeal. It is a chance to leverage this story into a whole-of-organization push. You
+            now have a story to bring donors that is compelling, urgent, and alive. If leveraged well,
+            this becomes the greatest capital-raising narrative in OM's history — a story about the
+            future, and a bigger, badder, awesomer OM.
           </p>
           <div className="border-l-2 border-ignition pl-6 py-2 my-8">
             <p className="text-base md:text-lg font-heading font-bold text-signal-white leading-relaxed">
