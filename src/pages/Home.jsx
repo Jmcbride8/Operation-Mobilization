@@ -4,6 +4,7 @@ import Navbar from "@/components/om/Navbar";
 import HeroSection from "@/components/om/HeroSection";
 import GreatCommission from "@/components/om/GreatCommission";
 import WhatWeAreNot from "@/components/om/WhatWeAreNot";
+import WhyOM from "@/components/om/WhyOM";
 import DiagnosisSection from "@/components/om/about/DiagnosisSection";
 import CureSection from "@/components/om/about/CureSection";
 import WorldMap from "@/components/om/WorldMap";
@@ -20,6 +21,7 @@ export default function Home() {
       <HeroSection />
       <GreatCommission />
       <WhatWeAreNot />
+      <WhyOM />
       <DiagnosisSection />
       <CureSection />
       <WorldMap />
