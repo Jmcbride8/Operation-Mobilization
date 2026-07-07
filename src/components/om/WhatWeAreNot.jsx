@@ -19,7 +19,7 @@ const CONTRASTS = [
   },
   {
     not: "DISASTER TOURISTS",
-    is: "LONG-TERM SPECIALISTS",
+    is: "LIFELONG SERVANTS",
     desc: "We don't parachute in for a photo op and leave. Our average deployment is 18 months. We build, we train, we stay until the work is done.",
     imageKey: "identity.tourists",
   },
