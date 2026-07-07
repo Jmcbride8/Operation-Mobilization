@@ -191,13 +191,7 @@ export default function HallOfFaith() {
               delay={300}
             />
           </div>
-          <div className="lg:col-span-4 lg:pt-4">
-            <p className="text-xs md:text-sm font-mono text-titanium leading-relaxed">
-              A generation forgot their names. We will not. These are the ones who went before —
-              who counted the cost, paid the price, and never came back the same. They are not
-              relics. They are the standard.
-            </p>
-          </div>
+          <div className="lg:col-span-4 lg:pt-4" />
         </div>
 
         {/* Manifesto block */}
@@ -213,22 +207,6 @@ export default function HallOfFaith() {
             with no return ticket. They buried their children in foreign soil. They gave their
             lives to people who never asked for them. <span className="text-ignition">That is not foolishness. That is glory.</span>
           </p>
-        </motion.div>
-
-        {/* Scripture quote */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="mb-16 max-w-2xl mx-auto text-center border-l-2 border-r-2 border-ignition/60 px-6 md:px-12 py-6"
-        >
-          <p className="font-heading text-lg md:text-2xl text-signal-white italic leading-relaxed">
-            "Greater love has no one than this, that someone lay down his life
-            for his friends."
-          </p>
-          <span className="block mt-3 text-[10px] font-mono tracking-[0.25em] text-ignition">
-            — JOHN 15:13
-          </span>
         </motion.div>
 
         {/* Hero cards */}
