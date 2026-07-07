@@ -129,7 +129,7 @@ export default function Give() {
             <p className="text-xs md:text-sm font-mono text-titanium leading-relaxed">
               Every dollar goes to the front lines. Choose where your resources
               land — the organization, a specific field, a specialized ministry,
-              or an individual worker. No overhead. No waste. Just the mission.
+              or an individual worker. No nonsense. No waste. Just the mission.
             </p>
           </div>
         </div>
