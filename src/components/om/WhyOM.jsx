@@ -97,11 +97,9 @@ export default function WhyOM() {
             className="font-heading font-black text-3xl md:text-5xl lg:text-6xl tracking-tight text-signal-white mb-4 block"
           />
           <p className="text-sm md:text-base font-mono text-titanium leading-relaxed">
-            Many Christians use a business, a job, or a humanitarian organization to get into a closed country.
-            But under those banners, the job is #1 — and the Gospel becomes a sidequest you sneak in on weekends.
-            Under OM, <span className="text-signal-white font-bold">Christ is the main quest.</span> You are not muzzled.
-            You are not discouraged from sharing His name lest you risk your org's reputation.
-            That <span className="text-ignition">is</span> the mission of our org.
+            Many Christians use a business, a job, or a humanitarian organization to take the Gospel global.
+            But the job is #1 — and the Gospel is the sidequest. With OM, <span className="text-signal-white font-bold">Christ is the main quest.</span>
+            You are not muzzled. You are <span className="text-ignition font-bold">unleashed</span>.
           </p>
         </div>
 
