@@ -48,13 +48,13 @@ export default function HeroSection() {
               <ScrambleText
                 as="h1"
                 text="GOD'S LOVE,"
-                className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
+                className="font-heading font-black text-[64px] md:text-[100px] lg:text-[130px] text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
                 delay={200}
               />
               <ScrambleText
                 as="h1"
                 text="GOING GLOBAL."
-                className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-ignition tracking-[-0.03em] uppercase leading-[0.9]"
+                className="font-heading font-black text-[64px] md:text-[100px] lg:text-[130px] text-ignition tracking-[-0.03em] uppercase leading-[0.9]"
                 delay={400}
               />
             </div>
