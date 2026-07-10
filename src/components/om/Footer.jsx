@@ -101,16 +101,19 @@ export default function Footer() {
           <div className="md:col-span-2">
             <span className="text-[9px] font-mono text-titanium tracking-[0.2em] block mb-3">LEGAL</span>
             <div className="space-y-2">
-              {["Privacy Policy", "Terms of Service", "Cookie Policy", "Whistleblower"].map((item) => (
-                <a
-                  key={item}
-                  href="https://om.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
+              {[
+                { label: "Privacy Policy", to: "/privacy-policy" },
+                { label: "Terms of Service", to: "/terms-of-service" },
+                { label: "Cookie Policy", to: "/cookie-policy" },
+                { label: "Whistleblower", to: "/whistleblower" },
+              ].map((item) => (
+                <Link
+                  key={item.label}
+                  to={item.to}
                   className="block text-[11px] font-mono text-signal-white/60 hover:text-ignition transition-colors"
                 >
-                  {item}
-                </a>
+                  {item.label}
+                </Link>
               ))}
             </div>
           </div>

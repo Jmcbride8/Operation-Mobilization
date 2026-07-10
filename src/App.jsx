@@ -21,6 +21,10 @@ import MissionServants from '@/pages/MissionServants';
 import TheFields from '@/pages/TheFields';
 import Turnaround from '@/pages/Turnaround';
 import Recapitalize from '@/pages/Recapitalize';
+import PrivacyPolicy from '@/pages/PrivacyPolicy';
+import TermsOfService from '@/pages/TermsOfService';
+import CookiePolicy from '@/pages/CookiePolicy';
+import Whistleblower from '@/pages/Whistleblower';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -62,6 +66,10 @@ const AuthenticatedApp = () => {
       <Route path="/fields" element={<TheFields />} />
       <Route path="/turnaround" element={<Turnaround />} />
       <Route path="/recapitalize" element={<Recapitalize />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/terms-of-service" element={<TermsOfService />} />
+      <Route path="/cookie-policy" element={<CookiePolicy />} />
+      <Route path="/whistleblower" element={<Whistleblower />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
