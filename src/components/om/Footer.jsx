@@ -43,18 +43,20 @@ export default function Footer() {
             <span className="text-[9px] font-mono text-titanium tracking-[0.2em] block mb-3">NAVIGATION</span>
             <div className="space-y-2">
               {[
-                { label: "Command", href: "#command" },
-                { label: "Operations", href: "#operations" },
-                { label: "Logistics", href: "#logistics" },
-                { label: "Deploy", href: "#deploy" },
+                { label: "Home", to: "/" },
+                { label: "The Mission", to: "/about" },
+                { label: "The Message", to: "/message" },
+                { label: "The Fields", to: "/fields" },
+                { label: "Give", to: "/give" },
+                { label: "Go", to: "/enlist" },
               ].map((item) => (
-                <button
+                <Link
                   key={item.label}
-                  onClick={() => handleNav(item.href)}
+                  to={item.to}
                   className="block text-[11px] font-mono text-signal-white/60 hover:text-ignition transition-colors"
                 >
                   {item.label}
-                </button>
+                </Link>
               ))}
             </div>
           </div>
