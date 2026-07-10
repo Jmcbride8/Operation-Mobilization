@@ -70,6 +70,8 @@ export default function HeroSection() {
               <CounterDisplay target={5800} label="On the Field" />
               <CounterDisplay target={118} label="Countries" duration={1500} />
               <CounterDisplay target={67} label="Years Deployed" duration={1200} />
+              <CounterDisplay target={2400000} label="Lives to Christ" duration={2000} />
+              <CounterDisplay target={8500} label="Churches Planted" duration={1800} />
             </div>
           </div>
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-export default function CounterDisplay({ target, label, duration = 2000 }) {
+export default function CounterDisplay({ target, label, duration = 2000, decimals = 0 }) {
   const [count, setCount] = useState(0);
   const [started, setStarted] = useState(false);
   const ref = useRef(null);
@@ -21,7 +21,8 @@ export default function CounterDisplay({ target, label, duration = 2000 }) {
       const elapsed = Date.now() - start;
       const progress = Math.min(elapsed / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3);
-      setCount(Math.floor(eased * target));
+      const value = eased * target;
+      setCount(decimals > 0 ? value.toFixed(decimals) : Math.floor(value));
       if (progress >= 1) clearInterval(interval);
     }, 16);
     return () => clearInterval(interval);
