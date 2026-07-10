@@ -94,7 +94,7 @@ export default function WhyOM() {
           <ScrambleText
             as="h2"
             text="THREE PATHS TO THE FIELD."
-            className="font-heading font-black text-3xl md:text-5xl lg:text-6xl tracking-tight text-signal-white mb-4 block"
+            className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] tracking-[-0.03em] text-signal-white mb-4 block uppercase leading-[0.95]"
           />
           <p className="text-sm md:text-base font-mono text-titanium leading-relaxed">
             Many Christians use a business, a job, or a humanitarian organization to take the Gospel global.
