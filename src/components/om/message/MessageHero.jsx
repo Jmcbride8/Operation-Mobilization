@@ -27,10 +27,14 @@ export default function MessageHero() {
           text="THE MESSAGE"
           className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.03em] uppercase leading-[0.9]"
         />
-        <p className="mt-8 text-xs md:text-sm font-mono text-signal-white/70 max-w-xl mx-auto leading-relaxed">
-          What we believe. Why it matters. The faith that sends us
-          to the ends of the earth.
-        </p>
+        <div className="mt-8 max-w-xl mx-auto">
+          <p className="text-sm md:text-base font-mono text-signal-white/80 leading-relaxed italic">
+            "I am not ashamed of the gospel, for it is the power of God for salvation to everyone who believes."
+          </p>
+          <p className="mt-3 text-[10px] font-mono tracking-[0.3em] text-ignition">
+            ROMANS 1:16
+          </p>
+        </div>
       </div>
     </section>
   );
