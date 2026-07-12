@@ -136,7 +136,7 @@ export default function OneBody() {
         </div>
         <ScrambleText
           as="h2"
-          text="The Massagers"
+          text="The Messengers"
           className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-4"
         />
 
@@ -147,6 +147,9 @@ export default function OneBody() {
               <p className="text-sm md:text-base font-mono text-signal-white/90 leading-relaxed">
                 Pastors and plumbers. Surgeons and soldiers. Teachers and tradespeople.
                 If you believe the Christian Creed — we are on the same team. Same Savior. Same mission.
+                So bring your faith and bring your skill set. Whatever your hands find to do,
+                do it with all your might for the Kingdom — your vocation is your deployment.
+                Join the mission. The fields are ripe, and the laborers are few.
               </p>
 
             </div>
