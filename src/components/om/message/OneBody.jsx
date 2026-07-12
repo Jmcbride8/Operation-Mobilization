@@ -146,10 +146,9 @@ export default function OneBody() {
             <div className="border-l-2 border-ignition pl-6">
               <p className="text-sm md:text-base font-mono text-signal-white/90 leading-relaxed">
                 Pastors and plumbers. Surgeons and soldiers. Teachers and tradespeople.
-                If you believe the Christian Creed — we are on the same team. Same Savior. Same mission.
-                So bring your faith and bring your skill set. Whatever your hands find to do,
-                do it with all your might for the Kingdom — your vocation is your deployment.
-                Join the mission. The fields are ripe, and the laborers are few.
+                If you believe the Creed — we are on the same team. Same Savior. Same mission.
+                Bring your faith and your skill set. Your vocation is your deployment.
+                The fields are ripe, and the laborers are few.
               </p>
 
             </div>
