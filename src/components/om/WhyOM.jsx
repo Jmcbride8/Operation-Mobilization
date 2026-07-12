@@ -84,7 +84,7 @@ export default function WhyOM() {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="relative py-24 md:py-32 border-t border-titanium/20 grid-lines">
+    <section ref={ref} className="relative py-24 md:py-32 border-t border-titanium/20">
       <div className="max-w-[1440px] mx-auto px-4 md:px-8">
         <div className="mb-16 md:mb-20 max-w-3xl">
           <div className="flex items-center gap-2 mb-4">
@@ -114,14 +114,10 @@ export default function WhyOM() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.6 }}
-            className="mt-12 flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8 border-l-2 border-ignition pl-6"
+            className="mt-12 border-l-2 border-ignition pl-6"
           >
-            <p className="font-heading font-black text-lg md:text-2xl text-signal-white tracking-tight">
-              WITH OM, YOU ARE UNLEASHED.
-            </p>
-            <p className="text-[12px] font-mono text-titanium leading-relaxed max-w-xl">
-              Not sent to build a career. Not sent to protect a brand. Sent to preach Christ crucified —
-              with a 65-year war chest of experience, logistics, and prayer at your back.
+            <p className="font-heading font-black text-2xl md:text-4xl text-signal-white tracking-tight">
+              CHRIST IS THE MAIN QUEST.
             </p>
           </motion.div>
         )}
