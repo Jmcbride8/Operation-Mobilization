@@ -146,7 +146,6 @@ export default function OneBody() {
             <div className="border-l-2 border-ignition pl-6">
               <p className="text-sm md:text-base font-mono text-signal-white/90 leading-relaxed">
                 Pastors and plumbers. Surgeons and soldiers. Teachers and tradespeople.
-                If you believe the Creed — we are on the same team. Same Savior. Same mission.
                 Bring your faith and your skill set. Your vocation is your deployment.
                 The fields are ripe, and the laborers are few.
               </p>
