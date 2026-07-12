@@ -136,7 +136,7 @@ export default function OneBody() {
         </div>
         <ScrambleText
           as="h2"
-          text="ONE BODY. MANY PARTS."
+          text="The Massagers"
           className="font-heading font-black text-[46px] md:text-[70px] lg:text-[82px] text-signal-white tracking-[-0.02em] uppercase mb-4"
         />
 
@@ -148,11 +148,7 @@ export default function OneBody() {
                 Pastors and plumbers. Surgeons and soldiers. Teachers and tradespeople.
                 If you believe the Christian Creed — we are on the same team. Same Savior. Same mission.
               </p>
-              <p className="text-xs md:text-sm font-mono text-titanium leading-relaxed mt-4">
-                We honor the diversity of Christian vocations, ethnicities, and callings —
-                every profession is noble, every contribution needed, every worker a minister.
-                Different roles. One body. One Lord. One Great Commission. We don't uniform the body — we deploy it.
-              </p>
+
             </div>
           </div>
           <div className="lg:col-span-5">
