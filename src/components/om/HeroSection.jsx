@@ -61,8 +61,9 @@ export default function HeroSection() {
 
             <p className="text-xs md:text-sm font-mono text-titanium max-w-lg leading-relaxed">
               Operation Mobilization sends men and women anywhere on earth.
-              Not tourists. Not spectators. Servants, determined to take the
-              love of Jesus to the ends of the earth. Do it with Doers who have Done it.
+              Servants, determined to take the love of Jesus to the ends of the earth.
+              <br />
+              <span className="text-ignition">Do it with Doers who have Done it.</span>
             </p>
 
             {/* Stats row */}
