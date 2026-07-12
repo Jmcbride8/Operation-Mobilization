@@ -89,15 +89,6 @@ export default function Navbar() {
           >
             HOME
           </Link>
-          {NAV_ITEMS.filter((item) => ["THE MISSION", "THE MESSAGE"].includes(item.label)).map((item) => (
-            <Link
-              key={item.label}
-              to={item.to}
-              className="px-3 py-1.5 text-[10px] font-mono tracking-[0.15em] text-black dark:text-white hover:text-ignition hover:border hover:border-titanium/40 transition-all duration-200"
-            >
-              {item.label}
-            </Link>
-          ))}
           {/* Team dropdown */}
           <div className="relative group">
             <button className="px-3 py-1.5 text-[10px] font-mono tracking-[0.15em] text-black dark:text-white hover:text-ignition hover:border hover:border-titanium/40 transition-all duration-200 flex items-center gap-1">
@@ -117,6 +108,15 @@ export default function Navbar() {
               ))}
             </div>
           </div>
+          {NAV_ITEMS.filter((item) => ["THE MISSION", "THE MESSAGE"].includes(item.label)).map((item) => (
+            <Link
+              key={item.label}
+              to={item.to}
+              className="px-3 py-1.5 text-[10px] font-mono tracking-[0.15em] text-black dark:text-white hover:text-ignition hover:border hover:border-titanium/40 transition-all duration-200"
+            >
+              {item.label}
+            </Link>
+          ))}
           {NAV_ITEMS.filter((item) => item.label === "THE FIELDS").map((item) =>
             item.to ? (
               <Link
