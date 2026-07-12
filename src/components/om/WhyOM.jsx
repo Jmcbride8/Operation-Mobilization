@@ -117,7 +117,7 @@ export default function WhyOM() {
             className="mt-12 border-l-2 border-ignition pl-6"
           >
             <p className="font-heading font-black text-2xl md:text-4xl text-signal-white tracking-tight">
-              CHRIST IS THE MAIN QUEST.
+              AT OM, CHRIST IS <span className="text-ignition">THE MAIN QUEST</span>.
             </p>
           </motion.div>
         )}
