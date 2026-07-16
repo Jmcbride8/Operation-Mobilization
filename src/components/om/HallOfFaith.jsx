@@ -225,7 +225,7 @@ export default function HallOfFaith() {
             <span className="text-[9px] font-mono text-titanium tracking-[0.2em] mb-4">
               [ POSITION OPEN ]
             </span>
-            <h3 className="font-heading font-black text-xl md:text-2xl text-signal-white uppercase tracking-tight leading-tight">
+            <h3 className="font-heading font-black text-3xl md:text-5xl text-signal-white uppercase tracking-tight leading-tight">
               THE NEXT NAME
               <br />
               <span className="text-ignition">IS YOURS.</span>
