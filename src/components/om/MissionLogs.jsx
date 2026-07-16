@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const LOGS = [
-  { id: "ML-0491", region: "SOUTH ASIA", text: "Gospel broadcast reached 12,000 homes. 47 professions of faith.", time: "06:14 UTC", img: "https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=200&h=120&fit=crop" },
-  { id: "ML-0492", region: "EAST AFRICA", text: "Church planted in unreached village. First service: 130 gathered.", time: "08:33 UTC", img: "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=200&h=120&fit=crop" },
-  { id: "ML-0493", region: "MIDDLE EAST", text: "Believer baptized in secret. 9th new convert this month.", time: "09:47 UTC", img: "https://images.unsplash.com/photo-1588392382834-a891ac275f39?w=200&h=120&fit=crop" },
-  { id: "ML-0494", region: "CENTRAL ASIA", text: "Field team deployed. 12 missionaries entering closed nation.", time: "11:02 UTC", img: "https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=200&h=120&fit=crop" },
-  { id: "ML-0495", region: "NORTH AFRICA", text: "Scriptures distributed: 2,400 Bibles delivered to house churches.", time: "12:58 UTC", img: "https://images.unsplash.com/photo-1546015720-b8b30df5aa27?w=200&h=120&fit=crop" },
-  { id: "ML-0496", region: "SOUTHEAST ASIA", text: "Orphan rescued from trafficking ring. Now in discipleship.", time: "14:21 UTC", img: "https://images.unsplash.com/photo-1493558103817-58b2924bce98?w=200&h=120&fit=crop" },
-  { id: "ML-0497", region: "EUROPE", text: "Refugee family baptized. Father declares Christ before camp.", time: "15:40 UTC", img: "https://images.unsplash.com/photo-1528164344705-4754a6179b63?w=200&h=120&fit=crop" },
-  { id: "ML-0498", region: "LATIN AMERICA", text: "Evangelism campaign closed: 340 souls saved in 3 days.", time: "17:05 UTC", img: "https://images.unsplash.com/photo-1547891654-e66c4c8d3d13?w=200&h=120&fit=crop" },
+  { id: "ML-0491", region: "SOUTH ASIA", text: "Gospel broadcast reached 12,000 homes. 47 professions of faith.", time: "06:14 UTC", img: "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=200&h=120&fit=crop" },
+  { id: "ML-0492", region: "EAST AFRICA", text: "Church planted in unreached village. First service: 130 gathered.", time: "08:33 UTC", img: "https://images.unsplash.com/photo-1524670231024-9e2cce6353f1?w=200&h=120&fit=crop" },
+  { id: "ML-0493", region: "MIDDLE EAST", text: "Believer baptized in secret. 9th new convert this month.", time: "09:47 UTC", img: "https://images.unsplash.com/photo-1502810365585-7c5b3f6e8e0a?w=200&h=120&fit=crop" },
+  { id: "ML-0494", region: "CENTRAL ASIA", text: "Field team deployed. 12 missionaries entering closed nation.", time: "11:02 UTC", img: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=200&h=120&fit=crop" },
+  { id: "ML-0495", region: "NORTH AFRICA", text: "Scriptures distributed: 2,400 Bibles delivered to house churches.", time: "12:58 UTC", img: "https://images.unsplash.com/photo-1532531562-1e7e8f3d30e5?w=200&h=120&fit=crop" },
+  { id: "ML-0496", region: "SOUTHEAST ASIA", text: "Orphan rescued from trafficking ring. Now in discipleship.", time: "14:21 UTC", img: "https://images.unsplash.com/photo-1488521787991-ed7bbaae2b40?w=200&h=120&fit=crop" },
+  { id: "ML-0497", region: "EUROPE", text: "Refugee family baptized. Father declares Christ before camp.", time: "15:40 UTC", img: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=200&h=120&fit=crop" },
+  { id: "ML-0498", region: "LATIN AMERICA", text: "Evangelism campaign closed: 340 souls saved in 3 days.", time: "17:05 UTC", img: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=200&h=120&fit=crop" },
 ];
 
 export default function MissionLogs() {
