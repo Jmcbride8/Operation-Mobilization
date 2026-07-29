@@ -68,7 +68,6 @@ export default function Footer() {
               {[
                 { label: "About OM", to: "/about" },
                 { label: "Leadership", to: "/about" },
-                { label: "Financial Reports", to: "/about" },
                 { label: "Turnaround", to: "/turnaround" },
                 { label: "Recapitalize", to: "/recapitalize" },
                 { label: "Brand Identity", to: "/brand" },
