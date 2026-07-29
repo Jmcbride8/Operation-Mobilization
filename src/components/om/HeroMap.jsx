@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { MapContainer, TileLayer, CircleMarker } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -21,6 +21,8 @@ export default function HeroMap() {
   const [isDark, setIsDark] = useState(
     typeof document !== "undefined" && document.documentElement.classList.contains("dark")
   );
+  const mapRef = useRef(null);
+  const containerRef = useRef(null);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -30,39 +32,63 @@ export default function HeroMap() {
     return () => observer.disconnect();
   }, []);
 
+  // Leaflet computes tile layout from the container's size at init time.
+  // If the container resizes afterwards (responsive reflow, font/image load),
+  // tiles no longer cover the full area — leaving a gap at the top. Re-running
+  // invalidateSize on mount and whenever the container size changes fixes this.
+  useEffect(() => {
+    const map = mapRef.current;
+    const el = containerRef.current;
+    if (!map || !el) return;
+
+    const invalidate = () => map.invalidateSize();
+    invalidate();
+    const t = setTimeout(invalidate, 200);
+
+    const ro = new ResizeObserver(invalidate);
+    ro.observe(el);
+    return () => {
+      clearTimeout(t);
+      ro.disconnect();
+    };
+  }, [isDark]);
+
   return (
-    <MapContainer
-      key={isDark ? "dark" : "light"}
-      center={[20, 15]}
-      zoom={2}
-      minZoom={2}
-      maxZoom={2}
-      scrollWheelZoom={false}
-      dragging={false}
-      doubleClickZoom={false}
-      zoomControl={false}
-      attributionControl={false}
-      style={{ width: "100%", height: "100%", background: "var(--obsidian)" }}
-      worldCopyJump={true}
-    >
-      <TileLayer
-        url={isDark
-          ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-          : "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"}
-      />
-      {OPERATIONS.map((op, i) => (
-        <CircleMarker
-          key={i}
-          center={op.coords}
-          radius={Math.max(5, op.personnel / 120)}
-          pathOptions={{
-            color: "#B33939",
-            fillColor: "#B33939",
-            fillOpacity: 0.5,
-            weight: 1,
-          }}
+    <div ref={containerRef} className="w-full h-full">
+      <MapContainer
+        ref={mapRef}
+        key={isDark ? "dark" : "light"}
+        center={[20, 15]}
+        zoom={2}
+        minZoom={2}
+        maxZoom={2}
+        scrollWheelZoom={false}
+        dragging={false}
+        doubleClickZoom={false}
+        zoomControl={false}
+        attributionControl={false}
+        style={{ width: "100%", height: "100%", background: "var(--obsidian)" }}
+        worldCopyJump={true}
+      >
+        <TileLayer
+          url={isDark
+            ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+            : "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"}
         />
-      ))}
-    </MapContainer>
+        {OPERATIONS.map((op, i) => (
+          <CircleMarker
+            key={i}
+            center={op.coords}
+            radius={Math.max(5, op.personnel / 120)}
+            pathOptions={{
+              color: "#B33939",
+              fillColor: "#B33939",
+              fillOpacity: 0.5,
+              weight: 1,
+            }}
+          />
+        ))}
+      </MapContainer>
+    </div>
   );
 }
